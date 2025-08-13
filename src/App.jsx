@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import Service from "./pages/Service";
 import ServiceDetails from "./pages/ServiceDetails";
 import ScrollToTop from "./components/ScrollToTop";
+import Blog from "./pages/Blog";
 
 function App() {
   useEffect(() => {
@@ -34,6 +35,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/services" element={<Service />} />
         <Route path="/services/:serviceId" element={<ServiceDetails />} />
+        <Route path="/blog" element={<Blog />} />
       </Routes>
       <Footer />
     </Router>
