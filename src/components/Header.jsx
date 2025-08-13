@@ -78,7 +78,7 @@ const Header = () => {
               <Link to="/services" onClick={() => setIsOpen(false)}>Services</Link>
               <Link to="/blog" onClick={() => setIsOpen(false)}>Blog</Link>
               <Link to="/contact" onClick={() => setIsOpen(false)}>Contact Us</Link>
-              <Link to="/legal" onClick={() => setIsOpen(false)}>Legal Policies</Link>
+              {/* <Link to="/legal" onClick={() => setIsOpen(false)}>Legal Policies</Link> */}
             </nav>
             <div className="mt-4 flex flex-col gap-3">
               <Link

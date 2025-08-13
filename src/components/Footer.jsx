@@ -67,7 +67,7 @@ export default function Footer() {
                   { label: "Services", path: "/services" },
                   { label: "Blogs", path: "/blogs" },
                   { label: "Contact Us", path: "/contact" },
-                  { label: "Legal Policies", path: "/legal" },
+                  // { label: "Legal Policies", path: "/legal" },
                 ].map((item, i) => (
                   <li key={i}>
                     <Link
@@ -94,7 +94,7 @@ export default function Footer() {
                   Follow Us
                 </h4>
                 <div className="flex space-x-4">
-                  {["pinterest-p", "instagram", "twitter", "facebook-f"].map(
+                  {[ "facebook-f", "linkedin-in"].map(
                     (icon, idx) => (
                       <motion.a
                         key={idx}
