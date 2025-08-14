@@ -24,7 +24,7 @@ footer .container-fluid {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 100px 0px 20px 0px;
+  /* padding: 100px 0px 20px 0px; */
 }
 .service-details-hero{
     background-image: url("https://the-varallo-group.vercel.app/hero-bg.jpg");

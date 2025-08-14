@@ -23,7 +23,9 @@ function BlogHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-        What started as a way to help my mum manage her childcare centre became a platform that redefined how early learning services connect with families.
+          What started as a way to help my mum manage her childcare centre
+          became a platform that redefined how early learning services connect
+          with families.
         </motion.p>
 
         <motion.div
@@ -34,6 +36,16 @@ function BlogHero() {
         >
           <Button text="Schedule a Consultation" link="/pay" arrowClass="d" />
         </motion.div>
+       <div className="mt-5">
+         <motion.img
+          initial={{ scale: 0.9 }}
+          animate={{ scale: 1 }}
+          transition={{ type: "tween", duration: 1.5 }} // Increased duration
+          src="./blog-hero.png" // Replace with your actual image path
+          alt="Professional"
+          className="w-full  "
+        />
+       </div>
       </div>
     </Hero>
   );

@@ -1,0 +1,116 @@
+import React from "react";
+import { motion } from "framer-motion";
+import { FaLinkedin } from "react-icons/fa";
+
+const teamMembers = [
+  {
+    name: "Nancy Varallo",
+    role: "Founder",
+    image: "/team.png",
+    linkedin: "#",
+  },
+  {
+    name: "George Catuogno",
+    role: "CEO",
+    image: "/team.png",
+    linkedin: "#",
+  },
+  {
+    name: "Cedar Bushong",
+    role: "Director of IT and Marketing",
+    image: "/team.png",
+    linkedin: "#",
+  },
+  {
+    name: "Ellie Reinhardt",
+    role: "Director of Financial Operations",
+    image: "/team.png",
+    linkedin: "#",
+  },
+  {
+    name: "Mike Schena",
+    role: "Director of Business Development",
+    image: "/team.png",
+    linkedin: "#",
+  },
+  {
+    name: "Sarah Moynihan",
+    role: "Director of Court Reporting Operations",
+    image: "/team.png",
+    linkedin: "#",
+  },
+  {
+    name: "Pat Blaskopf",
+    role: "Director of Video Services",
+    image: "/team.png",
+    linkedin: "#",
+  },
+  {
+    name: "Amelia Schneider",
+    role: "Director of Association Services",
+    image: "/team.png",
+    linkedin: "#",
+  },
+];
+
+const Team = () => {
+  return (
+    <section className="py-16 bg-white">
+      {/* Section Header */}
+      <div className="text-center mb-12">
+        <h2 className="text-3xl font-bold">The Pillars of Varallo</h2>
+        <p className="text-gray-600 mt-2">
+          The thinkers, doers and leaders shaping your future.
+        </p>
+      </div>
+
+      {/* Team Grid */}
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 px-4">
+        {teamMembers.map((member, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: index * 0.1 }}
+            viewport={{ once: true }}
+            className="flex flex-col"
+          >
+            {/* Image */}
+            <div className="overflow-hidden rounded-xl shadow-md">
+              <img
+                src={member.image}
+                alt={member.name}
+                className="w-full h-auto object-cover"
+              />
+            </div>
+
+            {/* Info */}
+            <div className="mt-4 ">
+              <div className="flex justify-between w-full  gap-2">
+                <div className="">
+                    <h3 className="font-manrope font-medium text-xl">{member.name}</h3>
+              <p className="text-gray-500 text-sm">{member.role}</p>
+                </div>
+
+                <div className="">
+                    {member.linkedin && (
+                  <a
+                    href={member.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-black hover:text-blue-600"
+                  >
+                    <FaLinkedin size={16} />
+                  </a>
+                )}
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default Team;
