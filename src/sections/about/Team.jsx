@@ -6,49 +6,49 @@ const teamMembers = [
   {
     name: "Nancy Varallo",
     role: "Founder",
-    image: "/team.png",
+    image: "team.png",
     linkedin: "#",
   },
   {
     name: "George Catuogno",
     role: "CEO",
-    image: "/team.png",
+    image: "team.png",
     linkedin: "#",
   },
   {
     name: "Cedar Bushong",
     role: "Director of IT and Marketing",
-    image: "/team.png",
+    image: "team.png",
     linkedin: "#",
   },
   {
     name: "Ellie Reinhardt",
     role: "Director of Financial Operations",
-    image: "/team.png",
+    image: "team.png",
     linkedin: "#",
   },
   {
     name: "Mike Schena",
     role: "Director of Business Development",
-    image: "/team.png",
+    image: "team.png",
     linkedin: "#",
   },
   {
     name: "Sarah Moynihan",
     role: "Director of Court Reporting Operations",
-    image: "/team.png",
+    image: "team.png",
     linkedin: "#",
   },
   {
     name: "Pat Blaskopf",
     role: "Director of Video Services",
-    image: "/team.png",
+    image: "team.png",
     linkedin: "#",
   },
   {
     name: "Amelia Schneider",
     role: "Director of Association Services",
-    image: "/team.png",
+    image: "team.png",
     linkedin: "#",
   },
 ];
@@ -88,8 +88,8 @@ const Team = () => {
             <div className="mt-4 ">
               <div className="flex justify-between w-full  gap-2">
                 <div className="">
-                    <h3 className="font-manrope font-medium text-xl">{member.name}</h3>
-              <p className="text-gray-500 text-sm">{member.role}</p>
+                    <h3 className="font-manrope font-medium text-3xl">{member.name}</h3>
+              <p className="text-[#6C6C6C] text-p">{member.role}</p>
                 </div>
 
                 <div className="">
