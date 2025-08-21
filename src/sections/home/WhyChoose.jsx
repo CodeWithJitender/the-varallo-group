@@ -3,44 +3,35 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const stats = [
   {
-    title: "50+",
+    title: "500+",
     description:
-      "Decades of expertise led by Nancy  trusted by firms nationwide.",
+      "Court Reporting Firms Served",
   },
   {
-    title: "99%",
+    title: "40K+",
     description:
-      "Trusted accuracy in transcripts and deliverables, every time.",
+      "Attorneys Assisted ",
   },
   {
-    title: "50+",
+    title: "24+",
     description:
-      "Decades of expertise led by Nancy  trusted by firms nationwide.",
+      "Years of Industry Experience",
   },
   {
-    title: "99%",
+    title: "2.5M+",
     description:
-      "Trusted accuracy in transcripts and deliverables, every time.",
-  },
-  {
-    title: "50+",
-    description:
-      "Decades of expertise led by Nancy  trusted by firms nationwide.",
-  },
-  {
-    title: "99%",
-    description:
-      "Trusted accuracy in transcripts and deliverables, every time.",
+      "Million Depositions Handled",
   },
 ];
 
 const HeroSection = () => {
   const settings = {
     dots: true,
-    infinite: false,
+    infinite: true,
     slidesToShow: 2,
     slidesToScroll: 1,
     vertical: true,
@@ -62,7 +53,7 @@ const HeroSection = () => {
           viewport={{ once: true }}
         >
           <h1 className="text-h2 font-parkinsans font-medium">
-            Experience You Trust. <br /> Support You Deserve.
+           Experience You Trust. <br /> Support You Deserve.
           </h1>
           <motion.p
             className="text-gray-600 mt-6 lg:max-w-[40%] font-manrope text-base"
@@ -71,9 +62,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            Every brand starts with a vision — and we’re here to bring yours to
-            life. We listen, collaborate, and transform your ideas into bold,
-            intentional design.
+            For law firms that value reliability, accuracy and confidentiality, our team delivers more than just services; we deliver peace of mind.
           </motion.p>
         </motion.div>
 
@@ -106,19 +95,19 @@ const HeroSection = () => {
             >
               <div className="rounded-xl p-4 text-white text-sm font-medium bg-btn flex flex-col justify-between">
                 <p className="font-manrope text-xl leading-8">
-                  Decades of expertise led by Nancy trusted by firms nationwide.
+                 Decades of expertise led by Nancy  trusted by firms nationwide.
                 </p>
-                <span className="text-base mt-5 font-manrope leading-8">
+                <Link to={"/services"} className="text-base mt-5 font-manrope leading-8">
                   Learn More
-                </span>
+                </Link>
               </div>
               <div className="rounded-xl p-4 text-white text-sm font-medium bg-btn flex flex-col justify-between">
                 <p className="font-manrope text-xl leading-8">
-                  Precision in every word. Because in law, details matter.
+                 Precision in every word. Because in law, details matter.
                 </p>
-                <span className="text-base mt-5 font-manrope leading-8">
+                <Link to={"/services"} className="text-base mt-5 font-manrope leading-8">
                   Learn More
-                </span>
+                </Link>
               </div>
             </motion.div>
 
@@ -133,11 +122,11 @@ const HeroSection = () => {
               <Slider {...settings}>
                 {stats.map((stat, index) => (
                   <div key={index}>
-                    <div className="flex justify-between p-4 ps-0">
+                    <div className="flex justify-between p-4 ps-0 ">
                       <h3 className="text-h3 font-medium font-parkinsans">
                         {stat.title}
-                      </h3>
-                      <p className="text-black font-manrope text-base max-w-[300px]">
+                      </h3> 
+                      <p className="text-black font-manrope text-base max-w-[300px] pe-5">
                         {stat.description}
                       </p>
                     </div>

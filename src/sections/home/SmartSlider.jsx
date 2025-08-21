@@ -17,85 +17,36 @@ const smartData = [
     image: "smart-2.jpg",
   },
   {
-    title: "TVG Streaming",
-    desc: "We believe in delivering results — it’s a strategic approach.",
+    title: "TVG Stream",
+    desc: "Legal video, trial presentation and event A/V services for law firms and organizations.",
     image: "smart-3.jpg",
   },
   {
-    title: "TVG Management",
-    desc: "Agency management support to streamline operations and boost profitability.",
-    image: "smart-1.jpg",
+    title: "TVG Books",
+    desc: "Bookkeeping and financial services for court reporting and professional industries.",
+    image: "smart-4.jpg",
   },
   {
-    title: "TVG Reporting",
-    desc: "Court reporting and legal videography across the Northeast and beyond.",
-    image: "smart-2.jpg",
+    title: "TVG Creative",
+    desc: "Marketing, branding and digital solutions for legal and B2B sectors.",
+    image: "smart-5.jpg",
   },
   {
-    title: "TVG Streaming",
-    desc: "We believe in delivering results — it’s a strategic approach.",
-    image: "smart-3.jpg",
+    title: "TVG Connect",
+    desc: "Association management for trade groups and professional organizations.",
+    image: "smart-6.jpg",
   },
   {
-    title: "TVG Management",
-    desc: "Agency management support to streamline operations and boost profitability.",
-    image: "smart-1.jpg",
+    title: "TVG Command",
+    desc: "Sales of legal tech platforms like Claudio AI for transcription and automation.",
+    image: "smart-7.jpg",
   },
   {
-    title: "TVG Reporting",
-    desc: "Court reporting and legal videography across the Northeast and beyond.",
-    image: "smart-2.jpg",
+    title: "TVG Verify",
+    desc: "Background screening and compliance checks via the SmartHire platform.",
+    image: "smart-8.jpg",
   },
-  {
-    title: "TVG Streaming",
-    desc: "We believe in delivering results — it’s a strategic approach.",
-    image: "smart-3.jpg",
-  },
-  {
-    title: "TVG Management",
-    desc: "Agency management support to streamline operations and boost profitability.",
-    image: "smart-1.jpg",
-  },
-  {
-    title: "TVG Reporting",
-    desc: "Court reporting and legal videography across the Northeast and beyond.",
-    image: "smart-2.jpg",
-  },
-  {
-    title: "TVG Streaming",
-    desc: "We believe in delivering results — it’s a strategic approach.",
-    image: "smart-3.jpg",
-  },
-  {
-    title: "TVG Management",
-    desc: "Agency management support to streamline operations and boost profitability.",
-    image: "smart-1.jpg",
-  },
-  {
-    title: "TVG Reporting",
-    desc: "Court reporting and legal videography across the Northeast and beyond.",
-    image: "smart-2.jpg",
-  },
-  {
-    title: "TVG Streaming",
-    desc: "We believe in delivering results — it’s a strategic approach.",
-    image: "smart-3.jpg",
-  },
-  {
-    title: "TVG Management",
-    desc: "Agency management support to streamline operations and boost profitability.",
-    image: "smart-1.jpg",
-  },
-  {
-    title: "TVG Reporting",
-    desc: "Court reporting and legal videography across the Northeast and beyond.",
-    image: "smart-2.jpg",
-  },
-  {
-    title: "TVG Streaming",
-    desc: "We believe in delivering results — it’s a strategic approach.",
-    image: "smart-3.jpg",
-  },
+  
 ];
 
 function NextArrow(props) {
@@ -125,11 +76,11 @@ function PrevArrow(props) {
 export default function SmartSlider() {
   const settings = {
     dots: false,
-    infinite: false,
+    infinite: true,
     speed: 600,
     slidesToShow: 2,
     slidesToScroll: 1,
-    centerMode: true,
+    centerMode: false,
     autoplay: true,
     autoplaySpeed: 3000, // 3 seconds
     nextArrow: <NextArrow />,
@@ -182,10 +133,10 @@ export default function SmartSlider() {
 
               <div className="flex items-center gap-2 mb-8">
                 <Button
-                  text="Schedule a Consultation"
+                  text="Get Started Today"
                   color={"text-white"}
                   arrowClass={"sd"}
-                  link={"/contact"}
+                  link={"/"}
                 />
               </div>
             </motion.div>
@@ -197,11 +148,7 @@ export default function SmartSlider() {
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              At The Varallo Group, our services are built to simplify,
-              strengthen and scale your operations. Whether you’re a court
-              reporting firm, law practice or professional organization, our
-              expertise meets your needs right where you are and right when you
-              need it.
+              At The Varallo Group, our services are built to simplify, strengthen and scale your operations. Whether you're a court reporting firm, law practice or professional organization, our expertise meets your needs right where you are and right when you need it.
             </motion.p>
           </motion.div>
 

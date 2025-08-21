@@ -4,6 +4,7 @@ import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import Button from "../../components/Button";
 import { motion } from "motion/react";
 import Hero from "../../components/Hero";
+import { Link } from "react-router-dom";
 // import heroImage from "../assets/hero-image.jpg"; // Replace with your actual image
 
 const HomeHero = () => {
@@ -18,9 +19,7 @@ const HomeHero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
           >
-            Your Legal Support Partner.
-            <br />
-            With You At Every Step.
+           Your Legal Support Partner. With You at Every Step.
           </motion.h1>
 
           <motion.p
@@ -29,8 +28,7 @@ const HomeHero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            From expert court reporting to operations, we’re the steady hand
-            behind your firm’s everyday success.
+           From expert court reporting to operations, we’re the steady hand behind your firm’s everyday success.
           </motion.p>
 
           <motion.div
@@ -39,7 +37,7 @@ const HomeHero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            <Button text="Schedule a Consultation" link="/pay" arrowClass="d" />
+            <Button text="Get Started Today" link="/" arrowClass="d" />
           </motion.div>
 
           <motion.div
@@ -50,12 +48,11 @@ const HomeHero = () => {
           >
             <div className="font-manrope bg-[#FFFFFF0A] rounded-xl px-6 py-4 text-white text-sm flex flex-col justify-between gap-2">
               <span className="text-xl">
-                Specialized Expertise in Legal, Non-profit and Professional
-                Services
+                Specialized Expertise in Legal, Non-profit and Professional Services
               </span>
-              <a href="#" className="text-[16px] whitespace-nowrap text-end">
+              <Link to="/services" className="text-[16px] whitespace-nowrap text-end">
                 Learn More
-              </a>
+              </Link>
             </div>
           </motion.div>
         </div>

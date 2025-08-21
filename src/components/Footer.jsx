@@ -27,7 +27,7 @@ export default function Footer() {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <Button arrowClass="m" text="Get Started For Free" />
+            <Button arrowClass="m" link={"/"} text="Get Started Today" />
           </motion.div>
 
           {/* Footer Grid */}
@@ -67,7 +67,7 @@ export default function Footer() {
                   { label: "Services", path: "/services" },
                   { label: "Blogs", path: "/blogs" },
                   { label: "Contact Us", path: "/contact" },
-                  // { label: "Legal Policies", path: "/legal" },
+                  { label: "Legal Policies", path: "/" },
                 ].map((item, i) => (
                   <li key={i}>
                     <Link
@@ -94,18 +94,16 @@ export default function Footer() {
                   Follow Us
                 </h4>
                 <div className="flex space-x-4">
-                  {[ "facebook-f", "linkedin-in"].map(
-                    (icon, idx) => (
-                      <motion.a
-                        key={idx}
-                        href="#"
-                        whileHover={{ scale: 1.1 }}
-                        className="bg-black text-white rounded-full w-10 h-10 text-center text-xl leading-10"
-                      >
-                        <i className={`fab fa-${icon}`}></i>
-                      </motion.a>
-                    )
-                  )}
+                  {["facebook-f", "linkedin-in"].map((icon, idx) => (
+                    <motion.a
+                      key={idx}
+                      href="#"
+                      whileHover={{ scale: 1.1 }}
+                      className="bg-black text-white rounded-full w-10 h-10 text-center text-xl leading-10"
+                    >
+                      <i className={`fab fa-${icon}`}></i>
+                    </motion.a>
+                  ))}
                 </div>
               </div>
             </motion.div>

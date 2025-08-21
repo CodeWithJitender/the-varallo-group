@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -10,13 +9,6 @@ const services = [
       "It starts from a very simple goal in mind and that's to serve your clients really well and grow at the same time. Running a court reporting firm involves more than just capturing the record, it demands consistent administrative precision, strong client communication and an eye on the bigger business picture. That’s where we come in. TVG Management service becomes your backbone, which helps you manage your day to day so you can actually focus on what really matters the most, which is your clients and your growth. ",
     link: "/services/tvg-management",
     img: "./service-1.png",
-  },
-  {
-    title: "TVG Reporting",
-    content:
-      "In the current legal world, capturing the legal record with precision and professionalism is the cornerstone of any successful court case. At TVG Reporting, we provide firms with dependable court reporters who uphold the highest standards of accuracy, neutrality and timeliness. Whether in-person or remote, our experienced reporters deliver transcripts you can trust, allowing attorneys and legal professionals to focus on advocacy without worrying about the details of documentation.",
-    link: "/services/tvg-reporting",
-    img: "./service-2.png",
   },
   {
     title: "TVG Stream",
@@ -32,8 +24,7 @@ const services = [
     link: "/services/tvg-books",
     img: "./service-1.png",
   },
-  
-    {
+  {
     title: "TVG Command",
     content:
       "As the legal industry evolves, so should your technology. From court reporting to case production, efficiency and accuracy are everything. That’s why more reporting firms are turning to AI-powered platforms that don’t just keep up, they lead. TVG Command helps you modernize your transcription workflow with cutting-edge platform solutions. As a U.S. sales partner for Claudio AI and other legal-first platforms, we connect you with tools designed to scale your reporting business, reduce manual work and improve turnaround times without sacrificing accuracy.",
@@ -47,7 +38,6 @@ const services = [
     link: "/services/tvg-connect",
     img: "./service-3.png",
   },
-
   {
     title: "TVG Verify",
     content:
@@ -60,6 +50,13 @@ const services = [
     content:
       "Whether you’re launching a new venture or refreshing your digital presence, how you show up matters. In today’s fast-moving world, first impressions aren’t just visual, they're strategic. That’s where TVG Creative steps in. We provide full-spectrum digital marketing, branding and design services customized for the legal and B2B industries. From law firm websites to startup identity kits, we help you cut through the noise, attract the right audience and communicate your value with clarity and style.",
     link: "/services/tvg-creative",
+    img: "./service-2.png",
+  },
+  {
+    title: "TVG Reporting",
+    content:
+      "In the current legal world, capturing the legal record with precision and professionalism is the cornerstone of any successful court case. At TVG Reporting, we provide firms with dependable court reporters who uphold the highest standards of accuracy, neutrality and timeliness. Whether in-person or remote, our experienced reporters deliver transcripts you can trust, allowing attorneys and legal professionals to focus on advocacy without worrying about the details of documentation.",
+    link: "/services/tvg-reporting",
     img: "./service-2.png",
   },
 ];
@@ -100,7 +97,7 @@ const ServicesGrid = () => {
               className="relative group rounded-xl overflow-hidden block "
             >
               {/* Image */}
-              <div className="absolute w-full h-full">
+              <div className="absolute top-0 left-0 w-full h-full">
                 <img
                   src={item.img}
                   alt={item.title}
@@ -117,8 +114,8 @@ const ServicesGrid = () => {
               </div>
 
               {/* Hover content overlay */}
-              <div className="relative z-10 inset-0 p-4 rounded-[25px] bg-black/80 backdrop-blur-sm   opacity-0 translate-y-8 group-hover:translate-y-0 group-hover:opacity-0 sm:group-hover:opacity-100 transition duration-300 flex flex-col justify-between ">
-              {/* <div className="relative z-10 inset-0 p-4 rounded-[25px] bg-black/80 backdrop-blur-sm opacity-0 translate-y-8 group-hover:translate-y-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-between h-full"> */}
+              <div className="relative w-full h-full z-10 inset-0 p-10 rounded-[25px] bg-black/80 backdrop-blur-sm   opacity-0 translate-y-8 group-hover:translate-y-0 group-hover:opacity-0 sm:group-hover:opacity-100 transition duration-300 flex flex-col justify-between ">
+                {/* <div className="relative z-10 inset-0 p-4 rounded-[25px] bg-black/80 backdrop-blur-sm opacity-0 translate-y-8 group-hover:translate-y-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-between h-full"> */}
                 <div>
                   <h3 className="font-normal font-parkinsans text-p sm:text-[40px] text-white mb-2">
                     {item.title}
@@ -127,7 +124,11 @@ const ServicesGrid = () => {
                     {item.content}
                   </p>
                 </div>
-                <img src="l-arrow.png" className="max-w-[100px] me-auto" alt="" />
+                <img
+                  src="l-arrow.png"
+                  className="max-w-[100px] me-auto"
+                  alt=""
+                />
               </div>
             </Link>
           </motion.div>
@@ -138,4 +139,3 @@ const ServicesGrid = () => {
 };
 
 export default ServicesGrid;
-

@@ -26,13 +26,10 @@ const AboutSection = () => {
               </h2>
               <div className="md:w-[40%]">
                 <h3 className="text-xl md:text-2xl font-manrope">
-                  Trusted Simplified Solutions for Court Reporting Firms
-                  Nationwide.
+                 Trusted Simplified Solutions for Court Reporting Firms Nationwide.
                 </h3>
                 <p className="text-gray-600 mt-2 font-manrope">
-                  With nearly 50 years of court reporting expertise, The Varallo
-                  Group blends legacy, precision and innovation to support your
-                  firm like an extension of your own team.
+                 With nearly 50 years of court reporting expertise, The Varallo Group blends legacy, precision and innovation to support your firm like an extension of your own team.
                 </p>
               </div>
             </motion.div>
@@ -64,8 +61,7 @@ const AboutSection = () => {
                     What Sets Us Apart
                   </h3>
                   <p className="text-tertiary text-xl  mt-2 ">
-                    Our handpicked team draws from her deep expertise,
-                    delivering every project with precision and professionalism.
+                    Our handpicked team draws from her deep expertise, delivering every project with precision and professionalism.
                   </p>
                 </div>
 
@@ -84,7 +80,7 @@ const AboutSection = () => {
                 >
                   {/* Card 1 */}
                   <div className="flex items-start gap-3">
-                    <div className="bg-grad text-black p-3 rounded-[3px]">
+                    <div className="bg-grad text-white p-3 rounded-[3px]">
                       <FontAwesomeIcon icon={faCamera} />
                     </div>
                     <div>
@@ -92,14 +88,14 @@ const AboutSection = () => {
                         Technology Driven
                       </h4>
                       <p className="font-manrope text-tertiary mt-3">
-                        Smarter, faster service with advanced tools.
+                       Smarter, faster service with advanced tools.
                       </p>
                     </div>
                   </div>
 
                   {/* Card 2 */}
                   <div className="flex items-start gap-3">
-                    <div className="bg-grad text-black p-3 rounded-[3px]">
+                    <div className="bg-grad text-white p-3 rounded-[3px]">
                       <FontAwesomeIcon icon={faLock} />
                     </div>
                     <div>
@@ -107,7 +103,7 @@ const AboutSection = () => {
                         Confidential & Secure
                       </h4>
                       <p className="font-manrope text-tertiary mt-3">
-                        Your data stays safe and compliant.
+                       Your data stays safe and compliant.
                       </p>
                     </div>
                   </div>

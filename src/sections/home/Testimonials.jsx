@@ -8,40 +8,34 @@ import { motion } from "framer-motion";
 
 const testimonials = [
   {
-    name: "James T",
-    role: "Music Enthusiast",
-    text: "These earphones make my workouts so much better! They stay in place and deliver amazing sound quality. Totally worth it!",
+    name: "Michael Scire",
+    role: "Florida Court Reporters Association",
+    text: "“Such a great experience working with The Varallo Group. I cannot say enough wonderful things about each of you. You are all professional, helpful, efficient, and respectful. You all jumped right in and often offered help when I didn’t realize I needed it. The conference ran seamlessly. Thank you from the bottom of my heart.”",
     image: "https://i.pravatar.cc/60?img=1",
   },
   {
-    name: "James T",
-    role: "Music Enthusiast",
-    text: "These earphones make my workouts so much better! They stay in place and deliver amazing sound quality. Totally worth it!",
+    name: "Ray Catuogno, Jr.",
+    role: "Real Time Court Reporting",
+    text: "“I don’t get an opportunity to say it often enough, but I really appreciate the effort and hard work that everyone puts into making my business operations run smoothly. My work to establish the business was done long ago, and now it’s everyone else’s work that continues to make the business a success. So thanks for the big things that are a pain to do, and thanks for the little things that don’t get as much notice but are just as important.”",
     image: "https://i.pravatar.cc/60?img=2",
   },
   {
-    name: "James T",
-    role: "Music Enthusiast",
-    text: "These earphones make my workouts so much better! They stay in place and deliver amazing sound quality. Totally worth it!",
+    name: "Pam Owen",
+    role: "BOSS Reporters",
+    text: "“I am so appreciative of what you have taught me and for all of your efforts. I am very pleased with the progress we’ve made together and grateful for your positivity and eagerness to get ‘all the ducks in a row.’ I am optimistic and very excited about the future, and know I am lucky to have found you.”",
     image: "https://i.pravatar.cc/60?img=3",
   },
   {
-    name: "James T",
-    role: "Music Enthusiast",
-    text: "These earphones make my workouts so much better! They stay in place and deliver amazing sound quality. Totally worth it!",
+    name: "Mary Beth Johnson",
+    role: "Community College of Allegheny County",
+    text: "“May I begin by thanking you for a lifetime of work on behalf of Steno reporting. Your brilliance in creating A to Z and Basic Training saved our profession. As a result of your initiative, we now teach students from Oregon to Atlanta. You had vision, and I am grateful for your foresight.”",
     image: "https://i.pravatar.cc/60?img=1",
   },
   {
-    name: "James T",
-    role: "Music Enthusiast",
-    text: "These earphones make my workouts so much better! They stay in place and deliver amazing sound quality. Totally worth it!",
+    name: "Michael Lewis",
+    role: "Discovery Legal Services",
+    text: "“Working with The Varallo Group and Cedar Bushong has been an excellent experience. Their team handled our website development with precision, creating a site that truly reflects our brand and meets our needs. Beyond the initial development, their ongoing support has been invaluable. They are consistently responsive and supportive, addressing any issues promptly and helping us adapt our site as our business evolves. We couldn’t be happier with their dedication and commitment to our success. Highly recommend!”",
     image: "https://i.pravatar.cc/60?img=2",
-  },
-  {
-    name: "James T",
-    role: "Music Enthusiast",
-    text: "These earphones make my workouts so much better! They stay in place and deliver amazing sound quality. Totally worth it!",
-    image: "https://i.pravatar.cc/60?img=3",
   },
 ];
 
@@ -79,20 +73,20 @@ const Testimonials = () => {
     centerPadding: "0px",
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
-     responsive: [
-    {
-      breakpoint: 768, // tablet & below
-      settings: {
-        slidesToShow: 2
-      }
-    },
-    {
-      breakpoint: 576, // mobile
-      settings: {
-        slidesToShow: 1
-      }
-    }
-  ]
+    responsive: [
+      {
+        breakpoint: 768, // tablet & below
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 576, // mobile
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
   return (
@@ -105,8 +99,8 @@ const Testimonials = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          Real Stories, Real <br />
-          Success with Fintech.
+          The Trust We Earn. <br />
+          The Stories They Share.
         </motion.h2>
 
         <motion.div
