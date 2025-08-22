@@ -1,7 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useParams } from "react-router-dom";
+import {Blog} from "../../blog";
 
-const blogs = [
+/* const blogs = [
   {
     title: "5 Essential Financial Strategies for Small",
     description:
@@ -23,12 +25,14 @@ const blogs = [
     img: "/blog-1.png",
     link: "#",
   },
-];
+]; */
 
-const PopularBlogs = () => {
+const PopularBlogs = ({data}) => {
+
+   const blogs = Blog.filter((b) => data.includes(b.id));
   return (
     <section>
-      <div className="container-fluid">
+      <div className="max-w-[1600px] m-auto pb-[100px]  px-[20px] md:px-[30px] lg:px-[50px]">
         {/* Animated Heading */}
         <motion.h2
           className="text-h2 font-semibold text-center mb-5 md:mb-12 font-parkinsans"
@@ -59,7 +63,7 @@ const PopularBlogs = () => {
                 transition={{ duration: 0.3 }}
               >
                 <motion.img
-                  src={blog.img}
+                  src={`/${blog.img}`}
                   alt={blog.title}
                   className="w-full h-64 object-cover"
                   whileHover={{ scale: 1.1 }}

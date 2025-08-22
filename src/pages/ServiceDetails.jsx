@@ -46,7 +46,7 @@ function ServiceDetails() {
         ],
       },
       TvgEffect: {
-        title:"The TVG effect",
+        title:"Service Metrics",
         pera:"Every brand starts with a vision — and we’re here to bring yours to life. We listen, collaborate, and transform your ideas into bold, intentional design. Whether you're launching a product",
         impactStats: [
           { number: ">1M", label: "Every brand starts" },

@@ -13,7 +13,7 @@ function BlogHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1 }}
         >
-          You work to unique requirements. <br /> We offer unique solutions.
+         Insights That Keep You Ahead
           <br />
         </motion.h1>
 
@@ -23,9 +23,8 @@ function BlogHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          What started as a way to help my mum manage her childcare centre
-          became a platform that redefined how early learning services connect
-          with families.
+         From industry trends to practical tips, explore blogs that help court reporters, videographers and legal pros work smarter, stay competitive and grow.
+
         </motion.p>
 
         <motion.div
@@ -34,7 +33,7 @@ function BlogHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
-          <Button text="Schedule a Consultation" link="/pay" arrowClass="d" />
+          <Button text="Get Started Today" link="/" arrowClass="d" />
         </motion.div>
        <div className="mt-5">
          <motion.img

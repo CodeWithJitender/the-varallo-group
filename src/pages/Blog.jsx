@@ -14,7 +14,7 @@ function Blog() {
         <BlogHero data={blogHero}/>
         <TrendingBlogs data={trendingBlogs} />
         <LatestBlogs data={latestBlogs} />
-        <PopularBlogs data={popularBlogs} />
+        <PopularBlogs data={[1,2,3]} />
     </div>
   )
 }

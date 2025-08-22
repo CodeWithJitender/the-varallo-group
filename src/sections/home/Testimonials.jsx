@@ -71,9 +71,12 @@ const Testimonials = () => {
     slidesToShow: 3,
     centerMode: true,
     centerPadding: "0px",
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    // nextArrow: <NextArrow />,
+    // prevArrow: <PrevArrow />,
     responsive: [
+      
       {
         breakpoint: 768, // tablet & below
         settings: {
@@ -120,12 +123,13 @@ const Testimonials = () => {
                 viewport={{ once: true }}
               >
                 <div className="bg-white border border-blue-300 rounded-lg p-6 shadow hover:shadow-md transition-all h-full flex flex-col justify-between">
-                  <div className="flex items-center mb-4">
-                    <img
+                  <div className="">
+                    <div className="flex items-center mb-4">
+                    {/* <img
                       src={item.image}
                       alt={item.name}
                       className="w-12 h-12 rounded-full mr-3"
-                    />
+                    /> */}
                     <div className="text-left">
                       <p className="text-xl text-tertiary">{item.name}</p>
                       <p className="text-base font-light text-tertiary">
@@ -133,9 +137,10 @@ const Testimonials = () => {
                       </p>
                     </div>
                   </div>
-                  <p className="text-tertiary text-left font-medium mb-6 font-manrope text-p leading-8">
+                  <p className="text-tertiary text-left font-medium mb-6 font-manrope text-base leading-6">
                     {item.text}
                   </p>
+                  </div>
                   <div>
                     <img
                       src="./format_quote.png"

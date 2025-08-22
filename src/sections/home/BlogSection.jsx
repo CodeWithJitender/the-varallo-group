@@ -27,7 +27,7 @@ const blogPosts = [
 
 const BlogSection = () => {
   return (
-    <section className="container-fluid mx-auto px-4 py-20">
+    <section className="container-fluid">
       <motion.h2
         className="text-h2 font-semibold text-center mb-5 md:mb-12 font-parkinsans"
         initial={{ opacity: 0, y: 40 }}
@@ -38,7 +38,7 @@ const BlogSection = () => {
         Our Blog
       </motion.h2>
 
-      <div className="space-y-12 max-w-4xl mx-auto">
+      <div className="space-y-12 max-w-7xl mx-auto">
         {blogPosts.map((post, index) => (
           <motion.div
             key={index}

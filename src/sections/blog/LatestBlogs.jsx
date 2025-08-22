@@ -1,33 +1,34 @@
 import React from "react";
 import { motion } from "framer-motion";
+import {Blog} from '../../blog';
 
 const blogPosts = [
   {
-    title: "5 Essential Financial Strategies for Small Businesses",
+    title: "Confidentiality Counts: Best Practices for Protecting Client Data in the Digital Age",
     excerpt:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...",
+      "It’s really intriguing to know that in today’s hyper connected and data driven world, where a single click can send information halfway across the globe, confidentiality standards aren’t just a compliance checkbox rather",
     image: "blog-3.png",
-    link: "#",
+    link: "/blog/3",
   },
   {
-    title: "Tax-Saving Tips for Entrepreneurs",
+    title: "Marketing on a Budget: How Independent Court Reporting Firms Can Build a Strong Online Presence",
     excerpt:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...",
+      "In a world where every search, click and review influence a potential client’s choice, having a solid online presence for independent court reporting firms isn’t just an extra, it’s essential. ",
     image: "blog-2.png",
-    link: "#",
+    link: "/blog/4",
   },
   {
-    title: "The Importance of Financial Planning for Startups",
+    title: "What Attorneys Wish You Knew: Common Missteps Court Reporters and Videographers Can Avoid",
     excerpt:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...",
+      "The transcript isn’t just words on a page, it’s the heartbeat of every case. You’ve heard it said before one small misstep and the whole case can wobble. That’s exactly the tightrope attorneys walk on",
     image: "blog-1.png",
-    link: "#",
+    link: "/blog/5",
   },
 ];
 
 const LatestBlogs = () => {
   return (
-    <section className="container-fluid mx-auto px-4 py-20">
+    <section className="max-w-[1600px] m-auto pb-[100px]  px-[20px] md:px-[30px] lg:px-[50px]">
       <motion.h2
         className="text-h2 font-semibold text-center mb-5 md:mb-12 font-parkinsans"
         initial={{ opacity: 0, y: 40 }}

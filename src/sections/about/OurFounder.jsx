@@ -6,14 +6,14 @@ function OurFounder() {
   return (
     <section className="bg-gradient-to-r from-sky-600 to-sky-400 py-32">
       <div className="container-fluid">
-        <div className="flex flex-col md:flex-row  gap-10 bg-white/10 backdrop-blur-lg rounded-2xl p-5">
+        <div className="flex flex-col md:flex-row  gap-10 bg-white/10 backdrop-blur-lg rounded-2xl ">
           {/* Left Side - Image + Name */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="flex  md:items-start w-full flex-col-reverse lg:flex-row md:w-1/2 items-stretch text-white relative"
+            className="flex  md:items-start w-full flex-col-reverse lg:flex-row md:w-1/2 items-stretch text-white relative p-5"
           >
             <div className="flex flex-col  lg:justify-between h-full relative z-30">
               <h2 className="text-h2 font-parkinsans leading-tight">
@@ -39,7 +39,7 @@ function OurFounder() {
                 </a>
               </div>
             </div>
-            <div className="lg:absolute bottom-0 right-0 lg:w-[320px] mb-5 lg:mb-0">
+            <div className="lg:absolute bottom-0 right-0 lg:w-[450px] mb-5 lg:mb-0">
               <img src="founder.png" className="w-full h-auto"  alt="Nancy Varallo" />
             </div>
           </motion.div>
@@ -50,7 +50,7 @@ function OurFounder() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="w-full md:w-1/2 text-white"
+            className="w-full md:w-1/2 text-white p-5"
           >
 
             {/* Quote */}

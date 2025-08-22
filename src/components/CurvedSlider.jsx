@@ -109,11 +109,15 @@ const CurvedSlider = ({
 
         <div
           ref={containerRef}
-          className={
-            windowSize.width > 1536
-              ? "relative mt-[2200px] scale-[1.5]"
-              : "relative mt-[2500px] scale-[1.5]"
-          }
+          className="
+    relative scale-[1.5]
+    mt-[1500px]     /* base for very small screens */
+    sm:mt-[1800px]  /* ≥640px */
+    md:mt-[2500px]  /* ≥768px */
+    lg:mt-[2200px]  /* ≥1024px */
+    xl:mt-[2400px]  /* ≥1280px */
+    2xl:mt-[2500px] /* ≥1536px */
+  "
         >
           {/* Circular cards */}
           {cards.map((card) => (

@@ -7,14 +7,14 @@ import CurvedSlider from "../../components/CurvedSlider";
 function ContactHero() {
   return (
     <Hero clCustom="none">
-      <div className="max-w-[1600px] m-auto">
+      <div className="max-w-[1600px] m-auto pt-[50px] md:pt-[70px] lg:pt-[100px] px-[20px] md:px-[30px] lg:px-[50px]">
         <motion.h1
-          className="text-h2 font-parkinsans leading-tight  text-center"
+          className="text-h2 font-parkinsans leading-tight max-w-[900px] m-auto text-center"
           initial={{ opacity: 0, y: 40 }} // from bottom
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1 }}
         >
-         You work to unique. <br /> We provide unique solutions. 
+         Start your journey with a conversation. Let’s Connect!
         </motion.h1>
 
         <motion.p
@@ -23,7 +23,7 @@ function ContactHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-        What started as a way to help my mum manage her childcare centre became a platform that redefined how early learning services connect with families.
+      Reach out today, we’ll map the way forward with clear strategies and reliable legal assistance.
         </motion.p>
 
         <motion.div
@@ -32,7 +32,7 @@ function ContactHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
-          <Button text="Schedule a Consultation" link="/pay" arrowClass="d" />
+          <Button text="Get Started Today" link="/pay" arrowClass="d" />
         </motion.div>
        <div className="mt-5">
          {/* <motion.img

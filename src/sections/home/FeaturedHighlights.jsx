@@ -4,22 +4,25 @@ import { motion } from "framer-motion";
 
 const data = [
   {
-    title: "Nationwide Reach. Local Expertise.",
+    title: "Nationwide Reach.",
+    title2: "Local Expertise.",
     text: "With trusted professionals across all 50 states, we offer personalized court reporting and legal services backed by decades of regional expertise.",
     img: "./featured-1.jpg",
     link: "https://example.com/learn-more",
     btnText: "Explore More",
   },
   {
-    title: "One Team. Multiple Solutions.",
+    title: "One Team.",
+    title2: "Multiple Solutions.",
     text: "From certified reporting to administrative and business support, our integrated team delivers a full spectrum of services customized to your firm’s needs.",
     img: "./featured-2.jpg",
     link: "https://example.com/learn-more",
     btnText: "Explore More",
   },
   {
-    title: "Tech-Driven. People-Focused.",
-    text: "We create purposeful, on-brand content that connects with your audience at every touchpoint. From creative direction and storyboarding",
+    title: "Tech-Driven. ",
+    title2: "People-Focused.",
+    text: "We blend advanced tools with human insight to provide efficient, secure and thoughtful support because behind every service is a team that cares.",
     img: "./featured-3.jpg",
     link: "https://example.com/learn-more",
     btnText: "Explore More",
@@ -55,10 +58,11 @@ export default function FeaturedHighlights() {
               viewport={{ once: true }}
             >
               <h2 className="text-h2 font-medium font-parkinsans mb-4">
-                {item.title}
+                {item.title} <br />
+                {item.title2}
               </h2>
               <p className="text-[#FFFFFFA1] mb-6 font-manrope">{item.text}</p>
-              <Button link={item.link} text={item.btnText} key={idx} />
+              <Button link={item.link}  text={item.btnText} key={idx} />
             </motion.div>
 
             {/* Image Section */}

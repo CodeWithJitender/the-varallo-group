@@ -15,7 +15,7 @@ function AboutHero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
           >
-           You work to unique requirements. We offer unique solutions. 
+           Your story is safe in hands that have shaped the record for generations.
           </motion.h1>
 
           <motion.p
@@ -24,7 +24,7 @@ function AboutHero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-          What started as a way to help my mum manage her childcare centre became a platform that redefined how early learning services connect with families.
+          Rooted in a legacy of court reporting since 1937, The Varallo Group blends time honored precision with modern innovation to protect, preserve and elevate the legal record.
           </motion.p>
 
           <motion.div
@@ -33,7 +33,7 @@ function AboutHero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            <Button text="Schedule a Consultation" link="/pay" arrowClass="d" />
+            <Button text="Get Started Today" link="/" arrowClass="d" />
           </motion.div>
 
           {/* <motion.div

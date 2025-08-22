@@ -24,13 +24,7 @@ const services = [
     link: "/services/tvg-books",
     img: "./service-1.png",
   },
-  {
-    title: "TVG Command",
-    content:
-      "As the legal industry evolves, so should your technology. From court reporting to case production, efficiency and accuracy are everything. That’s why more reporting firms are turning to AI-powered platforms that don’t just keep up, they lead. TVG Command helps you modernize your transcription workflow with cutting-edge platform solutions. As a U.S. sales partner for Claudio AI and other legal-first platforms, we connect you with tools designed to scale your reporting business, reduce manual work and improve turnaround times without sacrificing accuracy.",
-    link: "/services/tvg-command",
-    img: "./service-2.png",
-  },
+  
   {
     title: "TVG Connect",
     content:
@@ -57,6 +51,13 @@ const services = [
     content:
       "In the current legal world, capturing the legal record with precision and professionalism is the cornerstone of any successful court case. At TVG Reporting, we provide firms with dependable court reporters who uphold the highest standards of accuracy, neutrality and timeliness. Whether in-person or remote, our experienced reporters deliver transcripts you can trust, allowing attorneys and legal professionals to focus on advocacy without worrying about the details of documentation.",
     link: "/services/tvg-reporting",
+    img: "./service-2.png",
+  },
+  {
+    title: "TVG Command",
+    content:
+      "The legal industry evolves, so should your technology. From court reporting to case production, efficiency and accuracy are everything. That’s why more reporting firms are turning to AI-powered platforms that don’t just keep up, they lead. TVG Command helps you modernize your transcription workflow with cutting-edge platform solutions. As a U.S. sales partner for Claudio AI and other legal-first platforms, we connect you with tools designed to scale your reporting business, reduce manual work  without sacrificing accuracy.",
+    link: "/services/tvg-command",
     img: "./service-2.png",
   },
 ];

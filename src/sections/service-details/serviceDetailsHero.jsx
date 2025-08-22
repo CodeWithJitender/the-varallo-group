@@ -66,7 +66,7 @@ const ServiceDetailsHero = ({ data }) => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            <Button text="Schedule a Consultation" link="/pay" arrowClass="d" />
+            <Button text="Get Started Today" link="/" arrowClass="d" />
           </motion.div>
         </div>
       </div>

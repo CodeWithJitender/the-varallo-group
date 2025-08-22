@@ -46,7 +46,7 @@ const HomeHero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <div className="font-manrope bg-[#FFFFFF0A] rounded-xl px-6 py-4 text-white text-sm flex flex-col justify-between gap-2">
+            <div className="font-manrope bg-[#FFFFFF0A] backdrop-blur-80 rounded-xl px-6 py-4 text-white text-sm flex flex-col justify-between gap-2">
               <span className="text-xl">
                 Specialized Expertise in Legal, Non-profit and Professional Services
               </span>

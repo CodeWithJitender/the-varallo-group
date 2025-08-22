@@ -4,17 +4,17 @@ import { motion } from "framer-motion";
 const blogs = [
   {
     title:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor",
+      "From Steno to Stream: How Small Court Reporting Firms Can Leverage Tech to Stay Competitive",
     tag: "Latest Blogs",
     img: "/blog1.png",
   },
   {
-    title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+    title: "The Power of Partnership: How Legal Videographers and Court Reporters Can Grow Together",
     tag: "Latest Blogs",
     img: "/blog2.png",
   },
   {
-    title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+    title: "Confidentiality Counts: Best Practices for Protecting Client Data in the Digital Age",
     tag: "Latest Blogs",
     img: "/blog3.png",
   },
@@ -57,7 +57,7 @@ const TrendingBlogs = () => {
               <span className="bg-[#727272]/50 px-3 font-manrope border border-[#727272] py-1 rounded-md text-xl">
                 {blogs[0].tag}
               </span>
-              <p className="font-manrope mt-3 text-p lg:text-[32px] font-semibold">
+              <p className="font-manrope mt-3 text-p lg:text-3xl font-semibold">
                 {blogs[0].title}
               </p>
             </div>

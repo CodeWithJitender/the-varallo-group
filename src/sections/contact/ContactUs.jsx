@@ -38,7 +38,7 @@ const ContactUs = () => {
         >
           <h2 className="text-h2 font-parkinsans font-semibold">Contact Us</h2>
           <p className="font-manrope text-sm lg:text-xl mt-2">
-            What started as a way to help my mum manage her childcare centre.
+          Reach out today, we’ll map the way forward with clear strategies and reliable legal assistance..
           </p>
         </motion.div>
 
@@ -57,8 +57,7 @@ const ContactUs = () => {
                   You tell us. We Listen.
                 </h3>
                 <p className="mb-4 font-manrope text-p lg:text-xl">
-                  What started as a way to help my mum manage her childcare
-                  centre.
+                 What started as a way to help my mum manage her childcare centre.
                 </p>
 
                 <div className="space-y-4 mt-8">
@@ -195,16 +194,13 @@ const ContactUs = () => {
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1 }}
-            className="lg:col-span-2 bg-white rounded-2xl shadow-md p-8"
+            className="lg:col-span-2 bg-white rounded-2xl shadow-sm p-8"
           >
             <h3 className="text-3xl font-semibold font-manrope text-center mb-2">
-              Book a Service
+            Schedule Online
             </h3>
             <p className="text-p lg:text-xl font-manrope text-center mb-6">
-              You will receive an email confirming receipt of your request
-              within 24 hours. If you do not receive this confirmation email,
-              please call the office to confirm we have received the scheduling
-              request.
+            You will receive an email confirming receipt of your request within 24 hours. If you do not receive this confirmation email, please call the office to confirm we have received the scheduling request.
             </p>
 
             {/* Form */}
@@ -215,7 +211,7 @@ const ContactUs = () => {
               className="grid md:grid-cols-2 gap-6"
             >
               {/* Firm Name */}
-              <motion.div custom={0} variants={fadeInUp}>
+              <motion.div custom={0} variants={fadeInUp} className="mb-3">
                 <label className="block font-manrope mb-2 font-bold text-base md:text-xl ">
                   First Name*
                 </label>
@@ -227,7 +223,7 @@ const ContactUs = () => {
               </motion.div>
 
               {/* Attorney Name */}
-              <motion.div custom={1} variants={fadeInUp}>
+              <motion.div custom={1} variants={fadeInUp} className="mb-3">
                 <label className="block font-manrope mb-2 font-bold text-base md:text-xl">
                   Attorney Name*
                 </label>
@@ -239,7 +235,7 @@ const ContactUs = () => {
               </motion.div>
 
               {/* Contact Number */}
-              <motion.div custom={2} variants={fadeInUp}>
+              <motion.div custom={2} variants={fadeInUp} className="mb-3">
                 <label className="block font-manrope mb-2 font-bold text-base md:text-xl">
                   Contact Number*
                 </label>
@@ -251,7 +247,7 @@ const ContactUs = () => {
               </motion.div>
 
               {/* Contact Name */}
-              <motion.div custom={3} variants={fadeInUp}>
+              <motion.div custom={3} variants={fadeInUp} className="mb-3">
                 <label className="block font-manrope mb-2 font-bold text-base md:text-xl">
                   Contact Name*
                 </label>
@@ -266,7 +262,7 @@ const ContactUs = () => {
               <motion.div
                 custom={4}
                 variants={fadeInUp}
-                className="md:col-span-2"
+                className="md:col-span-2 mb-3"
               >
                 <label className="block font-manrope mb-2 font-bold text-base md:text-xl">
                   Contact Email Address*
@@ -288,7 +284,7 @@ const ContactUs = () => {
               </motion.h4>
 
               {/* Preferred Date */}
-              <motion.div custom={6} variants={fadeInUp}>
+              <motion.div custom={6} variants={fadeInUp} className="mb-3">
                 <label className="block font-manrope mb-2 font-bold text-base md:text-xl">
                   Preferred Date*
                 </label>
@@ -299,7 +295,7 @@ const ContactUs = () => {
               </motion.div>
 
               {/* Preferred Time */}
-              <motion.div custom={7} variants={fadeInUp}>
+              <motion.div custom={7} variants={fadeInUp} className="mb-3">
                 <label className="block font-manrope mb-2 font-bold text-base md:text-xl">
                   Preferred Time*
                 </label>
@@ -310,7 +306,7 @@ const ContactUs = () => {
               </motion.div>
 
               {/* State */}
-              <motion.div custom={8} variants={fadeInUp}>
+              <motion.div custom={8} variants={fadeInUp} className="mb-3">
                 <label className="block font-manrope mb-2 font-bold text-base md:text-xl">
                   Select State*
                 </label>
@@ -322,7 +318,7 @@ const ContactUs = () => {
               </motion.div>
 
               {/* City */}
-              <motion.div custom={9} variants={fadeInUp}>
+              <motion.div custom={9} variants={fadeInUp} className="mb-3">
                 <label className="block font-manrope mb-2 font-bold text-base md:text-xl">
                   Select City*
                 </label>
@@ -334,7 +330,7 @@ const ContactUs = () => {
               </motion.div>
 
               {/* Witness */}
-              <motion.div custom={10} variants={fadeInUp}>
+              <motion.div custom={10} variants={fadeInUp} className="mb-3">
                 <label className="block font-manrope mb-2 font-bold text-base md:text-xl">
                   Witness(es)*
                 </label>
@@ -346,7 +342,7 @@ const ContactUs = () => {
               </motion.div>
 
               {/* Estimated Duration */}
-              <motion.div custom={11} variants={fadeInUp}>
+              <motion.div custom={11} variants={fadeInUp} className="mb-3">
                 <label className="block font-manrope mb-2 font-bold text-base md:text-xl">
                   Estimated Duration*
                 </label>
@@ -358,7 +354,7 @@ const ContactUs = () => {
               </motion.div>
 
               {/* Services Needed */}
-              <motion.div custom={12} variants={fadeInUp}>
+              <motion.div custom={12} variants={fadeInUp} className="mb-3">
                 <label className="block font-manrope mb-2 font-bold text-base md:text-xl">
                   Services Needed*
                 </label>
@@ -370,7 +366,7 @@ const ContactUs = () => {
               </motion.div>
 
               {/* File Upload */}
-              <motion.div custom={13} variants={fadeInUp}>
+              <motion.div custom={13} variants={fadeInUp} className="mb-3">
                 <label className="block font-manrope mb-2 font-bold text-base md:text-xl">
                   Upload File
                 </label>

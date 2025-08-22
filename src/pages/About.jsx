@@ -11,7 +11,7 @@ import TimelineSectionCopy from '../sections/about/TimelineSectionCopy'
 
 function About() {
   return (
-    <div>
+    <div className='overflow-x-hidden'>
       <AboutHero />
       <Mission />
       <Vision />
