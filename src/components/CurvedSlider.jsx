@@ -113,10 +113,10 @@ const CurvedSlider = ({
     relative scale-[1.5]
     mt-[1500px]     /* base for very small screens */
     sm:mt-[1800px]  /* ≥640px */
-    md:mt-[2500px]  /* ≥768px */
+    md:mt-[2000px]  /* ≥768px */
     lg:mt-[2200px]  /* ≥1024px */
-    xl:mt-[2400px]  /* ≥1280px */
-    2xl:mt-[2500px] /* ≥1536px */
+    xl:mt-[2200px]  /* ≥1280px */
+    2xl:mt-[2100px] /* ≥1536px */
   "
         >
           {/* Circular cards */}
