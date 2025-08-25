@@ -19,7 +19,7 @@ function ServiceDetails() {
           "It starts from a very simple goal in mind and that's to serve your clients really well and grow at the same time. Running a court reporting firm involves more than just capturing the record, it demands consistent administrative precision, strong client communication and an eye on the bigger business picture. That’s where we come in.",
         ],
         link: "link",
-        images: ["/details-1.png","/details-2.png","/details-3.png","/details-4.png","/details-5.png","/details-6.png","/details-7.png","/details-8.png",],
+        images: ["/services/management/1.png","/services/management/2.png","/services/management/3.png","/services/management/4.png"],
       },
       Overview: {
         title: "Efficiency You Can Count On",
@@ -27,6 +27,7 @@ function ServiceDetails() {
           "Managing a court reporting agency means balancing client demands, coordinating with reporters, billing cycles and deadlines all while maintaining your firm’s reputation. That’s where TVG Management comes in. We help you as your supportive operational partner, providing customized administrative support that is specifically designed for court reporting firms.",
           "If you’re looking to expand your business, facing staffing shortages, or simply wanting to free up time for strategic growth, our experienced team steps in smoothly for your needs. We take care of all the behind the scenes mess so you can stay focused on delivering exceptional service to your clients.",
         ],
+        img: "/services/management-over.png",
       },
       Provide: {
         pera: "We take over your back office so you can focus on delivering top-tier client service. From scheduling to payroll, we streamline the chaos behind the scenes.",
@@ -47,7 +48,7 @@ function ServiceDetails() {
       },
       TvgEffect: {
         title:"Service Metrics",
-        pera:"Every brand starts with a vision — and we’re here to bring yours to life. We listen, collaborate, and transform your ideas into bold, intentional design. Whether you're launching a product",
+        pera:"Every business needs structure and we’re here to build it with you. We streamline operations, reduce stress and let you focus on what matters most the growth.",
         impactStats: [
           { number: ">1M", label: "Every brand starts" },
           { number: "60%", label: "Every brand starts" },
@@ -57,30 +58,30 @@ function ServiceDetails() {
       Overview2: [
         {
           icon: "/calendar-icon.png",
-          title: "End to End Scheduling & Communication Management",
+          title: "Complete Scheduling & Client Communication",
           description:
-            "Varallo handles appointment scheduling, calendar coordination, email monitoring and phone answering, which ensures your agency runs smoothly and stays responsive.",
+            "We manage appointments, calendars, emails and calls, keeping your agency responsive and organized.",
           classBorder: "md:border-e md:border-b",
         },
         {
           icon: "/calendar-icon.png",
-          title: "Seamless Transcript & Exhibit Processing",
+          title: "Transcript, Exhibit & Delivery Management",
           description:
-            "From accurate transcript formatting to exhibit marking, printing, binding and final delivery, we manage it all with precision and speed.",
+            "From formatting to exhibit handling and final delivery, we ensure every detail is processed with speed and accuracy.",
           classBorder: "md:border-s md:border-b",
         },
         {
           icon: "/calendar-icon.png",
-          title: "Streamlined Invoicing & Collections",
+          title: "Financial Operations & Invoicing",
           description:
-            "Get paid on time with professional invoice generation, client billing follow-ups and streamlined collections support.",
+            "Professional invoicing, collections, payroll and bookkeeping all handled to keep your finances clear and on track.",
           classBorder: "md:border-e md:border-t",
         },
         {
           icon: "/calendar-icon.png",
-          title: "Accurate Payroll & Bookkeeping",
+          title: "Branded Marketing Support",
           description:
-            "We process reporter payments and manage day-to-day bookkeeping, helping you maintain financial clarity and control.",
+            "If you require marketing materials, we design clean, on-brand brochures, emails and digital assets that represent your agency professionally.",
           classBorder: "md:border-s md:border-t",
         },
       ],
@@ -93,7 +94,7 @@ function ServiceDetails() {
           "In the current legal world, capturing the legal record with precision and professionalism is the cornerstone of any successful court case. At TVG Reporting, we provide firms with dependable court reporters who uphold the highest standards of accuracy, neutrality and timeliness. Whether in-person or remote, our experienced reporters deliver transcripts you can trust, allowing attorneys and legal professionals to focus on advocacy without worrying about the details of documentation.",
         ],
         link: "link",
-        images: ["/details-1.png","/details-2.png","/details-3.png","/details-4.png","/details-5.png","/details-6.png","/details-7.png","/details-8.png",],
+        images: ["/services/reporting/1.png","/services/reporting/2.png","/services/reporting/3.png","/services/reporting/4.png"],
       },
       Overview: {
         title: " Precision That Speaks for Itself",
@@ -101,9 +102,11 @@ function ServiceDetails() {
           "At the heart of every legal proceeding lies an accurate, impartial and timely record. TVG Reporting is dedicated to delivering just that. We partner with law firms and court reporting agencies to provide reliable court reporting and legal videography services across Massachusetts, Rhode Island, Connecticut and through our trusted network nationwide.",
           "Whether you need coverage for a deposition, hearing, arbitration or trial, our experienced reporters and videographers are prepared to capture the record with unmatched professionalism. With TVG Reporting, you get more than a transcript, you get peace of mind.",
         ],
+        img: "/services/reporting-over.png",
+
       },
       Provide: {
-        pera: "We take over your back office so you can focus on delivering top-tier client service. From scheduling to payroll, we streamline the chaos behind the scenes. ",
+        pera: "We support you in court reporting. Our experienced team handles all the logistics so your reporters stay focused on the record.",
         tagsLeft: [
           { icon: "/fruit-citrus.png", text: "Job assignment & coordination" },
           { icon: "/fruit-citrus.png", text: "Real-time and rough draft delivery" },
@@ -165,7 +168,7 @@ function ServiceDetails() {
           "Remote proceedings have quickly moved from an option to a necessity in today’s evolving legal landscape. But with high stakes and tight schedules, no firm can afford technical hiccups or disjointed setups. TVG Stream ensures your virtual depositions are handled with the same precision and professionalism as in-person proceedings. From multi-party sessions to quick one-on-ones, we bring you secure platforms, real-time support and seamless experiences, so your team can stay focused on what truly matters: making your case heard.",
         ],
         link: "link",
-        images: ["/details-1.png","/details-2.png","/details-3.png","/details-4.png","/details-5.png","/details-6.png","/details-7.png","/details-8.png",],
+        images: ["/services/stream/1.png","/services/stream/2.png","/services/stream/3.png","/services/stream/4.png"],
       },
       Overview: {
         title: "Streamlined Tech for High-Stakes Testimony.",
@@ -173,6 +176,7 @@ function ServiceDetails() {
           "In today’s fast-evolving legal environment, remote proceedings aren’t just convenient, they're essential. TVG Stream empowers law firms and court reporting agencies with reliable virtual deposition solutions that prioritize clarity, security and simplicity. From initial setup to post-deposition archiving, we handle the technical side so attorneys can stay fully present and focused on their case.",
           "Whether it’s a high-stakes multi-party deposition or a straightforward one-on-one, our platforms and support are designed for efficiency, professionalism and control at every stage",
         ],
+        img: "/services/stream-over.png",
       },
       Provide: {
         pera: "We are your remote deposition experts. We manage the tech so your virtual proceedings run smoothly, securely and professionally. ",
@@ -238,13 +242,14 @@ function ServiceDetails() {
           "At TVG Books, we get the behind-the-scenes pressures that you face. Whether you're chasing down client payments, trying to stay compliant or just need a better handle on your books, our team is here to simplify your financial life."
         ],
         link: "link",
-        images: ["/details-1.png","/details-2.png","/details-3.png","/details-4.png","/details-5.png","/details-6.png","/details-7.png","/details-8.png",],
+        images: ["/services/books/1.png","/services/books/2.png","/services/books/3.png","/services/books/4.png"],
       },
       Overview: {
         title: "Finances You Can Count On.",
         pera: [
           "Running a court reporting or legal support agency means wearing many hats and finances shouldn’t be the one that keeps you up at night. At TVG Books, we specialize in taking the weight of bookkeeping and accounting off your shoulders with services built specifically for your industry. Whether you're managing monthly invoices or prepping for year-end filings, we ensure your numbers stay clean, compliant and in control.",
         ],
+        img: "/services/books-over.png",
       },
       Provide: {
         pera: "We make your finances effortless. With organized bookkeeping, timely reporting and tax-ready numbers, you're always audit-ready.",
@@ -309,13 +314,14 @@ function ServiceDetails() {
           "Whether you’re launching a new venture or refreshing your digital presence, how you show up matters. In today’s fast-moving world, first impressions aren’t just visual, they're strategic. That’s where TVG Creative steps in. We provide full-spectrum digital marketing, branding and design services customized for the legal and B2B industries. From law firm websites to startup identity kits, we help you cut through the noise, attract the right audience and communicate your value with clarity and style."
         ],
         link: "link",
-        images: ["/details-1.png","/details-2.png","/details-3.png","/details-4.png","/details-5.png","/details-6.png","/details-7.png","/details-8.png",],
+        images: ["/services/creative/1.png","/services/creative/2.png","/services/creative/3.png","/services/creative/4.png"],
       },
       Overview: {
         title: "Built to Stand Out. Designed to Perform.",
         pera: [
           "In a market where attention is currency, your brand’s presence needs to do more than just look good, it needs to resonate, build trust and drive action. At TVG Creative, we blend strategy, design and technology to bring that vision to life. Whether you’re a law firm, reporting agency or professional service business, we help you build a brand that reflects your expertise and moves your business forward.", "From stunning websites to memorable branding and launch-ready identity kits, our creative solutions are built with purpose, customized to your niche, audience and goals.",
         ],
+        img:"/services/creative-over.png"
       },
       Provide: {
         pera: "To ensure you stand out in a crowded market. We craft branding and content that reflects your values and gets you noticed.",
@@ -351,9 +357,9 @@ function ServiceDetails() {
         },
         {
           icon: "/calendar-icon.png",
-          title: "Client Billing and Invoicing",
+          title: "Branding & Messaging",
           description:
-            "We generate accurate invoices, track payments and simplify billing helping you get paid faster and manage cash flow with ease.",
+            "Beyond just a logo, we develop your full brand identity, consistent visuals, voice and messaging that build trust and recognition.",
           classBorder: "md:border-s md:border-b",
         },
         {
@@ -380,13 +386,14 @@ function ServiceDetails() {
           "Trade groups and professional associations thrive on connection, coordination and clear leadership but managing all the moving parts can be overwhelming. From day-to-day operations to annual conferences, it takes more than passion to keep members engaged and everything running smoothly. That’s where TVG Connect steps in. We specialize in association management for professional, legal and compliance-driven industries, offering customized solutions that keep your organization efficient, professional and people-focused."
         ],
         link: "link",
-        images: ["/details-1.png","/details-2.png","/details-3.png","/details-4.png","/details-5.png","/details-6.png","/details-7.png","/details-8.png",],
+        images: ["/services/connect/1.png","/services/connect/2.png","/services/connect/3.png","/services/connect/4.png"],
       },
       Overview: {
         title: "Stronger Communities. Smarter Management.",
         pera: [
           "Behind every thriving association is a team that manages, plans and communicates with intention. At TVG Connect, we serve as an extension of your leadership, helping your organization grow with purpose while supporting your members with professionalism and care.", "From executive direction to event planning and member engagement, our services are built to meet the unique demands of associations in compliance-heavy and professional sectors. We provide the hands-on support and operational expertise needed to streamline your organization’s goals so you can focus on creating a lasting impact in your field.",
         ],
+        img: "/services/connect-over.png",
       },
       Provide: {
         pera: "We keep in mind that you build a brand people remember. We help you market your services with a unified message across every channel. ",
@@ -451,13 +458,14 @@ function ServiceDetails() {
           "As the legal industry evolves, so should your technology. From court reporting to case production, efficiency and accuracy are everything. That’s why more reporting firms are turning to AI-powered platforms that don’t just keep up, they lead. TVG Command helps you modernize your transcription workflow with cutting-edge platform solutions. As a U.S. sales partner for Claudio AI and other legal-first platforms, we connect you with tools designed to scale your reporting business, reduce manual work and improve turnaround times without sacrificing accura"
         ],
         link: "link",
-        images: ["/details-1.png","/details-2.png","/details-3.png","/details-4.png","/details-5.png","/details-6.png","/details-7.png","/details-8.png",],
+        images: ["/services/command/1.png","/services/command/2.png","/services/command/3.png","/services/command/4.png"],
       },
       Overview: {
         title: "Powering the Future of Legal Transcription.",
         pera: [
           "Manual transcription workflows are time-consuming, costly and hard to scale. With AI-enhanced tools, legal professionals can now automate the heavy lifting while maintaining the high-quality output their clients expect.", "TVG Command equips court reporting agencies and legal teams with smart, scalable transcription platforms starting with Claudio AI, a best-in-class solution customized for legal use. Our technology partners help you streamline your capture and production pipeline, accelerate delivery times and minimize editing without compromising precision.",
         ],
+        img: "/services/command-over.png",
       },
       Provide: {
         pera: "We help you run associations like a pro. From member management to event execution, we keep your organization running smoothly. ",
@@ -522,13 +530,14 @@ function ServiceDetails() {
           "Great hires start with great data. Whether you're an employer, association or staffing agency, the cost of a bad hire can be high not just financially, but reputationally. That’s why trusted, legally compliant screening is essential.","TVG Verify partners with USAFact to deliver reliable, scalable background check solutions that meet today’s fast-paced hiring demands. From identity verification to global criminal checks, we make it easy to hire with confidence without slowing down your process."
         ],
         link: "link",
-        images: ["/details-1.png","/details-2.png","/details-3.png","/details-4.png","/details-5.png","/details-6.png","/details-7.png","/details-8.png",],
+        images: ["/services/verify/1.png","/services/verify/2.png","/services/verify/3.png","/services/verify/4.png"],
       },
       Overview: {
         title: "Screen with Confidence. Hire with Certainty.",
         pera: [
           "In today’s competitive talent landscape, your hiring process needs to be both fast and foolproof. TVG Verify offers comprehensive employment screening tools through the SmartHire Platform, combining real-time data, automated workflows and regulatory compliance in one seamless system.", "Whether you're onboarding in the U.S. or abroad, our screening services are designed to scale with your team’s needs while keeping every step legally sound and stress-free."
         ],
+        img: "/services/verify-over.png"
       },
       Provide: {
         pera: "We ensure that the accuracy and security is guaranteed. Our final checks ensure your transcripts, formats and files meet every requirement before delivery. ",

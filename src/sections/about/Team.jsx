@@ -48,7 +48,7 @@ const teamMembers = [
   {
     name: "Amelia Schneider",
     role: "Director of Association Services",
-    image: "team-6.jpg",
+    image: "team-8.jpg",
     linkedin: "#",
   },
 ];

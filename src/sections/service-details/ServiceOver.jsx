@@ -17,7 +17,7 @@ const ServiceOver = ({ data }) => {
             transition={{ duration: 0.8, delay: 0.3 }}
           >
             <img
-              src="/service-over.png"
+              src={data.img}
               alt="Service Overview"
               className="w-full max-w-xl mx-auto"
             />
