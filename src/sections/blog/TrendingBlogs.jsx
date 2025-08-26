@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const blogs = [
   {
@@ -7,16 +8,19 @@ const blogs = [
       "From Steno to Stream: How Small Court Reporting Firms Can Leverage Tech to Stay Competitive",
     tag: "Latest Blogs",
     img: "/blog1.png",
+    link: "/blog/1"
   },
   {
     title: "The Power of Partnership: How Legal Videographers and Court Reporters Can Grow Together",
     tag: "Latest Blogs",
     img: "/blog2.png",
+    link: "/blog/2"
   },
   {
     title: "Confidentiality Counts: Best Practices for Protecting Client Data in the Digital Age",
     tag: "Latest Blogs",
     img: "/blog3.png",
+    link: "/blog/3"
   },
 ];
 
@@ -45,6 +49,7 @@ const TrendingBlogs = () => {
             viewport={{ once: true }}
             whileHover={{ scale: 1.02 }}
           >
+            <Link to={blogs[0].link}>
             <motion.img
               src={blogs[0].img}
               alt="Blog"
@@ -61,16 +66,18 @@ const TrendingBlogs = () => {
                 {blogs[0].title}
               </p>
             </div>
+            </Link>
           </motion.div>
+         
 
           {/* Small Blog Cards */}
           <div className="flex flex-col gap-6">
             {blogs.slice(1).map((blog, index) => (
-              <motion.div
-                key={index}
-                className="relative rounded-xl overflow-hidden group h-full"
-                initial={{ opacity: 0, x: 40 }}
-                whileInView={{ opacity: 1, x: 0 }}
+              <Link to={blog.link} key={index}>
+                <motion.div
+                  className="relative rounded-xl overflow-hidden group h-full"
+                  initial={{ opacity: 0, x: 40 }}
+                  whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: index * 0.2 }}
                 viewport={{ once: true }}
                 whileHover={{ scale: 1.02 }}
@@ -90,6 +97,7 @@ const TrendingBlogs = () => {
                   <p className="font-manrope mt-2 text-p font-medium">{blog.title}</p>
                 </div>
               </motion.div>
+              </Link>
             ))}
           </div>
         </div>
