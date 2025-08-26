@@ -3,8 +3,26 @@ import Button from "../../components/Button";
 import { motion } from "motion/react";
 import Hero from "../../components/Hero";
 import CurvedSlider from "../../components/CurvedSlider";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import { a } from "framer-motion/client";
 
 function ContactHero() {
+  const settings = {
+    dots: false,
+    arrows: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    fade: true,
+    pauseOnHover: false,
+     cssEase: "linear",
+  // centerMode: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  };
   return (
     <Hero clCustom="none">
       <div className="max-w-[1600px] m-auto pt-[50px] md:pt-[70px] lg:pt-[100px] px-[20px] md:px-[30px] lg:px-[50px]">
@@ -45,7 +63,21 @@ function ContactHero() {
         /> */}
        </div>
       </div>
-      <CurvedSlider/>
+      <div className="block md:hidden">
+      <div className="container-fluid">
+        <Slider {...settings}>
+        <div><img src="/contact1.png" alt="" /></div>
+        <div><img src="/contact2.png" alt="" /></div>
+        <div><img src="/contact3.png" alt="" /></div>
+        <div><img src="/contact1.png" alt="" /></div>
+        <div><img src="/contact2.png" alt="" /></div>
+        <div><img src="/contact3.png" alt="" /></div>
+      </Slider>
+      </div>
+      </div>
+      <div className="hidden md:block">
+        <CurvedSlider />
+      </div>
     </Hero>
   );
 }

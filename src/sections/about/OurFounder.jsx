@@ -4,9 +4,9 @@ import { FaLinkedin, FaFacebook } from "react-icons/fa";
 
 function OurFounder() {
   return (
-    <section className="bg-gradient-to-r from-sky-600 to-sky-400 py-32">
+    <section className="bg-gradient-to-r from-sky-600 to-sky-400 md:py-32">
       <div className="container-fluid">
-        <div className="flex flex-col md:flex-row  gap-10 bg-white/10 backdrop-blur-lg rounded-2xl ">
+        <div className="flex flex-col md:flex-row  md:gap-10 bg-white/10 backdrop-blur-lg rounded-2xl ">
           {/* Left Side - Image + Name */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -15,12 +15,12 @@ function OurFounder() {
             viewport={{ once: true }}
             className="flex  md:items-start w-full flex-col-reverse lg:flex-row md:w-1/2 items-stretch text-white relative p-5"
           >
-            <div className="flex flex-col  lg:justify-between h-full relative z-30">
+            <div className="flex flex-col text-center gap-4 lg:justify-between h-full relative z-30">
               <h2 className="text-h2 font-parkinsans leading-tight">
                 Nancy <br className="lg:block hidden"/> Varallo
               </h2>
               {/* Social Icons */}
-              <div className="flex gap-4 ">
+              <div className="flex justify-center md:justify-start gap-4">
                 <a
                   href="#"
                   target="_blank"

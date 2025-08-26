@@ -47,7 +47,7 @@ export default function FeaturedHighlights() {
             key={idx}
             className={`flex flex-col-reverse md:flex-row relative z-10 ${
               idx % 2 === 1 ? "md:flex-row-reverse" : ""
-            } items-center gap-10`}
+            } items-center gap-4 md:gap-10`}
           >
             {/* Text Section */}
             <motion.div
@@ -57,11 +57,11 @@ export default function FeaturedHighlights() {
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-h2 font-medium font-parkinsans mb-4">
+              <h2 className="text-h2 font-medium font-parkinsans mb-2 md:mb-4">
                 {item.title} <br />
                 {item.title2}
               </h2>
-              <p className="text-[#FFFFFFA1] mb-6 font-manrope">{item.text}</p>
+              <p className="text-[#FFFFFFA1] mb-2 md:mb-6 font-manrope">{item.text}</p>
               <Button link={item.link}  text={item.btnText} key={idx} />
             </motion.div>
 
@@ -76,7 +76,7 @@ export default function FeaturedHighlights() {
               <img
                 src={item.img}
                 alt={item.title}
-                className="rounded-[50px] w-full"
+                className="rounded-2xl md:rounded-[50px] w-full"
               />
             </motion.div>
           </div>

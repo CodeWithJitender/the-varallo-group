@@ -3,7 +3,7 @@ import React from "react";
 function OverviewCard({icon,title, description, classBorder}) {
   return (
     <div className="h-full">
-      <div  className={`p-6 md:py-10 flex flex-col gap-4 border-white h-full ${classBorder}`}>
+      <div  className={`py-6 md:py-10 flex flex-col gap-4 border-white h-full ${classBorder}`}>
         <div className="">
           <img
             src={icon}

@@ -1,136 +1,162 @@
 import React, { useRef, useEffect, useState } from "react";
-import { gsap } from "gsap";
+import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const steps = [
   {
-    year: "2017",
     title: "Managing a court reporting agency",
     desc: "Managing a court reporting agency means balancing client demands, coordinating with reporters, billing cycles and deadlines all while maintaining your firm's reputation.",
-    img: "/Story.png"
+    img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop"
   },
   {
-    year: "2017",
     title: "The Birth of TVG",
+    year: "2017",
     desc: "Managing a court reporting agency means balancing client demands, coordinating with reporters, billing cycles and deadlines all while maintaining your firm's reputation. That's where TVG Management comes in. We help you as your supportive operational partner.",
-    img: "/Story.png"
+    img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=500&fit=crop"
   },
   {
-    year: "2017",
     title: "Next Phase",
     desc: "Step 3 content goes here. Add relevant descriptive text and swap the image.",
-    img: "/Story.png"
+    img: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=500&fit=crop"
   }
 ];
 
-const TimelineSection = () => {
+const TimelineSectionGSAP = () => {
   const containerRef = useRef(null);
-  const stepRefs = useRef([]);
-  const imgRef = useRef(null);
-  const textRefs = useRef({ year: null, title: null, desc: null });
+  const circleRefs = useRef([]);
   const lineRefs = useRef([]);
+  const [activeStep, setActiveStep] = useState(0);
 
   useEffect(() => {
-    const ctx = gsap.context(() => {
-      // Step indicators
-      stepRefs.current.forEach((step, idx) => {
-        gsap.fromTo(
-          step,
-          { scale: 0.8, borderColor: "#d1d5db", color: "#9ca3af" },
-          {
-            scale: 1,
-            borderColor: "#3b82f6",
-            color: "#3b82f6",
-            scrollTrigger: {
-              trigger: containerRef.current,
-              start: `${idx * 40}% center`,
-              end: `${(idx + 1) * 40}% center`,
-              scrub: true,
-              toggleActions: "play reverse play reverse"
-            }
-          }
-        );
-      });
+    const section = containerRef.current;
 
-      // Line animations
-      lineRefs.current.forEach((line, idx) => {
-        gsap.fromTo(
-          line,
-          { height: "0%" },
-          {
-            height: "100%",
-            scrollTrigger: {
-              trigger: containerRef.current,
-              start: `${(idx + 0.2) * 40}% center`,
-              end: `${(idx + 1) * 40}% center`,
-              scrub: true
-            }
-          }
-        );
-      });
+    // Kill all triggers before re-running effect (prevents duplicates)
+    ScrollTrigger.getAll().forEach(t => t.kill());
 
-      // Image fade + scale
-      gsap.utils.toArray(stepRefs.current).forEach((_, idx) => {
-        ScrollTrigger.create({
-          trigger: containerRef.current,
-          start: `${idx * 40}% center`,
-          end: `${(idx + 1) * 40}% center`,
-          onEnter: () => {
-            gsap.fromTo(
-              imgRef.current,
-              { opacity: 0, scale: 1.05 },
-              { opacity: 1, scale: 1, duration: 0.6, ease: "power2.out" }
-            );
-            gsap.fromTo(
-              Object.values(textRefs.current),
-              { opacity: 0, y: 30 },
-              { opacity: 1, y: 0, duration: 0.6, stagger: 0.1, ease: "power2.out" }
-            );
-          },
-          onEnterBack: () => {
-            gsap.fromTo(
-              imgRef.current,
-              { opacity: 0, scale: 1.05 },
-              { opacity: 1, scale: 1, duration: 0.6, ease: "power2.out" }
-            );
-            gsap.fromTo(
-              Object.values(textRefs.current),
-              { opacity: 0, y: 30 },
-              { opacity: 1, y: 0, duration: 0.6, stagger: 0.1, ease: "power2.out" }
-            );
+    // Pin the timeline section while steps are animating
+    ScrollTrigger.create({
+      trigger: section,
+      start: "top top",
+      end: "+=1200", // Adjust for the scroll distance needed for all animations
+      pin: true,
+      scrub: true
+    });
+
+    // Step connecting lines and content triggers
+    steps.forEach((_, idx) => {
+      if (idx < steps.length - 1) {
+        gsap.to(lineRefs.current[idx], {
+          height: "100%",
+          background: "#3b82f6",
+          ease: "none",
+          scrollTrigger: {
+            trigger: section,
+            start: `top+=${(idx + 1) * 400}px top`,
+            end: `top+=${(idx + 2) * 400}px top`,
+            scrub: true,
+            onEnter: () => setActiveStep(idx + 1),
+            onEnterBack: () => setActiveStep(idx)
           }
         });
-      });
-    }, containerRef);
+      }
+    });
 
-    return () => ctx.revert();
+    // Reset lines for initial render
+    gsap.set(lineRefs.current, { height: "0%", background: "#e2e8f0" });
+
+    // Cleanup on unmount
+    return () => {
+      ScrollTrigger.getAll().forEach(t => t.kill());
+    };
   }, []);
 
   return (
-    <section className="bg-gray-50 min-h-screen">
+    <div style={{ backgroundColor: "#f8fafc", minHeight: "100vh" }}>
       <div
         ref={containerRef}
-        className="relative min-h-[200vh] flex items-center justify-center px-6 py-16 container-fluid"
+        style={{
+          minHeight: "1200px", // Must match ScrollTrigger duration for pin
+          padding: "4rem 2rem",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          position: "relative"
+        }}
       >
-        <div className="flex items-center gap-12 w-full sticky top-1/2 -translate-y-1/2">
-          {/* Timeline */}
-          <div className="flex flex-col items-center">
-            {steps.map((_, idx) => (
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            maxWidth: "1200px",
+            width: "100%",
+            gap: "3rem"
+          }}
+        >
+          {/* Left: Timeline */}
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              gap: "0"
+            }}
+          >
+            {steps.map((step, idx) => (
               <React.Fragment key={idx}>
+                {/* Step Circle */}
                 <div
-                  ref={(el) => (stepRefs.current[idx] = el)}
-                  className="w-14 h-14 rounded-full flex items-center justify-center font-bold text-xl border-2 border-gray-300 text-gray-400 shadow-md"
+                  ref={el => (circleRefs.current[idx] = el)}
+                  style={{
+                    width: "60px",
+                    height: "60px",
+                    borderRadius: "50%",
+                    border:
+                      activeStep >= idx
+                        ? "3px solid #3b82f6"
+                        : "2px solid #e2e8f0",
+                    backgroundColor: "#ffffff",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    fontWeight: "700",
+                    fontSize: "1.5rem",
+                    color: activeStep >= idx ? "#3b82f6" : "#94a3b8",
+                    boxShadow:
+                      activeStep >= idx
+                        ? "0 0 20px rgba(59, 130, 246, 0.3)"
+                        : "0 2px 10px rgba(0, 0, 0, 0.1)",
+                    transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+                    zIndex: 2,
+                    position: "relative"
+                  }}
                 >
                   {idx + 1}
                 </div>
+
+                {/* Connecting Line */}
                 {idx < steps.length - 1 && (
-                  <div className="relative w-1 h-32 bg-gray-200 my-2 overflow-hidden">
+                  <div
+                    style={{
+                      width: "4px",
+                      height: "120px",
+                      backgroundColor: "#e2e8f0",
+                      position: "relative",
+                      margin: "8px 0"
+                    }}
+                  >
                     <div
-                      ref={(el) => (lineRefs.current[idx] = el)}
-                      className="absolute top-0 left-0 w-full bg-blue-500 rounded"
-                      style={{ height: "0%" }}
+                      ref={el => (lineRefs.current[idx] = el)}
+                      style={{
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        width: "100%",
+                        height: "0%",
+                        backgroundColor: "#e2e8f0",
+                        borderRadius: "2px"
+                      }}
                     />
                   </div>
                 )}
@@ -138,35 +164,82 @@ const TimelineSection = () => {
             ))}
           </div>
 
-          {/* Content */}
-          <div className="flex gap-5 items-end content">
-            {/* Image */}
-            <div className="rounded-2xl  relative ">
-              <img
-                ref={imgRef}
-                src={steps[0].img}
-                alt={steps[0].title}
-                className="w-full h-full object-cover"
-              />
-            </div>
+          {/* Center: Image */}
+          <div
+            style={{
+              width: "400px",
+              height: "500px",
+              borderRadius: "24px",
+              overflow: "hidden",
+              boxShadow: "0 20px 60px rgba(0, 0, 0, 0.1)",
+              position: "relative"
+            }}
+          >
+            <img
+              key={activeStep}
+              src={steps[activeStep].img}
+              alt={steps[activeStep].title}
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                transition: "all 0.5s cubic-bezier(0.4, 0, 0.2, 1)"
+              }}
+            />
+          </div>
 
-            {/* Text */}
-            <div className="max-w-lg flex-1">
-              <p ref={(el) => (textRefs.current.year = el)} className="text-[#00100D] font-manrope text-base md:text-2xl lg:text-3xl mb-2">
-                {steps[0].year}
-              </p>
-              <h2 ref={(el) => (textRefs.current.title = el)} className="text-h2 mb-4 font-parkinsans">
-                {steps[0].title}
+          {/* Right: Content */}
+          <div style={{ maxWidth: "500px", flex: "1" }}>
+            <div
+              key={activeStep}
+              style={{
+                transition: "all 0.5s cubic-bezier(0.4, 0, 0.2, 1)",
+                transform: "translateY(0)",
+                opacity: 1
+              }}
+            >
+              {steps[activeStep].year && (
+                <p
+                  style={{
+                    fontSize: "1.25rem",
+                    color: "#3b82f6",
+                    fontWeight: "600",
+                    margin: "0 0 1rem 0"
+                  }}
+                >
+                  {steps[activeStep].year}
+                </p>
+              )}
+              <h2
+                style={{
+                  fontSize: "2.5rem",
+                  fontWeight: "800",
+                  color: "#1a202c",
+                  margin: "0 0 1.5rem 0",
+                  lineHeight: "1.2"
+                }}
+              >
+                {steps[activeStep].title}
               </h2>
-              <p ref={(el) => (textRefs.current.desc = el)} className="font-manrope text-[#00100D] text-base md:text-lg lg:text-xl">
-                {steps[0].desc}
+              <p
+                style={{
+                  color: "#64748b",
+                  fontSize: "1.1rem",
+                  lineHeight: "1.7",
+                  margin: 0
+                }}
+              >
+                {steps[activeStep].desc}
               </p>
             </div>
           </div>
         </div>
       </div>
-    </section>
+
+      {/* Extra footer for scroll (not pinned) */}
+      <div style={{ height: "100vh" }} />
+    </div>
   );
 };
 
-export default TimelineSection;
+export default TimelineSectionGSAP;

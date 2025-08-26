@@ -110,10 +110,10 @@ export default function SmartSlider() {
   return (
     <section className="bg-gradient-to-br from-[#0052B9] to-[#38ABD0] text-white py-20 relative">
       <img src="" alt="" />
-      <div className="container- px-[20px] md:px-[25px] lg:ps-[100px]">
+      <div className="container px-[20px] md:px-[25px] lg:ps-[100px]">
         <div className="lg:flex items-stretch">
           <motion.div
-            className="lg:w-[40%] flex flex-col justify-between px-6 mb-10 lg:mb-0"
+            className="lg:w-[40%] flex flex-col justify-between md:px-6 mb-10 lg:mb-0"
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
@@ -176,7 +176,7 @@ export default function SmartSlider() {
                         className="w-full rounded-[30px]"
                       />
                       <div className="absolute top-0 left-0 w-full h-full flex items-end justify-start p-4">
-                        <div className="p-4 bg-black/50 backdrop-blur-md text-white rounded-xl w-2/4">
+                        <div className="p-4 bg-black/50 backdrop-blur-md text-white rounded-xl md:w-2/4">
                           <h4 className="font-medium text-p font-manrope mb-1">
                             {item.title}
                           </h4>

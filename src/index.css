@@ -26,8 +26,8 @@ footer .container-fluid {
   background-repeat: no-repeat;
   /* padding: 100px 0px 20px 0px; */
 }
-.service-details-hero{
-    background-image: url("https://the-varallo-group.vercel.app/hero-bg.jpg");
+.service-details-hero {
+  background-image: url("https://the-varallo-group.vercel.app/hero-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -51,7 +51,6 @@ footer .container-fluid {
   width: 200px;
   height: 100%;
   background: linear-gradient(270deg, #ffffff 0%, rgba(255, 255, 255, 0) 58.4%);
-
   z-index: 7;
 }
 .testimonials .slider-container::after {
@@ -110,15 +109,15 @@ footer .container-fluid {
 
 /* ------------========== Service Page End ==========------------ */
 
-.testimonials .slick-slide{
-  height: 500px ;
-} 
-.testimonials .slick-slide> div{
+.testimonials .slick-slide {
+  height: 500px;
+}
+.testimonials .slick-slide > div {
   height: 100% !important;
-} 
-.testimonials .slick-slide> div> div{
+}
+.testimonials .slick-slide > div > div {
   height: 100% !important;
-} 
+}
 /* ------------========== Responsive CSS Start ==========------------ */
 
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
@@ -127,16 +126,16 @@ footer .container-fluid {
 
 /* // `xl` applies to large devices (desktops, less than 1200px) */
 @media (max-width: 1200px) {
-  .testimonials .slick-slide{
-  height: 700px ;
-} 
+  .testimonials .slick-slide {
+    height: 700px;
+  }
 }
 
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 992px) {
-  .testimonials .slick-slide{
-  height: 800px ;
-} 
+  .testimonials .slick-slide {
+    height: 800px;
+  }
 }
 
 /* // `md` applies to small devices (landscape phones, less than 768px) */
@@ -151,24 +150,27 @@ footer .container-fluid {
     padding: 50px;
   }
   footer .container-fluid {
-        padding: 70px 25px 0px 25px;
-
+    padding: 70px 25px 0px 25px;
   }
   .foot-text {
-  font-size: clamp(50px, 15vw, 400px);
-}
- .testimonials .slick-slide{
-  height: 600px ;
-}
-.testimonials .slick-slide {
-  transform: scale(1);
-  padding: 10px;
-}
+    font-size: clamp(50px, 15vw, 400px);
+  }
+  .testimonials .slick-slide {
+    height: 600px;
+  }
+  .testimonials .slick-slide {
+    transform: scale(1);
+    padding: 10px;
+  }
+  .testimonials .slider-container::after,
+  .testimonials .slider-container::before{
+    width: 100px;
+  }
 }
 
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 576px) {
-  .container-fluid{
+  .container-fluid {
     padding: 50px 20px;
   }
 }

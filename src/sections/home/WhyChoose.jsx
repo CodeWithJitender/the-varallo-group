@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import VerticalStatsSlider from "../../pages/VerticalStatsSlider";
 
 const stats = [
   {
@@ -94,7 +95,7 @@ const HeroSection = () => {
               viewport={{ once: true }}
             >
               <div className="rounded-xl p-4 text-white text-sm font-medium bg-btn flex flex-col justify-between">
-                <p className="font-manrope text-xl leading-8">
+                <p className="font-manrope text-xl leading-6 md:leading-8">
                  Decades of expertise led by Nancy  trusted by firms nationwide.
                 </p>
                 <Link to={"/services"} className="text-base mt-5 font-manrope leading-8">
@@ -102,7 +103,7 @@ const HeroSection = () => {
                 </Link>
               </div>
               <div className="rounded-xl p-4 text-white text-sm font-medium bg-btn flex flex-col justify-between">
-                <p className="font-manrope text-xl leading-8">
+                <p className="font-manrope text-xl leading-6 md:leading-8">
                  Precision in every word. Because in law, details matter.
                 </p>
                 <Link to={"/services"} className="text-base mt-5 font-manrope leading-8">
@@ -119,20 +120,7 @@ const HeroSection = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               viewport={{ once: true }}
             >
-              <Slider {...settings}>
-                {stats.map((stat, index) => (
-                  <div key={index}>
-                    <div className="flex justify-between p-4 ps-0 ">
-                      <h3 className="text-h3 font-medium font-parkinsans">
-                        {stat.title}
-                      </h3> 
-                      <p className="text-black font-manrope text-base max-w-[300px] pe-5">
-                        {stat.description}
-                      </p>
-                    </div>
-                  </div>
-                ))}
-              </Slider>
+              <VerticalStatsSlider stats={stats} />
             </motion.div>
           </motion.div>
         </div>

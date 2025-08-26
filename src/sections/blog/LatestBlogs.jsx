@@ -43,7 +43,7 @@ const LatestBlogs = () => {
         {blogPosts.map((post, index) => (
           <motion.div
             key={index}
-            className="flex flex-col md:flex-row md:items-center justify-between gap-6 border-t pt-10 sm:mb-5"
+            className="flex flex-col-reverse md:flex-row md:items-center justify-between gap-6 border-t pt-10 sm:mb-5"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: index * 0.2 }}

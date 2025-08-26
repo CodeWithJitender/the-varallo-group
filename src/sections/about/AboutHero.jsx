@@ -6,7 +6,7 @@ import Hero from "../../components/Hero";
 function AboutHero() {
   return (
     <Hero>
-      <div className="mx-auto px-4  grid lg:grid-cols-2 items-center">
+      <div className="mx-auto md:px-4  grid lg:grid-cols-2 items-center">
         {/* Text Content */}
         <div className="">
           <motion.h1
@@ -28,7 +28,7 @@ function AboutHero() {
           </motion.p>
 
           <motion.div
-            className="mt-10"
+            className="mt-4 md:mt-10"
             initial={{ opacity: 0, y: 40 }} // from bottom
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}

@@ -4,7 +4,7 @@ import { FaUser, FaSmile, FaClock } from "react-icons/fa";
 
 const Mission = () => {
   return (
-    <section className="py-10">
+    <section className="">
       <div className="container-fluid ">
         <motion.p
           className="text-center text-h2 font-parkinsans"

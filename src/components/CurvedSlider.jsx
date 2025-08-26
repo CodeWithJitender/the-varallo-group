@@ -7,7 +7,7 @@ const CurvedSlider = ({
   cardSize = 145,
   rotationSpeed = 60,
   responsiveConfig = {
-    mobile: { maxWidth: 640, radius: 300, cardCount: 5, cardSize: 100, spacing: .8 },
+    mobile: { maxWidth: 640, radius: 250, cardCount: 5, cardSize: 100, spacing: .8 },
     tablet: { maxWidth: 1024, radius: 450, cardCount: 10, cardSize: 120, spacing: 1.2 },
     desktop: { maxWidth: Infinity, radius: 750, cardCount: 14, cardSize: 145, spacing: 1 },
   },
