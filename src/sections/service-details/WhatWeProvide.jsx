@@ -80,7 +80,7 @@ const reverseMarqueeSettings = {
                 transition={{ duration: 0.4, delay: index * 0.05 }}
                 viewport={{ once: true }}
               >
-                <img src={service.icon} className="w-5" alt="" />
+                {/* <img src={service.icon} className="w-5" alt="" /> */}
                 <span>{service.text}</span>
               </motion.div>
             </div>
@@ -107,7 +107,7 @@ const reverseMarqueeSettings = {
                 transition={{ duration: 0.4, delay: index * 0.05 }}
                 viewport={{ once: true }}
               >
-                <img src={service.icon} className="w-5" alt="" />
+                {/* <img src={service.icon} className="w-5" alt="" /> */}
                 <span>{service.text}</span>
               </motion.div>
             </div>

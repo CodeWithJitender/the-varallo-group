@@ -45,7 +45,7 @@ const Story = () => {
     <section className="">
       <div className="container-fluid">
         {/* Heading */}
-        <div className="text-center md:mb-12">
+        <div className="text-center ">
           <h2 className="text-h2 font-parkinsans">
             Managing a court reporting agency
           </h2>
@@ -60,13 +60,13 @@ const Story = () => {
       {data.map((item, index) => (
         <div className="work-item bg-white" key={index}>
           <div className="max-w-[1600px] m-auto px-4 py-[50px]">
-            <div className="flex flex-col md:flex-row gap-8 items-end  ">
+            <div className="flex flex-col md:flex-row gap-5  items-center  ">
               {/* Image */}
               <div className="md:w-[60%]">
                 <img
                 src={item.img}
                 alt="Story"
-                className="rounded-2xl w-full shadow-lg"
+                className="rounded-2xl w-full shadow-lg max-w-[700px] mx-auto"
               />
             </div>
 
@@ -75,7 +75,7 @@ const Story = () => {
               <p className="text-[#00100D] font-manrope text-base md:text-2xl lg:text-3xl mb-2">
                 {item.year}
               </p>
-              <h3 className="text-h2 mb-4 font-parkinsans">{item.title}</h3>
+              <h3 className="text-h2 mb-4 font-parkinsans max-w-[300px] leading-normal">{item.title}</h3>
               <p className="font-manrope text-[#00100D] text-base md:text-lg lg:text-xl">
                 {item.para}
               </p>

@@ -12,16 +12,16 @@ function Home() {
   return (
     <div className="home-page overflow-x-hidden">
       <HomeHero />
-      <div id="what-sets-us-apart">
+      <div id="our-expertise">
         <AboutSection />
       </div>
-      <div className="" id="smart-support">
+      <div className="" id="services">
         <SmartSlider />
       </div>
-      <div className="" id="why-choose">
+      <div className="" id="metrics">
         <WhyChoose />
       </div>
-      <div className="" id="featured-">
+      <div className="" id="featured">
         <FeaturedHighlights />
       </div>
       <div className="" id="testimonials">

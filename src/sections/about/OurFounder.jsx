@@ -15,8 +15,8 @@ function OurFounder() {
             viewport={{ once: true }}
             className="flex  md:items-start w-full flex-col-reverse lg:flex-row md:w-1/2 items-stretch text-white relative p-5"
           >
-            <div className="flex flex-col text-center gap-4 lg:justify-between h-full relative z-30">
-              <h2 className="text-h2 font-parkinsans leading-tight">
+            <div className="flex flex-col text-center gap-4 lg:justify-between  relative z-30">
+              <h2 className="text-h2 font-parkinsans leading-tight text-center md:text-start">
                 Nancy <br className="lg:block hidden"/> Varallo
               </h2>
               {/* Social Icons */}
@@ -54,17 +54,16 @@ function OurFounder() {
           >
 
             {/* Quote */}
-            <div className="text-p md:text-2xl xl:text-3xl font-parkinsans text-center  mb-6 relative flex">
-              <span className="text-4xl self-start">
-                <img src="q-left.png" className="w-20" alt="" />
+            <div className="flex md:block font-parkinsans mb-6 relative">
+              <span className="hidden md:block md:absolute left-0 top-0 md:translate-x-[-110%] w-10 -mt-5">
+                <img src="q-left.png" className="w-10" alt="" />
               </span>
-              <p className="p-0">
-                Turning a lifelong passion into a legacy of support for court
-                reporting.
+              <p className="md:mt-5 text-p">
+                Our team is the heart of The Varallo Group. They bring dedication, professionalism, and integrity to everything they do. I’m constantly inspired by their commitment to our clients and to each other. It's a privilege to work alongside such talented people who take real pride in delivering excellence every single day.
               </p>
 
-              <span className="text-4xl  self-end">
-                <img src="q-right.png" className="w-20" alt="" />
+              <span className="hidden md:block md:absolute right-0 bottom-0  md:translate-y-[50%]">
+                <img src="q-right.png" className="w-10" alt="" />
               </span>
             </div>
 

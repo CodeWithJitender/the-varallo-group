@@ -17,10 +17,18 @@ function About() {
       <div className="" id="vision">
         <Vision />
       </div>
-      <Story />
-      <OurFounder />
-      <Team />
-      <Testimonials/>
+      <div className="" id="our-story">
+        <Story />
+      </div>
+      <div className="" id="founder">
+        <OurFounder />
+      </div>
+      <div className="" id="team">
+        <Team />
+      </div>
+      <div className="" id="testimonials">
+        <Testimonials />
+      </div>
     </div>
   )
 }

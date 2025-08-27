@@ -14,9 +14,9 @@ const Header = () => {
       name: "Home",
       path: "/",
       submenu: [
-        { name: "What Sets Us Apart", path: "/#what-sets-us-apart" },
-        { name: "Smart Support", path: "/#smart-support" },
-        { name: "Why Choose Us", path: "/#why-choose" },
+        { name: "Our Expertise", path: "/#our-expertise" },
+        { name: "Services", path: "/#services" },
+        { name: "Metrics", path: "/#metrics" },
         { name: "Featured", path: "/#featured" },
         { name: "Testimonials", path: "/#testimonials" },
         { name: "Our Blog", path: "/#our-blog" },
@@ -51,8 +51,9 @@ const Header = () => {
       name: "Blog",
       path: "/blog",
       submenu: [
-        { name: "Trending Blogs", path: "/trending-blogs" },
-        { name: "Categories", path: "/blog/categories" },
+        { name: "Trending Blogs", path: "/blog#trending-blogs" },
+        { name: "Latest Blogs", path: "/blog#latest-blogs" },
+        { name: "Popular Blogs", path: "/blog#popular-blogs" },
       ],
     },
     {
