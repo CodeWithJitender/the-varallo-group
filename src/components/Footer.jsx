@@ -97,7 +97,10 @@ export default function Footer() {
                   {["facebook-f", "linkedin-in"].map((icon, idx) => (
                     <motion.a
                       key={idx}
-                      href="#"
+                      href="https://www.facebook.com/profile.php?id=100057624812642"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      initial={{ scale: 1 }}
                       whileHover={{ scale: 1.1 }}
                       className="bg-black text-white rounded-full w-10 h-10 text-center text-xl leading-10"
                     >

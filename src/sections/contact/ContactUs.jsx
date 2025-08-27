@@ -8,14 +8,14 @@ const ContactUs = () => {
   const [open, setOpen] = useState(false);
 
   const services = [
-    { name: "General Inquiry", email: "inquiry@example.com" },
-    { name: "Support", email: "support@example.com" },
-    { name: "Billing", email: "billing@example.com" },
-    { name: "Partnerships", email: "partners@example.com" },
-    { name: "Press", email: "press@example.com" },
-    { name: "Careers", email: "careers@example.com" },
-    { name: "Technical Help", email: "tech@example.com" },
-    { name: "Feedback", email: "feedback@example.com" },
+    { name: "Scheduling", email: "schedule@thevarallogroup.com" },
+    { name: "Production", email: "production@thevarallogroup.com" },
+    { name: "Invoicing", email: "invoices@thevarallogroup.com" },
+    { name: "Video", email: "video@thevarallogroup.com" },
+    { name: "Marketing ", email: "cedar@thevarallogroup.com" },
+    { name: "General inquires", email: " info@thevarallogroup.com" },
+    // { name: "Technical Help", email: "tech@example.com" },
+    // { name: "Feedback", email: "feedback@example.com" },
   ];
   const fadeInUp = {
     hidden: { opacity: 0, y: 30 },
@@ -38,7 +38,7 @@ const ContactUs = () => {
         >
           <h2 className="text-h2 font-parkinsans font-semibold">Contact Us</h2>
           <p className="font-manrope text-sm lg:text-xl mt-2">
-          Reach out today, we’ll map the way forward with clear strategies and reliable legal assistance..
+            Reach out today, we’ll map the way forward with clear strategies and reliable legal assistance..
           </p>
         </motion.div>
 
@@ -57,7 +57,7 @@ const ContactUs = () => {
                   You tell us. We Listen.
                 </h3>
                 <p className="mb-4 font-manrope text-p lg:text-xl">
-                 What started as a way to help my mum manage her childcare centre.
+                  What started as a way to help my mum manage her childcare centre.
                 </p>
 
                 <div className="space-y-4 mt-8">
@@ -122,9 +122,8 @@ const ContactUs = () => {
                       >
                         Email us
                         <FaChevronDown
-                          className={`transition-transform duration-300 ${
-                            open ? "rotate-180" : ""
-                          }`}
+                          className={`transition-transform duration-300 ${open ? "rotate-180" : ""
+                            }`}
                         />
                       </button>
 
@@ -147,7 +146,8 @@ const ContactUs = () => {
                                 className="px-4 py-2 hover:bg-blue-500 hover:text-white cursor-pointer transition"
                               >
                                 <a
-                                  href={`mailto:${service.email}`}
+                                  // href={`mailto:${service.email}`}
+                                  href={`mailto:${service.email?.trim()}`}
                                   target="_blank"
                                   rel="noopener noreferrer"
                                 >
@@ -197,10 +197,12 @@ const ContactUs = () => {
             className="lg:col-span-2 bg-white rounded-2xl shadow-sm p-8"
           >
             <h3 className="text-3xl font-semibold font-manrope text-center mb-2">
-            Schedule Online
+              Schedule Online
             </h3>
             <p className="text-p lg:text-xl font-manrope text-center mb-6">
-            You will receive an email confirming receipt of your request within 24 hours. If you do not receive this confirmation email, please call the office to confirm we have received the scheduling request.
+              Once you submit your request, we’ll send a confirmation email within 24 hours.
+              If you haven’t received it by then, please contact our office to confirm we’ve received your scheduling request.
+
             </p>
 
             {/* Form */}
@@ -384,7 +386,7 @@ const ContactUs = () => {
                 className=""
               >
                 <Button
-                  text="Schedule a Consultation"
+                  text="Start a Conversation"
                   link="/pay"
                   color={"text-white"}
                   arrowClass="d"

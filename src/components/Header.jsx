@@ -29,8 +29,8 @@ const Header = () => {
         { name: "Mission", path: "/about#mission" },
         { name: "Vision", path: "/about#vision" },
         { name: "Our Story", path: "/about#our-story" },
-        { name: "Founder", path: "/about#founder" },
-        { name: "Team", path: "/about#team" },
+        { name: "Our Founder", path: "/about#founder" },
+        { name: "Our Experts", path: "/about#team" },
       ],
     },
     {
