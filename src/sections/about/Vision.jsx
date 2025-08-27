@@ -41,7 +41,7 @@ const Vision = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
             viewport={{ once: true }}
-            className="text-h2 mb-4"
+            className="text-h2 mb-5"
           >
             Empowering Progress. Elevating Standards.
           </motion.h2>
@@ -51,22 +51,19 @@ const Vision = () => {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className="mb-10 leading-relaxed font-manrope text-xl"
+            className="mb-5 leading-relaxed font-manrope text-xl"
           >
-            To be the trusted partner powering the court reporting community
-            with expert, scalable support.
+           To be the trusted partner powering the court reporting community with expert, scalable support.
+
           </motion.p>
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className="mb-10 leading-relaxed font-manrope text-xl"
+            className="mb-5 leading-relaxed font-manrope text-xl"
           >
-            We’re building a future where every firm — big or small — has access
-            to proven solutions backed by experience. Through smart tech and
-            dedicated people, we’re raising the industry, one partnership at a
-            time.
+          We’re building a future where every firm, big or small, has access to proven solutions backed by experience. Through smart tech and dedicated people, we’re raising the industry, one partnership at a time.
           </motion.p>
 {/* 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 xl:grid-cols-2 gap-8">

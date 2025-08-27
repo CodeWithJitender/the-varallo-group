@@ -19,7 +19,7 @@ const HomeHero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
           >
-           Your Legal Support Partner. With You at Every Step.
+           Smart Support. Real People. Scalable Success.
           </motion.h1>
 
           <motion.p
@@ -28,7 +28,7 @@ const HomeHero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-           From expert court reporting to operations, we’re the steady hand behind your firm’s everyday success.
+          We partner with court reporting agencies to streamline logistics, enhance capacity and elevate your service delivery from transcripts to tech.
           </motion.p>
 
           <motion.div
@@ -37,7 +37,7 @@ const HomeHero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            <Button text="Get Started Today" link="/" arrowClass="d" />
+            <Button text="Schedule a call now" link="/" arrowClass="d" />
           </motion.div>
 
           <motion.div

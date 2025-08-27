@@ -26,10 +26,12 @@ const AboutSection = () => {
               </h2>
               <div className="md:w-[35%] ms-auto">
                 <h3 className="text-xl md:text-2xl font-manrope">
-                 Trusted Simplified Solutions for Court Reporting Firms Nationwide.
+                Delivering Trusted Solutions to Court Reporting Firms Everywhere
+
                 </h3>
                 <p className="text-tertiary mt-2 font-manrope">
-                 With nearly 50 years of court reporting expertise, The Varallo Group blends legacy, precision and innovation to support your firm like an extension of your own team.
+                 With more than 50 years of court reporting expertise, The Varallo Group combines a rich legacy, unwavering precision and forward-thinking innovation to empower and support your firm every step of the way.
+
                 </p>
               </div>
             </motion.div>
@@ -61,7 +63,7 @@ const AboutSection = () => {
                     What Sets Us Apart
                   </h3>
                   <p className="text-tertiary text-xl max-w-[500px] mt-2 ">
-                    Our handpicked team draws from her deep expertise, delivering every project with precision and professionalism.
+                    Our handpicked team draws from decades of experience, delivering service with precision and professionalism.  Think of us as a trusted extension of your team, dedicated to driving results together.
                   </p>
                 </div>
 
@@ -81,23 +83,28 @@ const AboutSection = () => {
                   {[
                     { 
                       icon: faCamera, 
-                      title: "Technology Driven", 
-                      description: "Smarter, faster service with advanced tools." 
+                      title: "Technology-Driven", 
+                      description: "We leverage advanced tools to streamline scheduling, delivery and communication so you can scale with confidence. " 
                     },
                     { 
                       icon: faLock, 
-                      title: "Confidential & Secure", 
-                      description: "Your data stays safe and compliant." 
+                      title: "Confidential & Reliable", 
+                      description: "We recognize the trust you’ve placed in us and we’re dedicated to protecting the confidentiality of your private company information. " 
+                    },
+                    { 
+                      icon: faLock, 
+                      title: "People First", 
+                      description: "It’s not just what we do, it’s about the people we serve. Our dedicated team brings genuine passion to help your business thrive and succeed." 
                     }
                   ].map((card, index) => (
                     <div key={index} className="flex items-start flex-col sm:flex-row md:flex-col lg:flex-row gap-4 justify-between mb-4 md:mb-8">
                       <div className="bg-grad text-white p-3 rounded-[3px]">
                         <FontAwesomeIcon icon={card.icon} />
                       </div>
-                      <h4 className="font-medium font-manrope text-tertiary text-p sm:w-[28%] md:w-full lg:w-[28%]">
+                      <h4 className="font-medium font-manrope text-tertiary text-p sm:w-[28%] md:w-full lg:w-[25%]">
                         {card.title}
                       </h4>
-                      <p className="font-manrope text-tertiary sm:w-[40%] md:w-full lg:w-[40%]">
+                      <p className="font-manrope text-tertiary sm:w-[40%] md:w-full lg:w-[60%]">
                         {card.description}
                       </p>
                   </div>))}

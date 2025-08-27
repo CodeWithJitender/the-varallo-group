@@ -13,13 +13,11 @@ const Mission = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          Our mission is to simplify operations,<img src="m-1.png" alt="" className="mx-2 inline w-6 md:w-14 lg:w-20" />
+         Our mission is to deliver expert court reporting,<img src="m-1.png" alt="" className="mx-2 inline w-6 md:w-14 lg:w-20" />
          
-          strengthen outcomes and free up our clients to focus on what matters most. We do<img src="m-2.png" alt="" className="mx-2 inline w-6 md:w-14 lg:w-20" />
+         legal video, association and administrative services as a true extension of your team. We simplify operations, <img src="m-2.png" alt="" className="mx-2 inline w-6 md:w-14 lg:w-20" />
           
-         more than support — we partner, anticipate and elevate<img src="m-3.png" alt="" className="mx-2 inline w-6 md:w-14 lg:w-20" />
-          
-          .
+         strengthen results and free you to focus on what matters most. More than support, we partner closely with you to anticipate client needs and elevate your success<img src="m-3.png" alt="" className="mx-2 inline w-6 md:w-14 lg:w-20" />.
         </motion.p>
       </div>
     </section>

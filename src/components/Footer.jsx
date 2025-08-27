@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="bg-[url('https://the-varallo-group.vercel.app/footer-bg.jpg')] bg-cover bg-center text-white relative  overflow-hidden ">
       <div className="container-fluid ">
-        <div className="max-w-6xl mx-auto sm:px-6 text-center">
+        <div className="max-w-full mx-auto sm:px-6 text-center">
           {/* Heading */}
           <motion.h2
             className="text-h1 font-medium font-parkinsans mb-5 text-black"
@@ -16,7 +16,7 @@ export default function Footer() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            Join hands with experience that delivers.
+            Partnership. Where Proven Experience Meets Genuine Passion.
           </motion.h2>
 
           {/* Button */}

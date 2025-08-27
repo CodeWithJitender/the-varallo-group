@@ -10,22 +10,22 @@ const stats = [
   {
     title: "500+",
     description:
-      "Court Reporting Firms Served",
+      "Court reporting firms served",
   },
   {
     title: "40K+",
     description:
-      "Attorneys Assisted ",
+      "Attorneys assisted by our team",
   },
   {
     title: "24+",
     description:
-      "Years of Industry Experience",
+      "Years in business",
   },
   {
     title: "2.5M+",
     description:
-      "Million Depositions Handled",
+      "Million depositions handled",
   },
 ];
 

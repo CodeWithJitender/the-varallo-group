@@ -102,8 +102,8 @@ const Testimonials = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          The Trust We Earn. <br />
-          The Stories They Share.
+         Why Our Clients Choose Us <br />
+         Again and Again
         </motion.h2>
 
         <motion.div

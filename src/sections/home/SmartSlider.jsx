@@ -8,42 +8,42 @@ import { motion } from "framer-motion";
 const smartData = [
   {
     title: "TVG Management",
-    desc: "Agency management support to streamline operations and boost profitability.",
+    desc: "Comprehensive agency management support focused on optimizing your day-to-day operations.",
     image: "smart-1.jpg",
   },
   {
     title: "TVG Reporting",
-    desc: "Court reporting and legal videography across the Northeast and beyond.",
+    desc: "Our nationwide network of court reporters and legal videographers is ready to support your firm wherever you need.",
     image: "smart-2.jpg",
   },
   {
     title: "TVG Stream",
-    desc: "Legal video, trial presentation and event A/V services for law firms and organizations.",
+    desc: "Cutting edge legal video, trial presentation and event AV solutions.",
     image: "smart-3.jpg",
   },
   {
     title: "TVG Books",
-    desc: "Bookkeeping and financial services for court reporting and professional industries.",
+    desc: "Bookkeeping and financial support services for court reporting and other professional industries.",
     image: "smart-4.jpg",
   },
   {
     title: "TVG Creative",
-    desc: "Marketing, branding and digital solutions for legal and B2B sectors.",
+    desc: "Marketing materials, branding and identity kits for legal and B2B sectors.",
     image: "smart-5.jpg",
   },
   {
     title: "TVG Connect",
-    desc: "Association management for trade groups and professional organizations.",
+    desc: "Focused management services built for professional associations and organizations.",
     image: "smart-6.jpg",
   },
   {
     title: "TVG Command",
-    desc: "Sales of legal tech platforms like Claudio AI for transcription and automation.",
+    desc: "Empowering you with sales support and practical training on leading legal tech platforms.",
     image: "smart-7.jpg",
   },
   {
     title: "TVG Verify",
-    desc: "Background screening and compliance checks via the SmartHire platform.",
+    desc: "Let us ensure your hiring is secure with reliable background screening and compliance checks, powered by SmartHire.",
     image: "smart-8.jpg",
   },
   
@@ -147,7 +147,7 @@ export default function SmartSlider() {
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              At The Varallo Group, our services are built to simplify, strengthen and scale your operations. Whether you're a court reporting firm, law practice or professional organization, our expertise meets your needs right where you are and right when you need it.
+              At The Varallo Group, our services are built to simplify, strengthen, and scale your operations. Whether you're a court reporting firm, a law practice, or a professional organization, our expertise meets your needs right where you are and right when you need it.
             </motion.p>
           </motion.div>
 

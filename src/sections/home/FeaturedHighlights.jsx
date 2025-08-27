@@ -14,7 +14,7 @@ const data = [
   {
     title: "One Team.",
     title2: "Multiple Solutions.",
-    text: "From certified reporting to administrative and business support, our integrated team delivers a full spectrum of services customized to your firm’s needs.",
+    text: "From court reporting coverage to administrative and business support, our experienced team offers a comprehensive range of services customized to meet your firm’s unique needs.",
     img: "./featured-2.jpg",
     link: "https://example.com/learn-more",
     btnText: "Explore More",
@@ -22,7 +22,7 @@ const data = [
   {
     title: "Tech-Driven. ",
     title2: "People-Focused.",
-    text: "We blend advanced tools with human insight to provide efficient, secure and thoughtful support because behind every service is a team that cares.",
+    text: "We combine advanced technology with genuine human insight to deliver efficient, secure and attentive support because behind every service is a team that truly cares.",
     img: "./featured-3.jpg",
     link: "https://example.com/learn-more",
     btnText: "Explore More",
