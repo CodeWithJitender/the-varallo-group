@@ -43,7 +43,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="why-choose">
+    <section className="why-choose" id="why-choose">
       <div className="container-fluid">
         {/* Left Content */}
         <motion.div

@@ -6,18 +6,18 @@ import Story from '../sections/about/Story'
 import OurFounder from '../sections/about/OurFounder'
 import Team from '../sections/about/Team'
 import Testimonials from '../sections/home/Testimonials'
-import TimelineSection from '../sections/about/TimelineSection'
-import TimelineSectionCopy from '../sections/about/TimelineSectionCopy'
 
 function About() {
   return (
     <div className='overflow-x-hidden'>
       <AboutHero />
+      <div className="" id="mission">
       <Mission />
-      <Vision />
-      {/* <Story /> */}
-      <TimelineSection />
-      {/* <TimelineSectionCopy /> */}
+      </div>
+      <div className="" id="vision">
+        <Vision />
+      </div>
+      <Story />
       <OurFounder />
       <Team />
       <Testimonials/>

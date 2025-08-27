@@ -93,7 +93,7 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="testimonials bg-white pb-10 relative text-center">
+    <div className="testimonials bg-white pb-10 relative text-center" id="testimonials">
       <div className="container-fluid">
         <motion.h2
           className="text-h2 font-medium font-parkinsans text-gray-900 mb-12"

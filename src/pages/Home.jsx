@@ -12,12 +12,24 @@ function Home() {
   return (
     <div className="home-page overflow-x-hidden">
       <HomeHero />
-      <AboutSection />
-      <SmartSlider />
-      <WhyChoose />
-      <FeaturedHighlights />
-      <Testimonials />
-      <BlogSection />
+      <div id="what-sets-us-apart">
+        <AboutSection />
+      </div>
+      <div className="" id="smart-support">
+        <SmartSlider />
+      </div>
+      <div className="" id="why-choose">
+        <WhyChoose />
+      </div>
+      <div className="" id="featured-">
+        <FeaturedHighlights />
+      </div>
+      <div className="" id="testimonials">
+        <Testimonials />
+      </div>
+      <div className="" id="our-blog">
+        <BlogSection />
+      </div>
     </div>
   );
 }

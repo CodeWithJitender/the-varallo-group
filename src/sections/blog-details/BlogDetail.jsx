@@ -104,7 +104,8 @@ export default function BlogDetail() {
                     key={i}
                     className="mb-2 text-base font-manrope text-[#262626]"
                   >
-                    <strong>{item.title}: </strong> {item.pera}
+                    {item.title && <strong>{item.title}: </strong>}
+                    {item.pera}
                   </li>
                 ))}
               </ul>

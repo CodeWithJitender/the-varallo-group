@@ -31,7 +31,7 @@ const data = [
 
 export default function FeaturedHighlights() {
   return (
-    <section className="bg-grad relative  text-white">
+    <section className="bg-grad relative  text-white" id="feature">
       <div className="image-top absolute top-0 left-0 w-60 h-60">
         <img src="/icon-half.png" alt="Featured 1" />
       </div>

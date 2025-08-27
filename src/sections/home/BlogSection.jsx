@@ -27,7 +27,7 @@ const blogPosts = [
 
 const BlogSection = () => {
   return (
-    <section className="container-fluid">
+    <section className="container-fluid" id="our-blog">
       <motion.h2
         className="text-h2 font-semibold text-center mb-5 md:mb-12 font-parkinsans"
         initial={{ opacity: 0, y: 40 }}

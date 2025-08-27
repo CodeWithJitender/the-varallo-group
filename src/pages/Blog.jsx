@@ -12,9 +12,16 @@ function Blog() {
   return (
     <div>
         <BlogHero data={blogHero}/>
+        <div className="" id='trending-blogs'>
         <TrendingBlogs data={trendingBlogs} />
+        </div>
+        <div className="" id='latest-blogs'>
         <LatestBlogs data={latestBlogs} />
+        </div>
+        <div className="" id='popular-blogs'>
         <PopularBlogs data={[1,2,3]} />
+        </div>
+
     </div>
   )
 }

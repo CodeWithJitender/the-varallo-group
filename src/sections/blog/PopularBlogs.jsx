@@ -63,7 +63,7 @@ const PopularBlogs = ({data}) => {
                 transition={{ duration: 0.3 }}
               >
                 <motion.img
-                  src={`/${blog.img}`}
+                  src={`${blog.img}`}
                   alt={blog.title}
                   className="w-full h-64 object-cover"
                   whileHover={{ scale: 1.1 }}

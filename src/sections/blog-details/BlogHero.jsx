@@ -28,9 +28,9 @@ function BlogHero({ img, title, date }) {
             initial={{ scale: 0.9 }}
             animate={{ scale: 1 }}
             transition={{ type: "tween", duration: 1.5 }} // Increased duration
-            src={`/${img}`}
+            src={`${img}`}
             alt="Professional"
-            className="w-full"
+            className="w-full rounded-t-2xl"
           />
         </div>
       </div>

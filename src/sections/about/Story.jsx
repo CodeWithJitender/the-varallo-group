@@ -1,95 +1,89 @@
-import React from "react";
-import { motion } from "framer-motion";
-
-const timelineData = [
-  {
-    number: 1,
-    year: "2017",
-    title: "The Birth of TVG",
-    description:
-      "Managing a court reporting agency means balancing client demands, coordinating with reporters, billing cycles and deadlines all while maintaining your firm's reputation. That's where TVG Management comes in. We help you as your supportive operational partner.",
-    image: "/story-1.jpg",
-  },
-  {
-    number: 2,
-    year: "2019",
-    title: "Expansion",
-    description:
-      "TVG expanded operations to serve more agencies nationwide, improving efficiency and coverage.",
-    image: "/story-2.jpg",
-  },
-  {
-    number: 3,
-    year: "2023",
-    title: "Innovation",
-    description:
-      "We introduced cutting-edge tools to help agencies manage their reporting needs faster and easier.",
-    image: "/story-3.jpg",
-  },
-];
+import React, { useEffect, useRef } from "react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+gsap.registerPlugin(ScrollTrigger);
 
 const Story = () => {
+  useGSAP(() => {
+    let sections = gsap.utils.toArray(".work-item");
+    sections.forEach((container, i) => {
+      let pin = i === sections.length - 1;
+      console.log(pin);
+
+      ScrollTrigger.create({
+        trigger: container,
+        start: "top top",
+        pin: true,
+        pinSpacing: pin,
+        // markers: true,
+      });
+    });
+  });
+  const data = [
+    {
+      year: "2017",
+      title: "The Birth of TVG",
+      para: "Managing a court reporting agency means balancing client demands, coordinating with reporters, billing cycles and deadlines all while maintaining your firm's reputation. That's where TVG Management comes in. We help you as your supportive operational partner.",
+      img: "/Story.png",
+    },
+    {
+      year: "2017",
+      title: "The Birth of TVG",
+      para: "Managing a court reporting agency means balancing client demands, coordinating with reporters, billing cycles and deadlines all while maintaining your firm's reputation. That's where TVG Management comes in. We help you as your supportive operational partner.",
+      img: "/Story.png",
+    },
+    {
+      year: "2017",
+      title: "The Birth of TVG",
+      para: "Managing a court reporting agency means balancing client demands, coordinating with reporters, billing cycles and deadlines all while maintaining your firm's reputation. That's where TVG Management comes in. We help you as your supportive operational partner.",
+      img: "/Story.png",
+    },
+  ];
+
   return (
-    <section className="py-16 bg-white">
-      <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold">Managing a court reporting agency</h2>
-        <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
-          Managing a court reporting agency means balancing client demands,
-          coordinating with reporters, billing cycles and deadlines all while
-          maintaining your firm's reputation.
-        </p>
+    <section className="">
+      <div className="container-fluid">
+        {/* Heading */}
+        <div className="text-center md:mb-12">
+          <h2 className="text-h2 font-parkinsans">
+            Managing a court reporting agency
+          </h2>
+          <p className="mt-4 font-manrope text-[#00100D] text-xl max-w-4xl mx-auto">
+            Managing a court reporting agency means balancing client demands,
+            coordinating with reporters, billing cycles and deadlines all while
+            maintaining your firm&apos;s reputation.
+          </p>
+        </div>
       </div>
-
-      <div className="space-y-20">
-        {timelineData.map((item, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: index * 0.2 }}
-            viewport={{ once: true }}
-            className="grid md:grid-cols-3 gap-8 items-center"
-          >
-            {/* Timeline Steps */}
-            <div className="flex flex-col items-center relative">
-              {/* Connector Line */}
-              {index !== timelineData.length - 1 && (
-                <div className="absolute top-8 left-1/2 transform -translate-x-1/2 w-0.5 bg-gray-300 h-full z-0"></div>
-              )}
-              <div
-                className={`relative z-10 flex items-center justify-center w-10 h-10 rounded-full border-2 ${
-                  index === 0
-                    ? "bg-blue-100 border-blue-400 text-blue-500"
-                    : "bg-white border-gray-300 text-gray-500"
-                }`}
-              >
-                {item.number}
-              </div>
-            </div>
-
-            {/* Image */}
-            <motion.div
-              initial={{ scale: 0.95 }}
-              whileInView={{ scale: 1 }}
-              transition={{ duration: 0.6 }}
-              className="overflow-hidden rounded-xl shadow-md"
-            >
-              <img
-                src={item.image}
-                alt={item.title}
-                className="w-full h-full object-cover"
+      {/* Content Grid */}
+      {data.map((item, index) => (
+        <div className="work-item bg-white" key={index}>
+          <div className="max-w-[1600px] m-auto px-4 py-[50px]">
+            <div className="flex flex-col md:flex-row gap-8 items-end  ">
+              {/* Image */}
+              <div className="md:w-[60%]">
+                <img
+                src={item.img}
+                alt="Story"
+                className="rounded-2xl w-full shadow-lg"
               />
-            </motion.div>
-
-            {/* Content */}
-            <div>
-              <p className="text-gray-500">{item.year}</p>
-              <h3 className="text-2xl font-bold mb-2">{item.title}</h3>
-              <p className="text-gray-600 leading-relaxed">{item.description}</p>
             </div>
-          </motion.div>
-        ))}
-      </div>
+
+            {/* Text */}
+            <div className="md:w-[50%]">
+              <p className="text-[#00100D] font-manrope text-base md:text-2xl lg:text-3xl mb-2">
+                {item.year}
+              </p>
+              <h3 className="text-h2 mb-4 font-parkinsans">{item.title}</h3>
+              <p className="font-manrope text-[#00100D] text-base md:text-lg lg:text-xl">
+                {item.para}
+              </p>
+            </div>
+          </div>
+        </div>
+        </div>
+      ))}
     </section>
   );
 };

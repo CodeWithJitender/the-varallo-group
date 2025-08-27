@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const AboutSection = () => {
   return (
-    <section className="">
+    <section className="" id="WhatSetsUsApart">
       <div className="container-fluid">
         <div className=" mx-auto grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column */}
@@ -66,7 +66,7 @@ const AboutSection = () => {
                 </div>
 
                 <motion.div
-                  className="grid sm:grid-cols-2 gap-6 pt-10"
+                  className=""
                   initial="hidden"
                   whileInView="visible"
                   variants={{
@@ -78,35 +78,29 @@ const AboutSection = () => {
                   }}
                   viewport={{ once: true }}
                 >
-                  {/* Card 1 */}
-                  <div className="flex items-start gap-3">
-                    <div className="bg-grad text-white p-3 rounded-[3px]">
-                      <FontAwesomeIcon icon={faCamera} />
-                    </div>
-                    <div>
-                      <h4 className="font-medium font-manrope text-tertiary text-p">
-                        Technology Driven
+                  {[
+                    { 
+                      icon: faCamera, 
+                      title: "Technology Driven", 
+                      description: "Smarter, faster service with advanced tools." 
+                    },
+                    { 
+                      icon: faLock, 
+                      title: "Confidential & Secure", 
+                      description: "Your data stays safe and compliant." 
+                    }
+                  ].map((card, index) => (
+                    <div key={index} className="flex items-start flex-col sm:flex-row md:flex-col lg:flex-row gap-4 justify-between mb-4 md:mb-8">
+                      <div className="bg-grad text-white p-3 rounded-[3px]">
+                        <FontAwesomeIcon icon={card.icon} />
+                      </div>
+                      <h4 className="font-medium font-manrope text-tertiary text-p sm:w-[28%] md:w-full lg:w-[28%]">
+                        {card.title}
                       </h4>
-                      <p className="font-manrope text-tertiary mt-3">
-                       Smarter, faster service with advanced tools.
+                      <p className="font-manrope text-tertiary sm:w-[40%] md:w-full lg:w-[40%]">
+                        {card.description}
                       </p>
-                    </div>
-                  </div>
-
-                  {/* Card 2 */}
-                  <div className="flex items-start gap-3">
-                    <div className="bg-grad text-white p-3 rounded-[3px]">
-                      <FontAwesomeIcon icon={faLock} />
-                    </div>
-                    <div>
-                      <h4 className="font-medium font-manrope text-tertiary text-p">
-                        Confidential & Secure
-                      </h4>
-                      <p className="font-manrope text-tertiary mt-3">
-                       Your data stays safe and compliant.
-                      </p>
-                    </div>
-                  </div>
+                  </div>))}
                 </motion.div>
               </motion.div>
             </div>

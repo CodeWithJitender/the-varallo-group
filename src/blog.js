@@ -7,7 +7,7 @@ export const Blog = [
       day: "Tuesday",
       date: "21/09/2025",
     },
-    img: "blog-img.png",
+    img: "/blog/blog1/main.jpg",
     link: "/blog/1",
     content: [
       {
@@ -47,7 +47,7 @@ export const Blog = [
             pera: "Because transparency isn’t optional.",
           },
         ],
-        image: "/blog-images/blog-1-img.jpg",
+        image: "/blog/blog1/big.jpg",
       },
       {
         section: "Why Court Reporting Is Essential",
@@ -111,8 +111,8 @@ export const Blog = [
           },
         ],
         imageList: [
-          "/blog-images/blog-1-img.jpg",
-          "/blog-images/blog-1-img.jpg",
+          "/blog/blog1/1.jpg",
+          "/blog/blog1/2.jpg",
         ],
       },
       {
@@ -194,7 +194,7 @@ export const Blog = [
       day: "Tuesday",
       date: "21/09/2025",
     },
-    img: "blog-img.png",
+    img: "/blog/blog2/main.jpg",
     link: "/blog/2",
     content: [
       {
@@ -264,7 +264,7 @@ export const Blog = [
           "Legal videographers are no longer “camera people”, they’re trusted evidence custodians whose work can tip the balance in a trial.",
           "Bring the visual record to life. Each fills in the gaps of the other. Together, they offer legal teams a comprehensive package, clarity in words and depth in visuals. A transcript can be powerful but paired with video, it becomes unarguable. For court reporting firms aiming to provide end to end services, this collaboration isn’t just helpful, it’s foundational.",
         ],
-        image: "/blog-images/blog-1-img.jpg",
+        image: "/blog/blog2/big.jpg",
       },
       {
         section: "Why Court Reporters and Legal Videographers Need Each Other",
@@ -276,23 +276,18 @@ export const Blog = [
         ],
         list: [
           {
-            title: " ",
             pera: "They capture nonverbal cues so a juror can see the hesitation, not just read “(pause)” in a transcript.",
           },
           {
-            title: " ",
             pera: "They create synchronized video transcripts, making it easy to jump to exact testimony moments.",
           },
           {
-            title: " ",
             pera: "They preserve evidence in a secure, tamper proof way.",
           },
           {
-            title: " ",
             pera: "They meet regulatory requirements in jurisdictions that now mandate video for certain depositions.",
           },
           {
-            title: "",
             pera: "They elevate trial presentations with persuasive visual storytelling.",
           },
         ],
@@ -311,15 +306,12 @@ export const Blog = [
         ],
         list: [
           {
-            title: " ",
             pera: "Deliver a product that rivals or beats larger agencies in quality.",
           },
           {
-            title: " ",
             pera: "Building a deeper client relationship by understanding both their legal and logistical needs.",
           },
           {
-            title: " ",
             pera: "Position themselves as a one stop shop for modern litigation support.",
           },
         ],
@@ -327,8 +319,8 @@ export const Blog = [
           "Think about it, the legal industry is dealing with increasingly complex, digital first workflows. Hybrid depositions, encrypted file transfers, AI enhanced transcript these are now standard expectations. If your firm can tick all those boxes while still keeping that human touch the kind of personal service clients remember, you’re sitting right in the “sweet spot” of the market.",
         ],
         imageList: [
-          "/blog-images/blog-1-img.jpg",
-          "/blog-images/blog-1-img.jpg",
+          "/blog/blog2/1.jpg",
+          "/blog/blog2/2.jpg",
         ],
       },
       {
@@ -350,7 +342,7 @@ export const Blog = [
       day: "Tuesday",
       date: "21/09/2025",
     },
-    img: "blog-img.png",
+    img: "/blog/blog3/main.jpg",
     link: "/blog/3",
     content: [
       {
@@ -377,7 +369,7 @@ export const Blog = [
           "And here’s the thing, this isn’t just about obvious details like names and addresses. It includes patterns, strategy talk or even those “harmless” bits of information that, in the wrong hands, could chip away at a client’s privacy.",
         ],
 
-        image: "/blog-images/blog-1-img.jpg",
+        image: "/blog/blog3/big.jpg",
       },
       {
         section: "Types of Client Data Services That Require Protection",
@@ -411,8 +403,8 @@ export const Blog = [
         paragraphs:
           "The digital shift has brought efficiency but it’s also created more points of vulnerability. As highlighted by IBM’s Cost of a Data Breach Report, 83% of organizations have suffered more than one breach, with legal and financial sectors among the most targeted. Like for professionals, the risk isn’t just about data theft but it’s about erosion of trust. Once a client feels their privacy is compromised, the relationship and trust end most of the time.",
         imageList: [
-          "/blog-images/blog-1-img.jpg",
-          "/blog-images/blog-1-img.jpg",
+          "/blog/blog3/1.jpg",
+          "/blog/blog3/2.jpg",
         ],
       },
       {
@@ -469,7 +461,7 @@ export const Blog = [
       day: "Tuesday",
       date: "21/09/2025",
     },
-    img: "blog-img.png",
+    img: "/blog/blog4/main.jpg",
     link: "/blog/4",
     content: [
       {
@@ -535,7 +527,7 @@ export const Blog = [
             pera: "If you need something catchy? Then send branded notepads or pens to local courthouses or legal offices with your firm’s name and website. You can even share a quirky infographic saying “10 funny phrases we say in court reporting” on social media. It’s low cost and extremely high in personality, something people would actually be intrigued in.",
           },
         ],
-        image: "/blog-images/blog-1-img.jpg",
+        image: "/blog/blog4/main.jpg",
       },
       {
         section: "The Strategy Behind the Success",
@@ -563,7 +555,7 @@ export const Blog = [
       day: "Tuesday",
       date: "21/09/2025",
     },
-    img: "blog-img.png",
+    img: "/blog/blog5/main.jpg",
     link: "/blog/5",
     content: [
       {
@@ -640,7 +632,7 @@ export const Blog = [
           "As the NCRA puts it, the pros who deliver reliable, high quality work time after time stop being “just another vendor” and start becoming part of the legal team’s inner circle. Add in strong communication, a knack for solving problems before they blow up and staying totally neutral and you’re the go-to person attorneys rely on when deadlines are scary tight and stakes are sky high.",
           "The payoff? More referrals, steady, long term gigs and the kind of credibility that lands you those big, high profile cases you actually want to brag about. At the end of the day, avoiding these pitfalls isn’t just good etiquette, it’s basically your golden ticket, your “first call” status and the reason attorneys think of you before anyone else when they need flawless court reporting or legal videography.",
         ],
-        image: "/blog-images/blog-1-img.jpg",
+        image: "/blog/blog5/big.jpg",
       },
       {
         section: "Conclusion",

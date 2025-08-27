@@ -61,28 +61,28 @@ function ServiceDetails() {
           title: "Complete Scheduling & Client Communication",
           description:
             "We manage appointments, calendars, emails and calls, keeping your agency responsive and organized.",
-          classBorder: "md:border-e md:border-b",
+          classBorder: "border-b border-white",
         },
         {
           icon: "/calendar-icon.png",
           title: "Transcript, Exhibit & Delivery Management",
           description:
             "From formatting to exhibit handling and final delivery, we ensure every detail is processed with speed and accuracy.",
-          classBorder: "md:border-s md:border-b",
+          classBorder: "border-b border-white",
         },
         {
           icon: "/calendar-icon.png",
           title: "Financial Operations & Invoicing",
           description:
             "Professional invoicing, collections, payroll and bookkeeping all handled to keep your finances clear and on track.",
-          classBorder: "md:border-e md:border-t",
+          classBorder: "border-b border-white",
         },
         {
           icon: "/calendar-icon.png",
           title: "Branded Marketing Support",
           description:
             "If you require marketing materials, we design clean, on-brand brochures, emails and digital assets that represent your agency professionally.",
-          classBorder: "md:border-s md:border-t",
+          classBorder: "",
         },
       ],
     },
@@ -135,28 +135,28 @@ function ServiceDetails() {
           title: "Comprehensive Deposition Coverage",
           description:
             "On-site or remote, we provide flexible scheduling and full support for every deposition format.",
-          classBorder: "md:border-e md:border-b",
+          classBorder: "border-b border-white",
         },
         {
           icon: "/calendar-icon.png",
           title: "Real-time Access & Drafts",
           description:
             "Get immediate rough drafts and live feeds, enabling attorneys to respond and strategize in the moment.",
-          classBorder: "md:border-s md:border-b",
+          classBorder: "border-b border-white",
         },
         {
           icon: "/calendar-icon.png",
           title: "Professional Transcript Production",
           description:
             "Receive accurate, court-compliant transcripts promptly, in the format you need.",
-          classBorder: "md:border-e md:border-t",
+          classBorder: "border-b border-white",
         },
         {
           icon: "/calendar-icon.png",
           title: "Stenographers, Interpreters & Videographers",
           description:
             "Certified reporters, interpreters and videographers all coordinated seamlessly to support every case detail.",
-          classBorder: "md:border-s md:border-t",
+          classBorder: "",
         },
       ],
     },
@@ -208,28 +208,28 @@ function ServiceDetails() {
           title: "End-to-End Virtual Deposition Management",
           description:
             "From platform setup to scheduling and permissions, we handle the full environment so you don't have to.",
-          classBorder: "md:border-e md:border-b",
+          classBorder: "border-b border-white",
         },
         {
           icon: "/calendar-icon.png",
           title: "Comprehensive Onboarding & Training",
           description:
             "Step-by-step training for attorneys, clients and witnesses to ensure confidence and tech-readiness.",
-          classBorder: "md:border-s md:border-b",
+          classBorder: "border-b border-white",
         },
         {
           icon: "/calendar-icon.png",
           title: "Real-Time Tech Support",
           description:
             "Live troubleshooting during sessions to resolve connectivity issues or unexpected technical hiccups instantly.",
-          classBorder: "md:border-e md:border-t",
+          classBorder: "border-b border-white",
         },
         {
           icon: "/calendar-icon.png",
           title: "Secure Exhibit Sharing & Session Archiving",
           description:
             "Confidential, real-time document sharing with complete session recordings and optional transcripts stored securely.",
-          classBorder: "md:border-s md:border-t",
+          classBorder: "",
         },
       ],
     },
@@ -281,28 +281,28 @@ function ServiceDetails() {
           title: "Bookkeeping (QuickBooks Specialists)",
           description:
             "We handle daily entries, reconcile accounts and track finances using Quick Books, so your books stay accurate, organized and real-time ready.",
-          classBorder: "md:border-e md:border-b",
+          classBorder: "border-b border-white",
         },
         {
           icon: "/calendar-icon.png",
           title: "Client Billing and Invoicing",
           description:
             "We generate accurate invoices, track payments and simplify billing helping you get paid faster and manage cash flow with ease.",
-          classBorder: "md:border-s md:border-b",
+          classBorder: "border-b border-white",
         },
         {
           icon: "/calendar-icon.png",
           title: "Annual Filings and Basic Compliance Support",
           description:
             "From 1099s to annual filings, we prep, manage and ensure compliance making tax season smooth and stress-free.",
-          classBorder: "md:border-e md:border-t",
+          classBorder: "border-b border-white",
         },
         {
           icon: "/calendar-icon.png",
           title: "Financial Reporting",
           description:
             "Understand your numbers with clear, actionable reports from P&Ls to forecasts, we turn data into decision-making power.",
-          classBorder: "md:border-s md:border-t",
+          classBorder: "",
         },
       ],
     },
@@ -353,28 +353,28 @@ function ServiceDetails() {
           title: "Website Design & SEO",
           description:
             "We create responsive, fast and conversion-optimized websites that reflect your brand and drive results with SEO built in from the start.",
-          classBorder: "md:border-e md:border-b",
+          classBorder: "border-b border-white",
         },
         {
           icon: "/calendar-icon.png",
           title: "Branding & Messaging",
           description:
             "Beyond just a logo, we develop your full brand identity, consistent visuals, voice and messaging that build trust and recognition.",
-          classBorder: "md:border-s md:border-b",
+          classBorder: "border-b border-white",
         },
         {
           icon: "/calendar-icon.png",
           title: "Content Marketing Strategy",
           description:
             "Engage your audience with content that educates, inspires and positions you as an industry leader across platforms.",
-          classBorder: "md:border-e md:border-t",
+          classBorder: "border-b border-white",
         },
         {
           icon: "/calendar-icon.png",
           title: "Startup Identity Kits",
           description:
             "Launch with confidence using complete kits, logos, business cards, email signatures, brochures and more designed for instant credibility.",
-          classBorder: "md:border-s md:border-t",
+          classBorder: "",
         },
       ],
     },
@@ -425,28 +425,28 @@ function ServiceDetails() {
           title: "Executive Leadership Placement",
           description:
             "We place seasoned directors to lead daily operations, guide strategic planning, support governance and engage key stakeholders.",
-          classBorder: "md:border-e md:border-b",
+          classBorder: "border-b border-white",
         },
         {
           icon: "/calendar-icon.png",
           title: "Strategic Event Management",
           description:
             "From webinars to large conferences, we handle planning, promotion, vendors and execution so you can focus on delivering impact.",
-          classBorder: "md:border-s md:border-b",
+          classBorder: "border-b border-white",
         },
         {
           icon: "/calendar-icon.png",
           title: "Membership Engagement & Growth",
           description:
             "We manage onboarding, renewals and ongoing communication to build stronger member relationships and community engagement.",
-          classBorder: "md:border-e md:border-t",
+          classBorder: "border-b border-white",
         },
         {
           icon: "/calendar-icon.png",
           title: "Communication Strategy & Content",
           description:
             "Consistent messaging through newsletters, updates and social media to keep your audience informed, active and aligned.",
-          classBorder: "md:border-s md:border-t",
+          classBorder: "",
         },
       ],
     },
@@ -497,28 +497,28 @@ function ServiceDetails() {
           title: "Claudio AI – AI-Powered Transcription",
           description:
             "A purpose-built platform for court reporters and legal professionals, Claudio AI delivers speed, accuracy and industry-focused intelligence.",
-          classBorder: "md:border-e md:border-b",
+          classBorder: "border-b border-white",
         },
         {
           icon: "/calendar-icon.png",
           title: "Automated Transcription",
           description:
             "Upload audio or video files (100+ formats supported) and receive first-draft transcripts in minutes, powered by ~95–99% accurate speech models trained specifically for legal use.",
-          classBorder: "md:border-s md:border-b",
+          classBorder: "border-b border-white",
         },
         {
           icon: "/calendar-icon.png",
           title: "Speaker Identification",
           description:
             "Accurately tag multiple speakers even in complex legal environments like depositions and hearings. Ideal for high-volume or multi-party sessions.",
-          classBorder: "md:border-e md:border-t",
+          classBorder: "border-b border-white",
         },
         {
           icon: "/calendar-icon.png",
           title: "Smart, Scalable Output Built for Efficiency",
           description:
             "Save editing time with grammar-ready formatting and customizable rules all backed by enterprise-grade features like API integrations, secure delivery and domain-specific support.",
-          classBorder: "md:border-s md:border-t",
+          classBorder: "",
         },
       ],
     },
@@ -569,28 +569,28 @@ function ServiceDetails() {
           title: "Comprehensive Screening Packages",
           description:
             "Get full-spectrum background checks from criminal history and driving records to drug screenings, credit checks, employment verification and more all customized to your industry needs.",
-          classBorder: "md:border-e md:border-b",
+          classBorder: "border-b border-white",
         },
         {
           icon: "/calendar-icon.png",
           title: "Smart-Hire Platform",
           description:
             "A centralized client dashboard with live status updates, e-signatures, integrated workflows and direct candidate communication, making screening faster and more transparent.",
-          classBorder: "md:border-s md:border-b",
+          classBorder: "border-b border-white",
         },
         {
           icon: "/calendar-icon.png",
           title: "Legal Compliance at Every Step",
           description:
             "Fully certified by the Professional Background Screening Association (PBSA) and 100% FCRA-compliant, with adherence to all relevant state and federal regulations.",
-          classBorder: "md:border-e md:border-t",
+          classBorder: "border-b border-white",
         },
         {
           icon: "/calendar-icon.png",
           title: "Global Screening Reach",
           description:
             "Conduct screenings in the U.S. and across most global markets. We offer customized solutions for each geography and job type, ideal for remote or international hiring.",
-          classBorder: "md:border-s md:border-t",
+          classBorder: "",
         },
       ],
     },
@@ -609,6 +609,8 @@ function ServiceDetails() {
       <WhatWeProvide data={content.Provide} />
       <TVGEffect data={content.TvgEffect} />
       <ServiceOverview data={content.Overview2} />
+    
+
       <Testimonials />
     </div>
   );
