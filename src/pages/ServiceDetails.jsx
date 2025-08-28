@@ -59,30 +59,37 @@ function ServiceDetails() {
       Overview2: [
         {
           icon: "/calendar-icon.png",
-          title: "Complete Scheduling & Client Communication",
+          title: "End-to-End Scheduling & Communication Management",
           description:
-            "We manage appointments, calendars, emails and calls, keeping your agency responsive and organized.",
+            "We handle scheduling, resource calendar coordination, email monitoring and phone answering, ensuring your agency runs smoothly and stays responsive.  We are more than an answering service. We have the skills needed to answer questions the first time they are asked.",
           classBorder: "border-b border-white",
         },
         {
           icon: "/calendar-icon.png",
-          title: "Transcript, Exhibit & Delivery Management",
+          title: "Meticulous Transcript & Exhibit Processing",
           description:
-            "From formatting to exhibit handling and final delivery, we ensure every detail is processed with speed and accuracy.",
+            "From accurate transcript formatting to exhibit marking, printing, binding and final delivery, we manage it all with precision and speed.",
           classBorder: "border-b border-white",
         },
         {
           icon: "/calendar-icon.png",
-          title: "Financial Operations & Invoicing",
+          title: "Streamlined Invoicing & Collections",
           description:
-            "Professional invoicing, collections, payroll and bookkeeping all handled to keep your finances clear and on track.",
+            "Get paid on time with professional invoice generation, client billing follow-ups and efficient collections support.",
           classBorder: "border-b border-white",
         },
         {
           icon: "/calendar-icon.png",
-          title: "Branded Marketing Support",
+          title: "Accurate Payroll & Bookkeeping",
           description:
-            "If you require marketing materials, we design clean, on-brand brochures, emails and digital assets that represent your agency professionally.",
+            "We process reporter payments and manage day-to-day bookkeeping, helping you maintain financial clarity and control.",
+          classBorder: "border-b border-white",
+        },
+        {
+          icon: "/calendar-icon.png",
+          title: "Marketing Materials",
+          description:
+            "We craft polished brochures, email templates and digital assets to align perfectly with your company’s branding and messaging.",
           classBorder: "",
         },
       ],
@@ -133,30 +140,37 @@ function ServiceDetails() {
       Overview2: [
         {
           icon: "/calendar-icon.png",
-          title: "Comprehensive Deposition Coverage",
+          title: "In-Person & Remote Deposition Coverage",
           description:
-            "On-site or remote, we provide flexible scheduling and full support for every deposition format.",
+            "Scalable solutions for on-site or virtual proceedings available when and where you need us.",
           classBorder: "border-b border-white",
         },
         {
           icon: "/calendar-icon.png",
-          title: "Real-time Access & Drafts",
+          title: "Realtime Reporting & Rough Drafts",
           description:
-            "Get immediate rough drafts and live feeds, enabling attorneys to respond and strategize in the moment.",
+            "Live access and quick-turnaround drafts to keep your clients ahead of the curve.",
           classBorder: "border-b border-white",
         },
         {
           icon: "/calendar-icon.png",
-          title: "Professional Transcript Production",
+          title: "On-Time Transcript Production & Delivery",
           description:
-            "Receive accurate, court-compliant transcripts promptly, in the format you need.",
+            "Court-compliant transcripts delivered promptly, in your firm’s preferred formats and specifications.",
           classBorder: "border-b border-white",
         },
         {
           icon: "/calendar-icon.png",
-          title: "Stenographers, Interpreters & Videographers",
+          title: "Experienced Reporters",
           description:
-            "Certified reporters, interpreters and videographers all coordinated seamlessly to support every case detail.",
+            "Our professionals maintain the highest standards of neutrality, accuracy and discretion.",
+          classBorder: "border-b border-white",
+        },
+        {
+          icon: "/calendar-icon.png",
+          title: "Legal Videographers",
+          description:
+            "Our in-house videographers are experts in providing consistent, high-quality legal video services.",
           classBorder: "",
         },
       ],
@@ -206,30 +220,51 @@ function ServiceDetails() {
       Overview2: [
         {
           icon: "/calendar-icon.png",
-          title: "End-to-End Virtual Deposition Management",
+          title: "Remote Deposition Setup & Hosting",
           description:
-            "From platform setup to scheduling and permissions, we handle the full environment so you don't have to.",
+            "We manage platform access, scheduling, permissions and environment control, so you don’t have to.",
           classBorder: "border-b border-white",
         },
         {
           icon: "/calendar-icon.png",
-          title: "Comprehensive Onboarding & Training",
+          title: "Participant Training & Onboarding",
           description:
-            "Step-by-step training for attorneys, clients and witnesses to ensure confidence and tech-readiness.",
+            "Customized guidance for attorneys, clients and witnesses to ensure confidence and preparedness before every session.",
           classBorder: "border-b border-white",
         },
         {
           icon: "/calendar-icon.png",
-          title: "Real-Time Tech Support",
+          title: "Live Technical Support",
           description:
-            "Live troubleshooting during sessions to resolve connectivity issues or unexpected technical hiccups instantly.",
+            "Real-time troubleshooting during depositions and hearings to minimize disruptions and uphold professionalism.",
           classBorder: "border-b border-white",
         },
         {
           icon: "/calendar-icon.png",
-          title: "Secure Exhibit Sharing & Session Archiving",
+          title: "Secure Exhibit Management",
           description:
-            "Confidential, real-time document sharing with complete session recordings and optional transcripts stored securely.",
+            "Confidential document sharing, digital exhibit marking and real-time presentation tools to keep proceedings efficient and organized.",
+          classBorder: "border-b border-white",
+        },
+        {
+          icon: "/calendar-icon.png",
+          title: "Session Recording & Archiving",
+          description:
+            "Comprehensive video and audio capture with optional transcript syncing, securely stored and easily accessible when needed.",
+          classBorder: "border-b border-white",
+        },
+        {
+          icon: "/calendar-icon.png",
+          title: "Trial Technician & Hot-Seat Operator Services",
+          description:
+            "Skilled in-courtroom support for exhibit displays, video playback and technology coordination, assuring flawless execution under pressure.",
+          classBorder: "border-b border-white",
+        },
+        {
+          icon: "/calendar-icon.png",
+          title: "Trial Equipment Rentals",
+          description:
+            "Access professional-grade courtroom equipment including screens, projectors and audio systems with full setup and on-site support.",
           classBorder: "",
         },
       ],
@@ -281,28 +316,28 @@ function ServiceDetails() {
           icon: "/calendar-icon.png",
           title: "Bookkeeping (QuickBooks Specialists)",
           description:
-            "We handle daily entries, reconcile accounts and track finances using Quick Books, so your books stay accurate, organized and real-time ready.",
+            "We handle the day-to-day financial entries so you don’t have to. From reconciling accounts to tracking income and expenses, our team of QuickBooks specialists ensures your books are accurate, organized and up-to-date, giving you a real-time snapshot of your business health.",
           classBorder: "border-b border-white",
         },
         {
           icon: "/calendar-icon.png",
           title: "Client Billing and Invoicing",
           description:
-            "We generate accurate invoices, track payments and simplify billing helping you get paid faster and manage cash flow with ease.",
+            "Never miss a payment. We streamline your client billing process by generating timely, accurate invoices and tracking payments. We make it easy for your clients to pay and for you to stay on top of your receivables, keeping your cash flow steady and predictable.",
           classBorder: "border-b border-white",
         },
         {
           icon: "/calendar-icon.png",
           title: "Annual Filings and Basic Compliance Support",
           description:
-            "From 1099s to annual filings, we prep, manage and ensure compliance making tax season smooth and stress-free.",
+            "Tax season doesn't have to be stressful. We prepare and manage annual financial documents, assist with 1099s, and help ensure your business meets the basic compliance requirements for filings on time, every time.",
           classBorder: "border-b border-white",
         },
         {
           icon: "/calendar-icon.png",
           title: "Financial Reporting",
           description:
-            "Understand your numbers with clear, actionable reports from P&Ls to forecasts, we turn data into decision-making power.",
+            "Make confident business decisions with reports that actually make sense. From profit and loss statements to customized financial summaries, we equip you with insights you can use for forecasting, budgeting or just understanding where your business stands.",
           classBorder: "",
         },
       ],
@@ -353,30 +388,16 @@ function ServiceDetails() {
       Overview2: [
         {
           icon: "/calendar-icon.png",
-          title: "Website Design & SEO",
+          title: "Branding and Content Marketing",
           description:
-            "We create responsive, fast and conversion-optimized websites that reflect your brand and drive results with SEO built in from the start.",
+            "We help you create a brand identity that goes beyond just a logo. From messaging to visuals, we develop consistent, cohesive branding backed by strategic content that resonates with your audience and establishes you as a trusted authority.",
           classBorder: "border-b border-white",
         },
         {
           icon: "/calendar-icon.png",
-          title: "Branding & Messaging",
+          title: "Business Identity Kits",
           description:
-            "Beyond just a logo, we develop your full brand identity, consistent visuals, voice and messaging that build trust and recognition.",
-          classBorder: "border-b border-white",
-        },
-        {
-          icon: "/calendar-icon.png",
-          title: "Content Marketing Strategy",
-          description:
-            "Engage your audience with content that educates, inspires and positions you as an industry leader across platforms.",
-          classBorder: "border-b border-white",
-        },
-        {
-          icon: "/calendar-icon.png",
-          title: "Startup Identity Kits",
-          description:
-            "Launch with confidence using complete kits, logos, business cards, email signatures, brochures and more designed for instant credibility.",
+            "Everything you need to hit the ground running, whether you’re launching a startup or kicking off your next marketing campaign. Our startup kits include professionally designed logos, business cards, email signatures, social media profiles, brochures and more. From day one, your business identity will be credible, consistent and ready to make an impact.",
           classBorder: "",
         },
       ],
@@ -426,30 +447,23 @@ function ServiceDetails() {
       Overview2: [
         {
           icon: "/calendar-icon.png",
-          title: "Executive Leadership Placement",
+          title: "Executive Director Placement and Leadership",
           description:
-            "We place seasoned directors to lead daily operations, guide strategic planning, support governance and engage key stakeholders.",
+            "We place experienced leaders to manage day-to-day operations, drive strategic planning, support board governance and act as the liaison between members, partners and stakeholders.",
           classBorder: "border-b border-white",
         },
         {
           icon: "/calendar-icon.png",
-          title: "Strategic Event Management",
+          title: "Event Planning and Coordination",
           description:
-            "From webinars to large conferences, we handle planning, promotion, vendors and execution so you can focus on delivering impact.",
+            "Conferences, webinars, workshops, we plan and manage it all. Our event experts handle timelines, vendors, promotion, registration and execution with precision so you can focus on delivering value.",
           classBorder: "border-b border-white",
         },
         {
           icon: "/calendar-icon.png",
-          title: "Membership Engagement & Growth",
+          title: "Membership and Communications Management",
           description:
-            "We manage onboarding, renewals and ongoing communication to build stronger member relationships and community engagement.",
-          classBorder: "border-b border-white",
-        },
-        {
-          icon: "/calendar-icon.png",
-          title: "Communication Strategy & Content",
-          description:
-            "Consistent messaging through newsletters, updates and social media to keep your audience informed, active and aligned.",
+            "Engagement is everything. We manage member onboarding, renewals and consistent communication such as email newsletters, event updates and social content to keep your community informed and connected.",
           classBorder: "",
         },
       ],
@@ -498,7 +512,7 @@ function ServiceDetails() {
       Overview2: [
         {
           icon: "/calendar-icon.png",
-          title: "Claudio AI – AI-Powered Transcription",
+          title: "Claudio AI-Powered Transcription Built for Legal Professionals",
           description:
             "A purpose-built platform for court reporters and legal professionals, Claudio AI delivers speed, accuracy and industry-focused intelligence.",
           classBorder: "border-b border-white",
@@ -512,6 +526,13 @@ function ServiceDetails() {
         },
         {
           icon: "/calendar-icon.png",
+          title: "Smart Formatting & Grammar-Ready Output",
+          description:
+            "Save up to 20% of editing time. The platform applies customizable formatting rules, grammar clean-up and polish to deliver draft and near-final versions with minimal touch-ups.",
+          classBorder: "border-b border-white",
+        },
+        {
+          icon: "/calendar-icon.png",
           title: "Speaker Identification",
           description:
             "Accurately tag multiple speakers even in complex legal environments like depositions and hearings. Ideal for high-volume or multi-party sessions.",
@@ -519,9 +540,9 @@ function ServiceDetails() {
         },
         {
           icon: "/calendar-icon.png",
-          title: "Smart, Scalable Output Built for Efficiency",
+          title: "Enterprise Features & Custom Integrations",
           description:
-            "Save editing time with grammar-ready formatting and customizable rules all backed by enterprise-grade features like API integrations, secure delivery and domain-specific support.",
+            "Enjoy scalable infrastructure with open APIs, SFTP/Dropbox delivery, domain-specific vocabulary and SLA-backed uptime, everything built for serious production environments.",
           classBorder: "",
         },
       ],
@@ -572,12 +593,12 @@ function ServiceDetails() {
           icon: "/calendar-icon.png",
           title: "Comprehensive Screening Packages",
           description:
-            "Get full-spectrum background checks from criminal history and driving records to drug screenings, credit checks, employment verification and more all customized to your industry needs.",
+            "Get full-spectrum background checks from criminal history and driving records to drug screenings, credit checks, employment verification and more, all customized to your industry needs.",
           classBorder: "border-b border-white",
         },
         {
           icon: "/calendar-icon.png",
-          title: "Smart-Hire Platform",
+          title: "SmartHire Platform",
           description:
             "A centralized client dashboard with live status updates, e-signatures, integrated workflows and direct candidate communication, making screening faster and more transparent.",
           classBorder: "border-b border-white",
