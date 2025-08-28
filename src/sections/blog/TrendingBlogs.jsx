@@ -39,10 +39,10 @@ const TrendingBlogs = () => {
           Trending Blogs
         </motion.h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {/* Large Blog Card */}
           <motion.div
-            className="md:col-span-2 relative rounded-xl overflow-hidden group"
+            className="md:col-span-2 relative rounded-xl overflow-hidden group h-full"
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
@@ -53,7 +53,7 @@ const TrendingBlogs = () => {
             <motion.img
               src={blogs[0].img}
               alt="Blog"
-              className="w-full h-full object-cover"
+              className=""
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.5 }}
             />
@@ -71,9 +71,9 @@ const TrendingBlogs = () => {
          
 
           {/* Small Blog Cards */}
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-6 lg:h-full">
             {blogs.slice(1).map((blog, index) => (
-              <Link to={blog.link} key={index}>
+              <Link to={blog.link} key={index} className="lg:block lg:min-h-[48%]">
                 <motion.div
                   className="relative rounded-xl overflow-hidden group h-full"
                   initial={{ opacity: 0, x: 40 }}

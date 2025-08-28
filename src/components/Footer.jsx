@@ -27,7 +27,7 @@ export default function Footer() {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <Button arrowClass="m" link={"/"} text="Get Started Today" />
+            <Button arrowClass="m" text="Schedule a call now" />
           </motion.div>
 
           {/* Footer Grid */}

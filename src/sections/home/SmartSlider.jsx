@@ -109,6 +109,13 @@ export default function SmartSlider() {
 
   return (
     <section className="bg-gradient-to-br from-[#0052B9] to-[#38ABD0] text-white py-20 relative" id="SmartSlider">
+      <div className="image-top absolute top-0 left-0 w-32 md:w-60 h-32 md:h-60">
+        <img src="/icon-half.png" alt="Featured 1" />
+      </div>
+
+      <div className="image-bottom absolute right-0 -rotate-180 bottom-0 w-32 md:w-60 h-32 md:h-60">
+        <img src="/icon-half.png" alt="Featured 3" />
+      </div>
       <div className=" px-[20px] md:px-[25px] lg:ps-[100px]">
         <div className="lg:flex items-stretch justify-between">
           <motion.div
@@ -132,10 +139,10 @@ export default function SmartSlider() {
 
               <div className="flex items-center gap-2 mb-8">
                 <Button
-                  text="Get Started Today"
+                  text="Schedule a call now"
                   color={"text-white"}
                   arrowClass={"sd"}
-                  link={"/"}
+                  
                 />
               </div>
             </motion.div>

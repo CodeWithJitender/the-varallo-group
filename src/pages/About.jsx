@@ -6,6 +6,7 @@ import Story from '../sections/about/Story'
 import OurFounder from '../sections/about/OurFounder'
 import Team from '../sections/about/Team'
 import Testimonials from '../sections/home/Testimonials'
+import StackingCards from '../sections/about/StackingCards'
 
 function About() {
   return (
@@ -17,6 +18,7 @@ function About() {
       <div className="" id="vision">
         <Vision />
       </div>
+      {/* <StackingCards /> */}
       <div className="" id="our-story">
         <Story />
       </div>

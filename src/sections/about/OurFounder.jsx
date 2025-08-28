@@ -4,8 +4,32 @@ import { FaLinkedin, FaFacebook } from "react-icons/fa";
 
 function OurFounder() {
   return (
-    <section className="bg-gradient-to-r from-sky-600 to-sky-400 md:py-32">
+    <section className="bg-btn relative md:py-32">
+      <div className="image-bottom absolute left-0  top-0 w-32 md:w-60 h-32 md:h-60">
+        <img src="/icon-half.png" alt="Featured 3" />
+      </div>
+      <div className="image-bottom absolute right-0 -rotate-180 bottom-0 w-32 md:w-60 h-32 md:h-60">
+        <img src="/icon-half.png" alt="Featured 3" />
+      </div>
       <div className="container-fluid">
+        <div className="flex md:block mx-auto max-w-[1200px] text-center font-parkinsans mb-10 relative">
+          <span className="hidden md:block md:absolute left-0 top-0 md:translate-x-[-110%] w-10 -mt-5">
+            <img src="q-left.png" className="w-10" alt="" />
+          </span>
+          <p className="md:mb-20  text-p text-white">
+            Our team is the heart of The Varallo Group. They bring dedication,
+            professionalism, and integrity to everything they do. I’m constantly
+            inspired by their commitment to our clients and to each other. It's
+            a privilege to work alongside such talented people who take real
+            pride in delivering excellence every single day. <br />
+            {/* <span><i> — Nancy Varallo, Founder & Executive Director</i></span> */}
+          </p>
+
+          <span className="hidden md:block md:absolute right-0 bottom-0  md:translate-x-[110%]">
+            <img src="q-right.png" className="w-10" alt="" />
+          </span>
+        </div>
+
         <div className="flex flex-col md:flex-row  md:gap-10 bg-white/10 backdrop-blur-lg rounded-2xl ">
           {/* Left Side - Image + Name */}
           <motion.div
@@ -15,9 +39,9 @@ function OurFounder() {
             viewport={{ once: true }}
             className="flex  md:items-start w-full flex-col-reverse lg:flex-row md:w-1/2 items-stretch text-white relative p-5"
           >
-            <div className="flex flex-col text-center gap-4 lg:justify-between  relative z-30">
+            <div className="flex flex-col h-full items-stretch text-center gap-4 lg:justify-between  relative z-30">
               <h2 className="text-h2 font-parkinsans leading-tight text-center md:text-start">
-                Nancy <br className="lg:block hidden"/> Varallo
+                Nancy <br className="lg:block hidden" /> Varallo
               </h2>
               {/* Social Icons */}
               <div className="flex justify-center md:justify-start gap-4">
@@ -40,7 +64,11 @@ function OurFounder() {
               </div>
             </div>
             <div className="lg:absolute bottom-0 right-0 lg:w-[450px] mb-5 lg:mb-0">
-              <img src="founder.png" className="w-full h-auto"  alt="Nancy Varallo" />
+              <img
+                src="founder.png"
+                className="w-full h-auto"
+                alt="Nancy Varallo"
+              />
             </div>
           </motion.div>
 
@@ -52,28 +80,26 @@ function OurFounder() {
             viewport={{ once: true }}
             className="w-full md:w-1/2 text-white p-5"
           >
-
             {/* Quote */}
-            <div className="flex md:block font-parkinsans mb-6 relative">
-              <span className="hidden md:block md:absolute left-0 top-0 md:translate-x-[-110%] w-10 -mt-5">
-                <img src="q-left.png" className="w-10" alt="" />
-              </span>
-              <p className="md:mt-5 text-p">
-                Our team is the heart of The Varallo Group. They bring dedication, professionalism, and integrity to everything they do. I’m constantly inspired by their commitment to our clients and to each other. It's a privilege to work alongside such talented people who take real pride in delivering excellence every single day. <br />
-                {/* <span><i> — Nancy Varallo, Founder & Executive Director</i></span> */}
-              </p>
-
-              <span className="hidden md:block md:absolute right-0 bottom-0  md:translate-y-[50%]">
-                <img src="q-right.png" className="w-10" alt="" />
-              </span>
-            </div>
 
             {/* Description */}
             <p className="text-xl leading-relaxed font-manrope">
-             Nancy Varallo launched her court reporting career in 1979 and founded The Varallo Group in 2001, combining decades of expertise with a bold vision for better, smarter legal support. With a family name rooted in court reporting since 1937, Nancy carries that legacy forward through her unwavering commitment to quality, service and innovation.
+              Nancy Varallo launched her court reporting career in 1979 and
+              founded The Varallo Group in 2001, combining decades of expertise
+              with a bold vision for better, smarter legal support. With a
+              family name rooted in court reporting since 1937, Nancy carries
+              that legacy forward through her unwavering commitment to quality,
+              service and innovation.
             </p>
             <p className="text-xl leading-relaxed font-manrope">
-             From serving as President of the National Court Reporters Association to co-founding the Project to Advance Stenographic Reporting (Project Steno), Nancy has been a powerful advocate for the profession, mentoring students, creating industry programs and even overseeing high-profile cases at Guantanamo Bay. Known affectionately as the “Fearless Leader” by her team, she brings heart, leadership and family-first values to every part of The Varallo Group.
+              From serving as President of the National Court Reporters
+              Association to co-founding the Project to Advance Stenographic
+              Reporting (Project Steno), Nancy has been a powerful advocate for
+              the profession, mentoring students, creating industry programs and
+              even overseeing high-profile cases at Guantanamo Bay. Known
+              affectionately as the “Fearless Leader” by her team, she brings
+              heart, leadership and family-first values to every part of The
+              Varallo Group.
             </p>
           </motion.div>
         </div>

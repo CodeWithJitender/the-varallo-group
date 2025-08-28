@@ -26,7 +26,13 @@ const Vision = () => {
   ];
 
   return (
-    <section className="bg-gradient-to-br from-sky-500 to-sky-600 py-16">
+    <section className="bg-gradient-to-br from-sky-500 to-sky-600 py-16 relative">
+      <div className="image-bottom absolute left-0  top-0 w-32 md:w-60 h-32 md:h-60">
+        <img src="/icon-half.png" alt="Featured 3" />
+      </div>
+      <div className="image-bottom absolute right-0 -rotate-180 bottom-0 w-32 md:w-60 h-32 md:h-60">
+        <img src="/icon-half.png" alt="Featured 3" />
+      </div>
       <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
         {/* Left Content */}
         <motion.div

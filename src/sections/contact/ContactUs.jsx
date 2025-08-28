@@ -38,7 +38,8 @@ const ContactUs = () => {
         >
           <h2 className="text-h2 font-parkinsans font-semibold">Contact Us</h2>
           <p className="font-manrope text-sm lg:text-xl mt-2">
-            Reach out today, we’ll map the way forward with clear strategies and reliable legal assistance..
+            Reach out today, we’ll map the way forward with clear strategies and
+            reliable legal assistance..
           </p>
         </motion.div>
 
@@ -57,7 +58,8 @@ const ContactUs = () => {
                   You tell us. We Listen.
                 </h3>
                 <p className="mb-4 font-manrope text-p lg:text-xl">
-                  What started as a way to help my mum manage her childcare centre.
+                  What started as a way to help my mum manage her childcare
+                  centre.
                 </p>
 
                 <div className="space-y-4 mt-8">
@@ -122,8 +124,9 @@ const ContactUs = () => {
                       >
                         Email us
                         <FaChevronDown
-                          className={`transition-transform duration-300 ${open ? "rotate-180" : ""
-                            }`}
+                          className={`transition-transform duration-300 ${
+                            open ? "rotate-180" : ""
+                          }`}
                         />
                       </button>
 
@@ -200,18 +203,29 @@ const ContactUs = () => {
               Schedule Online
             </h3>
             <p className="text-p lg:text-xl font-manrope text-center mb-6">
-              Once you submit your request, we’ll send a confirmation email within 24 hours.
-              If you haven’t received it by then, please contact our office to confirm we’ve received your scheduling request.
-
+              Once you submit your request, we’ll send a confirmation email
+              within 24 hours. If you haven’t received it by then, please
+              contact our office to confirm we’ve received your scheduling
+              request.
             </p>
 
             {/* Form */}
             <motion.form
+              action="https://formsubmit.co/schedule@thevarallogroup.com"
+              method="POST"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
               className="grid md:grid-cols-2 gap-6"
             >
+              {/* Prevent spam bots */}
+              <input type="hidden" name="_captcha" value="false" />
+              {/* Redirect after submission (optional) */}
+              <input
+                type="hidden"
+                name="_next"
+                value="https://thevarallogroup.com/thank-you"
+              />
               {/* Firm Name */}
               <motion.div custom={0} variants={fadeInUp} className="mb-3">
                 <label className="block font-manrope mb-2 font-bold text-base md:text-xl ">
@@ -219,6 +233,7 @@ const ContactUs = () => {
                 </label>
                 <input
                   type="text"
+      name="first_name"
                   placeholder="Enter first name"
                   className="border font-manrope rounded-lg px-4 py-3 w-full bg-[#F2F2F2] text-xl"
                 />
@@ -231,6 +246,7 @@ const ContactUs = () => {
                 </label>
                 <input
                   type="text"
+      name="attorney_name"
                   placeholder="Enter attorney name"
                   className="border font-manrope rounded-lg px-4 py-3 w-full bg-[#F2F2F2] text-xl"
                 />
@@ -243,6 +259,7 @@ const ContactUs = () => {
                 </label>
                 <input
                   type="text"
+                  name="contact_number"
                   placeholder="Enter contact number"
                   className="border font-manrope rounded-lg px-4 py-3 w-full bg-[#F2F2F2] text-xl"
                 />
@@ -255,6 +272,7 @@ const ContactUs = () => {
                 </label>
                 <input
                   type="text"
+                  name="contact_name"
                   placeholder="Enter contact name"
                   className="border font-manrope rounded-lg px-4 py-3 w-full bg-[#F2F2F2] text-xl"
                 />
@@ -271,6 +289,7 @@ const ContactUs = () => {
                 </label>
                 <input
                   type="email"
+                  name="contact_email"
                   placeholder="Enter email address"
                   className="border font-manrope rounded-lg px-4 py-3 w-full bg-[#F2F2F2] text-xl"
                 />
@@ -292,6 +311,7 @@ const ContactUs = () => {
                 </label>
                 <input
                   type="date"
+                  name="preferred_date"
                   className="border font-manrope rounded-lg px-4 py-3 w-full bg-[#F2F2F2] text-xl"
                 />
               </motion.div>
@@ -303,6 +323,7 @@ const ContactUs = () => {
                 </label>
                 <input
                   type="time"
+                  name="preferred_time"
                   className="border font-manrope rounded-lg px-4 py-3 w-full bg-[#F2F2F2] text-xl"
                 />
               </motion.div>
@@ -313,7 +334,7 @@ const ContactUs = () => {
                   Select State*
                 </label>
                 <div className="border font-manrope rounded-lg px-4 py-3 w-full bg-[#F2F2F2] text-xl">
-                  <select className="w-full bg-[#F2F2F2]">
+                  <select  name="state" className="w-full bg-[#F2F2F2]">
                     <option>Select State</option>
                   </select>
                 </div>
@@ -325,7 +346,7 @@ const ContactUs = () => {
                   Select City*
                 </label>
                 <div className="border font-manrope rounded-lg px-4 py-3 w-full bg-[#F2F2F2] text-xl">
-                  <select className="w-full bg-[#F2F2F2]">
+                  <select name="city" className="w-full bg-[#F2F2F2]">
                     <option>Select City</option>
                   </select>
                 </div>
@@ -338,6 +359,7 @@ const ContactUs = () => {
                 </label>
                 <input
                   type="text"
+                  name="witnesses"
                   placeholder="Enter witness(es)"
                   className="border font-manrope rounded-lg px-4 py-3 w-full bg-[#F2F2F2] text-xl"
                 />
@@ -350,6 +372,7 @@ const ContactUs = () => {
                 </label>
                 <input
                   type="text"
+                  name="estimated_duration"
                   placeholder="Enter duration"
                   className="border font-manrope rounded-lg px-4 py-3 w-full bg-[#F2F2F2] text-xl"
                 />
@@ -362,6 +385,7 @@ const ContactUs = () => {
                 </label>
                 <input
                   type="text"
+                  name="services_needed"
                   placeholder="Enter services needed"
                   className="border font-manrope rounded-lg px-4 py-3 w-full bg-[#F2F2F2] text-xl"
                 />
@@ -374,6 +398,7 @@ const ContactUs = () => {
                 </label>
                 <input
                   type="file"
+                  name="file"
                   className="border font-manrope rounded-lg px-4 py-3 w-full bg-[#F2F2F2] text-xl"
                 />
               </motion.div>
@@ -387,7 +412,6 @@ const ContactUs = () => {
               >
                 <Button
                   text="Start a Conversation"
-                  link="/pay"
                   color={"text-white"}
                   arrowClass="d"
                 />

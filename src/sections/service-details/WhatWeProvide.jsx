@@ -38,7 +38,14 @@ const reverseMarqueeSettings = {
 
 
   return (
-    <div className="bg-grad py-[50px] md:py-[100px] overflow-hidden text-white">
+    <div className="bg-grad py-[50px] md:py-[100px] overflow-hidden text-white relative">
+      <div className="image-top absolute top-0 left-0 w-60 h-60">
+        <img src="/icon-half.png" alt="Featured 1" />
+      </div>
+    
+      <div className="image-bottom absolute right-0 -rotate-180 bottom-0 w-60 h-60">
+        <img src="/icon-half.png" alt="Featured 3" />
+      </div>
       <div className="text-center mb-10 px-5">
         <motion.h2
           className="text-h2 font-parkinsans"

@@ -37,7 +37,7 @@ const HomeHero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            <Button text="Schedule a call now" link="/" arrowClass="d" />
+            <Button text="Schedule a call now" arrowClass="d" />
           </motion.div>
 
           <motion.div

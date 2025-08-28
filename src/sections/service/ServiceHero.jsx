@@ -52,9 +52,8 @@ function ServiceHero() {
             </p>
             <Button
               arrowClass={"sdf"}
-              text={"Get Started Today"}
+              text={"Schedule a call now"}
               color={"text-white"}
-              link={"/"}
             />
           </motion.div>
 
