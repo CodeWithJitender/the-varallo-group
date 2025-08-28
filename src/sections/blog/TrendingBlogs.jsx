@@ -7,19 +7,19 @@ const blogs = [
     title:
       "From Steno to Stream: How Small Court Reporting Firms Can Leverage Tech to Stay Competitive",
     tag: "Latest Blogs",
-    img: "/blog1.png",
+    img: "/blog1.jpg",
     link: "/blog/1"
   },
   {
     title: "The Power of Partnership: How Legal Videographers and Court Reporters Can Grow Together",
     tag: "Latest Blogs",
-    img: "/blog2.png",
+    img: "/blog2.jpg",
     link: "/blog/2"
   },
   {
     title: "Confidentiality Counts: Best Practices for Protecting Client Data in the Digital Age",
     tag: "Latest Blogs",
-    img: "/blog3.png",
+    img: "/blog3.jpg",
     link: "/blog/3"
   },
 ];
