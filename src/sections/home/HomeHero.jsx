@@ -19,7 +19,7 @@ const HomeHero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
           >
-           Smart Support. Real People. Scalable Success.
+           Smart Support. <br /> Real People. <br /> Scalable Success.
           </motion.h1>
 
           <motion.p

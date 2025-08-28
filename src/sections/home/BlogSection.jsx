@@ -1,31 +1,16 @@
 import React from "react";
 import { motion } from "framer-motion";
+import {Blog} from "../../blog.js";
+import { Link, useNavigate } from "react-router-dom";
 
 const blogPosts = [
-  {
-    title: "Confidentiality Counts: Best Practices for Protecting Client Data in the Digital Age",
-    excerpt:
-      "It’s really intriguing to know that in today’s hyper connected and data driven world, where a single click can send information halfway across the globe, confidentiality standards aren’t just a compliance checkbox rather",
-    image: "blog-1.jpg",
-    link: "",
-  },
-  {
-    title: "Marketing on a Budget: How Independent Court Reporting Firms Can Build a Strong ",
-    excerpt:
-      "In a world where every search, click and review influence a potential client’s choice, having a solid online presence for independent court reporting firms isn’t just an extra, it’s essential. ",
-    image: "blog-2.jpg",
-    link: "",
-  },
-  {
-    title: "What Attorneys Wish You Knew: Common Missteps Court Reporters ",
-    excerpt:
-      "The transcript isn’t just words on a page, it’s the heartbeat of every case. You’ve heard it said before one small misstep and the whole case can wobble. That’s exactly the tightrope attorneys walk on",
-    image: "blog-3.jpg",
-    link: "",
-  },
+  Blog[0],
+  Blog[1],
+  Blog[2]
 ];
 
 const BlogSection = () => {
+  const navigate = useNavigate();
   return (
     <section className="container-fluid" id="our-blog">
       <motion.h2
@@ -47,18 +32,19 @@ const BlogSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: index * 0.2 }}
             viewport={{ once: true }}
+            onClick={() => navigate(post.link)}
           >
             <div className="md:w-[55%]">
               <h3 className="text-p lg:text-[30px] font-semibold font-manrope mb-2 sm:mb-5 text-[#262626]">
                 {post.title}
               </h3>
-              <p className="font-manrope text-lg mb-2 sm:mb-4">{post.excerpt}</p>
-              <a
+              <p className="font-manrope text-lg mb-2 sm:mb-4">{post.description}</p>
+              <Link
                 href={post.link}
                 className="font-manrope text-secondary font-medium underline text-[16px]"
               >
                 Read more
-              </a>
+              </Link>
             </div>
             <motion.div
               className="md:w-[45%] flex justify-center md:justify-end"
@@ -68,7 +54,7 @@ const BlogSection = () => {
               viewport={{ once: true }}
             >
               <img
-                src={`./${post.image}`}
+                src={`./${post.img}`}
                 alt={post.title}
                 className="rounded-xl w-full"
               />

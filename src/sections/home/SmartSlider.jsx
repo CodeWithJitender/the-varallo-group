@@ -4,47 +4,57 @@ import Slider from "react-slick";
 import Arrow from "../../components/Arrow";
 import Button from "../../components/Button";
 import { motion } from "framer-motion";
+import { useLocation, useNavigate } from "react-router-dom";
+import { link } from "framer-motion/client";
 
 const smartData = [
   {
     title: "TVG Management",
     desc: "Comprehensive agency management support focused on optimizing your day-to-day operations.",
     image: "smart-1.jpg",
+    link: "/services/tvg-management"
   },
   {
     title: "TVG Reporting",
     desc: "Our nationwide network of court reporters and legal videographers is ready to support your firm wherever you need.",
     image: "smart-2.jpg",
+    link: "/services/tvg-reporting"
   },
   {
     title: "TVG Stream",
     desc: "Cutting edge legal video, trial presentation and event AV solutions.",
     image: "smart-3.jpg",
+    link: "/services/tvg-stream"
   },
   {
     title: "TVG Books",
     desc: "Bookkeeping and financial support services for court reporting and other professional industries.",
     image: "smart-4.jpg",
+    link: "/services/tvg-books"
   },
   {
     title: "TVG Creative",
     desc: "Marketing materials, branding and identity kits for legal and B2B sectors.",
     image: "smart-5.jpg",
+    link: "/services/tvg-creative"
   },
   {
     title: "TVG Connect",
     desc: "Focused management services built for professional associations and organizations.",
     image: "smart-6.jpg",
+    link: "/services/tvg-connect"
   },
   {
     title: "TVG Command",
     desc: "Empowering you with sales support and practical training on leading legal tech platforms.",
     image: "smart-7.jpg",
+    link: "/services/tvg-command"
   },
   {
     title: "TVG Verify",
     desc: "Let us ensure your hiring is secure with reliable background screening and compliance checks, powered by SmartHire.",
     image: "smart-8.jpg",
+    link: "/services/tvg-verify"
   },
   
 ];
@@ -74,6 +84,7 @@ function PrevArrow(props) {
 }
 
 export default function SmartSlider() {
+  const useLo = useNavigate()
   const settings = {
     dots: false,
     infinite: true,
@@ -168,13 +179,14 @@ export default function SmartSlider() {
             <div className="relative">
               <Slider {...settings}>
                 {smartData.map((item, i) => (
-                  <div key={i} className="px-4">
+                  <div key={i}  className="px-4">
                     <motion.div
-                      className="relative rounded-xl overflow-hidden"
+                      className="relative rounded-xl overflow-hidden cursor-pointer"
                       initial={{ opacity: 0, scale: 0.95 }}
                       whileInView={{ opacity: 1, scale: 1 }}
                       transition={{ duration: 0.6, delay: i * 0.2 }}
                       viewport={{ once: true }}
+                      onClick={() => useLo(item.link)}
                     >
                       <img
                         src={item.image}
