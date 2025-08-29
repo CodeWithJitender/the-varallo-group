@@ -143,7 +143,7 @@ const Testimonials = () => {
                   </div>
                   <div>
                     <img
-                      src="./format_quote.png"
+                      src="/format_quote.svg"
                       className="w-12 ms-auto"
                       alt=""
                     />

@@ -35,15 +35,14 @@ const Story = () => {
         {/* Heading */}
         <div className="text-center">
           <h2 className="text-h2 font-parkinsans">
-            Managing a court reporting agency
+            The Varallo’s Journey
+
           </h2>
           <p className="mt-4 font-manrope text-xl max-w-4xl mx-auto">
-            Managing a court reporting agency means balancing client demands,
-            coordinating with reporters, billing cycles and deadlines all while
-            maintaining your firm&apos;s reputation.
+            A family name, a lifelong commitment to excellence.
           </p>
         </div>
-      </div>
+      
 
       {/* Story Content */}
       {item.map((story, index) => (
@@ -92,6 +91,7 @@ const Story = () => {
           </div>
         </motion.div>
       ))}
+      </div>
     </section>
   );
 };
