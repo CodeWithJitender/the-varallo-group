@@ -5,28 +5,49 @@ import Button from "../../components/Button";
 import { motion } from "framer-motion"; // ✅ Use framer-motion here
 import ServiceDetailsHeroPage from "../../components/ServiceDetailsHeroPage";
 import VerticalSlider from "./VerticalSlider";
-
+import Slick from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const ServiceDetailsHero = ({ data }) => {
   const { name, title, pera, link, images } = data;
-  
+  const settings = {
+    dots: false,
+    arrows: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
   return (
     <section className="service-details-hero bg-black text-white relative overflow-hidden p-0">
       <div className="container-fluid mx-auto px-4 grid xl:grid-cols-2 items-center relative z-10">
-        
         {/* Image and Info Cards */}
         <motion.div
-          className="mt-12 lg:mt-0 relative flex justify-center xl:order-2"
+          className="mt-12 lg:mt-0 relative flex justify-center xl:order-2 hidden md:block"
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
-          <div className="relative">
-            {/* Main Image/Slider Component */}
+          <div className="relative ">
             <VerticalSlider images={images} />
-            {/* <ServiceDetailsHeroPage /> */}
           </div>
         </motion.div>
+        <div className="block md:hidden">
+          <Slick {...settings} className="w-[300px] mx-auto max-w-[100%]">
+            {images.map((image, index) => (
+              <div key={index} className="slider-item">
+                <img
+                  src={image}
+                  className="w-full rounded-xl"
+                  alt={`Service slide ${index + 1}`}
+                />
+              </div>
+            ))}
+          </Slick>
+        </div>
         {/* Text Content */}
         <div className="xl:order-1">
           <motion.div
@@ -52,7 +73,7 @@ const ServiceDetailsHero = ({ data }) => {
           </motion.h1>
 
           <motion.p
-            className="text-gray-300 font-monospace text-xl mt-4 xl:max-w-2xl"
+            className="text-white font-monospace text-xl mt-4 xl:max-w-2xl"
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}

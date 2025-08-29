@@ -46,7 +46,7 @@ function OurFounder() {
               {/* Social Icons */}
               <div className="flex justify-center md:justify-start gap-4">
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/nancy-varallo-8346a248/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-white text-sky-600 rounded-full p-2 hover:bg-sky-100 transition"

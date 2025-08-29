@@ -91,7 +91,7 @@ const Team = () => {
                   <h3 className="font-manrope font-medium text-xl">
                     {member.name}
                   </h3>
-                  <p className="text-[#6C6C6C] text-base">{member.role}</p>
+                  <p className="text-base">{member.role}</p>
                 </div>
 
                 <div className="">

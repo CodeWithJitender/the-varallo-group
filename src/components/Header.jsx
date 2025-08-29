@@ -3,10 +3,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "motion/react";
+import ResourcePortalModal from "./ResourcePortalModal";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
+  const [portalOpen, setPortalOpen] = useState(false);
   const location = useLocation();
 
   const menuItems = [
@@ -59,27 +61,20 @@ const Header = () => {
     {
       name: "Contact Us",
       path: "/contact",
-      submenu: [
-        { name: "Support", path: "/contact/support" },
-        { name: "Locations", path: "/contact/locations" },
-      ],
     },
   ];
 
-  // Normalize pathnames like "/about/" -> "/about"
   const normalize = (p) => {
     if (!p) return "";
     if (p !== "/" && p.endsWith("/")) return p.slice(0, -1);
     return p;
   };
 
-  // Smooth scroll after route changes that include a hash
   useEffect(() => {
     if (location.hash) {
       const id = location.hash.slice(1);
       const el = document.getElementById(id);
       if (el) {
-        // slight delay so target exists after route transition
         setTimeout(() => {
           el.scrollIntoView({ behavior: "smooth", block: "start" });
         }, 120);
@@ -87,7 +82,7 @@ const Header = () => {
     }
   }, [location]);
 
-   useEffect(() => {
+  useEffect(() => {
     let lastScrollTop = 0;
     const handleScroll = () => {
       const header = document.getElementById("header");
@@ -103,12 +98,12 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Renders links; if hash is on the current page, intercept and smooth-scroll
   const renderLink = (sub, className = "", closeMenu = true) => {
     const hasHash = sub.path.includes("#");
     if (!hasHash) {
       return (
         <Link
+          key={sub.path}
           to={sub.path}
           className={className}
           onClick={() => {
@@ -124,13 +119,12 @@ const Header = () => {
     const [pathnamePart, hashPartRaw] = sub.path.split("#");
     const pathname = normalize(pathnamePart || "");
     const hash = hashPartRaw || "";
-    const isSamePage =
-      normalize(location.pathname) === (pathname || (hash ? "/" : normalize(location.pathname)));
+    const isSamePage = normalize(location.pathname) === pathname;
 
-    // If on the same page as the anchor, prevent navigation and smooth scroll
     if (isSamePage) {
       return (
         <a
+          key={sub.path}
           href={sub.path}
           className={className}
           onClick={(e) => {
@@ -138,9 +132,7 @@ const Header = () => {
             const el = document.getElementById(hash);
             if (el) {
               el.scrollIntoView({ behavior: "smooth", block: "start" });
-              // update the URL hash without reloading
-              const base = pathname || normalize(location.pathname);
-              window.history.pushState(null, "", `${base}#${hash}`);
+              window.history.pushState(null, "", `${pathname}#${hash}`);
             }
             if (closeMenu) setIsOpen(false);
             setOpenDropdown(null);
@@ -151,9 +143,9 @@ const Header = () => {
       );
     }
 
-    // Different page: let React Router navigate; useEffect will handle scroll
     return (
       <Link
+        key={sub.path}
         to={`${pathname || ""}#${hash}`}
         className={className}
         onClick={() => {
@@ -206,17 +198,17 @@ const Header = () => {
               >
                 <div className="flex items-center gap-1 cursor-pointer">
                   <Link className="font-manrope" to={item.path}>{item.name}</Link>
-                  <FontAwesomeIcon icon={faChevronDown} className="text-xs" />
+                  {item.submenu && <FontAwesomeIcon icon={faChevronDown} className="text-xs" />}
                 </div>
                 <AnimatePresence>
-                  {openDropdown === idx && (
+                  {openDropdown === idx && item.submenu && (
                     <motion.div
                       className="absolute left-0 mt-2 bg-white text-black rounded-lg shadow-lg p-3 w-52"
                       initial={{ opacity: 0, y: -10 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: -10 }}
                     >
-                      {item.submenu.map((sub, sidx) =>
+                      {item.submenu.map((sub) =>
                         renderLink(sub, "block px-3 py-2 rounded-md hover:bg-[#48cae49c]", false)
                       )}
                     </motion.div>
@@ -229,7 +221,7 @@ const Header = () => {
           <div className="flex gap-3">
             <button
               className="border border-white rounded-full px-5 py-2 text-lg font-manrope hover:bg-white hover:text-black transition"
-              onClick={() => window.open("https://www.repagencyworks.com/login.php", "_blank")}
+              onClick={() => setPortalOpen(true)}
             >
               Resource Portal
             </button>
@@ -260,20 +252,22 @@ const Header = () => {
                   onClick={() => setOpenDropdown(openDropdown === idx ? null : idx)}
                 >
                   {item.name}
-                  <FontAwesomeIcon
-                    icon={faChevronDown}
-                    className={`transition-transform ${openDropdown === idx ? "rotate-180" : ""}`}
-                  />
+                  {item.submenu && (
+                    <FontAwesomeIcon
+                      icon={faChevronDown}
+                      className={`transition-transform ${openDropdown === idx ? "rotate-180" : ""}`}
+                    />
+                  )}
                 </button>
                 <AnimatePresence>
-                  {openDropdown === idx && (
+                  {openDropdown === idx && item.submenu && (
                     <motion.div
                       className="pl-4 flex flex-col gap-2 py-2"
                       initial={{ opacity: 0, height: 0 }}
                       animate={{ opacity: 1, height: "auto" }}
                       exit={{ opacity: 0, height: 0 }}
                     >
-                      {item.submenu.map((sub, sidx) =>
+                      {item.submenu.map((sub) =>
                         renderLink(sub, "text-sm py-1 border-b border-gray-700", true)
                       )}
                     </motion.div>
@@ -300,6 +294,7 @@ const Header = () => {
           </motion.div>
         )}
       </AnimatePresence>
+      <ResourcePortalModal isOpen={portalOpen} onClose={() => setPortalOpen(false)} />
     </motion.header>
   );
 };

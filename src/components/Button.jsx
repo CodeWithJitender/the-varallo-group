@@ -13,7 +13,7 @@ function Button({ text, link, arrowClass, color }) {
     <>
       {link ? (
         // When link is provided -> Normal <Link>
-        <Link to={link} className={`main-btn flex ${color}`}>
+        <Link to={link} className={`main-btn flex font-manrope ${color}`}>
           <div className="text bg-secondary text-base leading-10 lg:text-xl px-6 lg:leading-[40px] rounded-[50px]">
             {text}
           </div>
@@ -21,7 +21,7 @@ function Button({ text, link, arrowClass, color }) {
         </Link>
       ) : (
         // When no link -> act like button
-        <button onClick={handleOpen} className={`main-btn flex ${color}`}>
+        <button onClick={handleOpen} className={`main-btn flex font-manrope ${color}`}>
           <div className="text bg-secondary text-base leading-10 lg:text-xl px-6 lg:leading-[40px] rounded-[50px]">
             {text}
           </div>

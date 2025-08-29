@@ -35,7 +35,7 @@ const BlogSection = () => {
             onClick={() => navigate(post.link)}
           >
             <div className="md:w-[55%]">
-              <h3 className="text-p lg:text-[30px] font-semibold font-manrope mb-2 sm:mb-5 text-[#262626]">
+              <h3 className="text-p lg:text-[30px] font-semibold font-manrope mb-2 sm:mb-5 ">
                 {post.title}
               </h3>
               <p className="font-manrope text-lg mb-2 sm:mb-4">{post.description}</p>

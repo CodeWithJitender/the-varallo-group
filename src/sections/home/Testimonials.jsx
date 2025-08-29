@@ -96,14 +96,14 @@ const Testimonials = () => {
     <div className="testimonials bg-white pb-10 relative text-center" id="testimonials">
       <div className="container-fluid">
         <motion.h2
-          className="text-h2 font-medium font-parkinsans text-gray-900 mb-12"
+          className="text-h2 font-medium font-parkinsans  mb-12"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-         Why Our Clients Choose Us <br />
-         Again and Again
+         Why Our Clients Choose Us <br className="hidden md:block" />
+         Again & Again
         </motion.h2>
 
         <motion.div
@@ -131,13 +131,13 @@ const Testimonials = () => {
                       className="w-12 h-12 rounded-full mr-3"
                     /> */}
                     <div className="text-left">
-                      <p className="text-xl text-tertiary">{item.name}</p>
-                      <p className="text-base font-light text-tertiary">
+                      <p className="text-xl font-manrope">{item.name}</p>
+                      <p className="text-base font-light font-manrope">
                         {item.role}
                       </p>
                     </div>
                   </div>
-                  <p className="text-tertiary text-left font-medium mb-6 font-manrope text-base leading-6">
+                  <p className=" text-left open-sans font-medium mb-6 font-manrope text-xl leading-6">
                     {item.text}
                   </p>
                   </div>

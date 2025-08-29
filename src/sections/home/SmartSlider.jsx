@@ -198,7 +198,7 @@ export default function SmartSlider() {
                           <h4 className="font-medium text-p font-manrope mb-1">
                             {item.title}
                           </h4>
-                          <p className="font-medium text-base leading-6 text-[#FFFFFFA1]">
+                          <p className="font-medium text-base leading-6 text-white">
                             {item.desc}
                           </p>
                         </div>

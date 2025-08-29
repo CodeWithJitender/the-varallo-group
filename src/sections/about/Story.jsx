@@ -37,7 +37,7 @@ const Story = () => {
           <h2 className="text-h2 font-parkinsans">
             Managing a court reporting agency
           </h2>
-          <p className="mt-4 font-manrope text-[#00100D] text-xl max-w-4xl mx-auto">
+          <p className="mt-4 font-manrope text-xl max-w-4xl mx-auto">
             Managing a court reporting agency means balancing client demands,
             coordinating with reporters, billing cycles and deadlines all while
             maintaining your firm&apos;s reputation.
@@ -84,7 +84,7 @@ const Story = () => {
                 <h3 className="text-h2 mb-4 font-parkinsans max-w-[300px] ">
                   {story.title}
                 </h3>
-                <p className="font-manrope text-[#00100D] text-base md:text-lg lg:text-xl">
+                <p className="font-manrope  text-base md:text-lg lg:text-xl">
                   {story.para}
                 </p>
               </motion.div>

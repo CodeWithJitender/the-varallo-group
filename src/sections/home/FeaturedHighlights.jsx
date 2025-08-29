@@ -61,7 +61,7 @@ export default function FeaturedHighlights() {
                 {item.title} <br />
                 {item.title2}
               </h2>
-              <p className="text-[#FFFFFFA1] mb-2 md:mb-6 font-manrope">{item.text}</p>
+              <p className="text-white mb-2 md:mb-6 font-manrope">{item.text}</p>
               <Button link={item.link}  text={item.btnText} key={idx} />
             </motion.div>
 

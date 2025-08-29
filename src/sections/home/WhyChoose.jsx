@@ -57,7 +57,7 @@ const HeroSection = () => {
            Experience You Trust. <br /> Support You Deserve.
           </h1>
           <motion.p
-            className="text-gray-600 mt-6 lg:max-w-[40%] font-manrope text-base"
+            className=" mt-6 lg:max-w-[40%] font-manrope text-base"
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}

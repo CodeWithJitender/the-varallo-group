@@ -23,7 +23,7 @@ const HomeHero = () => {
           </motion.h1>
 
           <motion.p
-            className="text-gray-300 font-monospace text-xl mt-4 max-w-[500px]"
+            className="text-white font-monospace text-xl mt-4 max-w-[500px]"
             initial={{ opacity: 0, y: 40 }} // from bottom
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}

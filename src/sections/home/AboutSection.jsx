@@ -29,7 +29,7 @@ const AboutSection = () => {
                 Delivering Trusted Solutions to Court Reporting Firms Everywhere
 
                 </h3>
-                <p className="text-tertiary mt-2 font-manrope">
+                <p className=" mt-2 font-manrope">
                  With more than 50 years of court reporting expertise, The Varallo Group combines a rich legacy, unwavering precision and forward-thinking innovation to empower and support your firm every step of the way.
 
                 </p>
@@ -62,7 +62,7 @@ const AboutSection = () => {
                   <h3 className="mb-4 text-h3 font-manrope">
                     What Sets Us Apart
                   </h3>
-                  <p className="text-tertiary text-xl max-w-[500px] mt-2 ">
+                  <p className=" text-xl max-w-[500px] mt-2 ">
                     Our handpicked team draws from decades of experience, delivering service with precision and professionalism.  Think of us as a trusted extension of your team, dedicated to driving results together.
                   </p>
                 </div>
@@ -82,29 +82,29 @@ const AboutSection = () => {
                 >
                   {[
                     { 
-                      icon: faCamera, 
+                      icon: '/ab-1.png', 
                       title: "Technology-Driven", 
                       description: "We leverage advanced tools to streamline scheduling, delivery and communication so you can scale with confidence. " 
                     },
                     { 
-                      icon: faLock, 
+                      icon: '/ab-2.png', 
                       title: "Confidential & Reliable", 
                       description: "We recognize the trust you’ve placed in us and we’re dedicated to protecting the confidentiality of your private company information. " 
                     },
                     { 
-                      icon: faLock, 
+                      icon: '/ab-3.png', 
                       title: "People First", 
                       description: "It’s not just what we do, it’s about the people we serve. Our dedicated team brings genuine passion to help your business thrive and succeed." 
                     }
                   ].map((card, index) => (
                     <div key={index} className="flex items-start flex-col sm:flex-row md:flex-col lg:flex-row gap-4 justify-between mb-4 md:mb-8">
-                      <div className="bg-grad text-white p-3 rounded-[3px]">
-                        <FontAwesomeIcon icon={card.icon} />
+                      <div className="">
+                        <img src={card.icon} alt={card.title} className="w-full max-w-[50px] h-auto" />
                       </div>
-                      <h4 className="font-medium font-manrope text-tertiary text-p sm:w-[28%] md:w-full lg:w-[25%]">
+                      <h4 className="font-medium font-manrope text-black text-p sm:w-[28%] md:w-full lg:w-[25%]">
                         {card.title}
                       </h4>
-                      <p className="font-manrope text-tertiary sm:w-[40%] md:w-full lg:w-[60%]">
+                      <p className="font-manrope text-black sm:w-[40%] md:w-full lg:w-[60%]">
                         {card.description}
                       </p>
                   </div>))}

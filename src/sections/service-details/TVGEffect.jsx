@@ -58,7 +58,7 @@ export default function TVGEffect({ data }) {
                   >
                     {item.number}
                   </div>
-                  <div className="text-sm md:text-base font-manrope text-[#000000A1] mt-1">
+                  <div className="text-sm md:text-base font-manrope  mt-1">
                     {item.label}
                   </div>
                 </motion.div>
