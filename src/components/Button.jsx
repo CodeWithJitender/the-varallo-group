@@ -101,7 +101,7 @@ function Button({ text, link, arrowClass, color }) {
 
               {/* Social Icons */}
               <div className="flex space-x-4">
-                <a href="#" className="bg-btn text-white w-10 h-10 flex items-center justify-center rounded-full">
+                <a href="https://www.linkedin.com/company/the-varallo-group/" target="_blank" className="bg-btn text-white w-10 h-10 flex items-center justify-center rounded-full">
                   <i className="fab fa-linkedin-in"></i>
                 </a>
                 <a href="#" className="bg-btn text-white w-10 h-10 flex items-center justify-center rounded-full">

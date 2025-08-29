@@ -41,7 +41,7 @@ export default function VerticalStatsSlider({ stats }) {
               <h3 className="text-h3 font-medium font-parkinsans">
                 {stat.title}
               </h3>
-              <p className="text-black font-manrope text-xl text-end max-w-[300px] pe-5">
+              <p className="text-black font-manrope text-xl text-end max-w-[350px] pe-5">
                 {stat.description}
               </p>
             </div>

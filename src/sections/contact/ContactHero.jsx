@@ -50,7 +50,7 @@ function ContactHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
-          <Button text="Get Started Today" link="/pay" arrowClass="d" />
+          <Button text="Schedule a call now" arrowClass="d" />
         </motion.div>
        <div className="mt-5">
          {/* <motion.img

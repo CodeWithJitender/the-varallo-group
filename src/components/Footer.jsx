@@ -65,9 +65,9 @@ export default function Footer() {
                   { label: "Home", path: "/" },
                   { label: "About Us", path: "/about" },
                   { label: "Services", path: "/services" },
-                  { label: "Blogs", path: "/blogs" },
+                  { label: "Blogs", path: "/blog" },
                   { label: "Contact Us", path: "/contact" },
-                  { label: "Legal Policies", path: "/" },
+                  // { label: "Legal Policies", path: "/" },
                 ].map((item, i) => (
                   <li key={i}>
                     <Link
@@ -97,7 +97,7 @@ export default function Footer() {
                   {["facebook-f", "linkedin-in"].map((icon, idx) => (
                     <motion.a
                       key={idx}
-                      href="https://www.facebook.com/profile.php?id=100057624812642"
+                      href="https://www.linkedin.com/company/the-varallo-group/"
                       target="_blank"
                       rel="noopener noreferrer"
                       initial={{ scale: 1 }}
