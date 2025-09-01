@@ -88,7 +88,7 @@ const reverseMarqueeSettings = {
                 viewport={{ once: true }}
               >
                 {/* <img src={service.icon} className="w-5" alt="" /> */}
-                <span>{service.text}</span>
+                <span className="capitalize">{service.text}</span>
               </motion.div>
             </div>
           ))}
@@ -115,7 +115,7 @@ const reverseMarqueeSettings = {
                 viewport={{ once: true }}
               >
                 {/* <img src={service.icon} className="w-5" alt="" /> */}
-                <span>{service.text}</span>
+                <span className="capitalize">{service.text}</span>
               </motion.div>
             </div>
           ))}

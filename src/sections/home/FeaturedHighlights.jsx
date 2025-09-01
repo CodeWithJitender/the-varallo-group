@@ -9,7 +9,7 @@ const data = [
     text: "With trusted professionals across all 50 states, we offer personalized court reporting and legal services backed by decades of regional expertise.",
     img: "./featured-1.jpg",
     link: "/services  ",
-    btnText: "Explore More",
+    btnText: "Learn More",
   },
   {
     title: "One Team.",
@@ -17,7 +17,7 @@ const data = [
     text: "From court reporting coverage to administrative and business support, our experienced team offers a comprehensive range of services customized to meet your firm’s unique needs.",
     img: "./featured-2.jpg",
     link: "/services  ",
-    btnText: "Explore More",
+    btnText: "Learn More",
   },
   {
     title: "Tech-Driven. ",
@@ -25,7 +25,8 @@ const data = [
     text: "We combine advanced technology with genuine human insight to deliver efficient, secure and attentive support because behind every service is a team that truly cares.",
     img: "./featured-3.jpg",
     link: "/services  ",
-    btnText: "Explore More",
+    btnText: "Learn More",
+    
   },
 ];
 

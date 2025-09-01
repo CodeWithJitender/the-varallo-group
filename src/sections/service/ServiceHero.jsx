@@ -42,7 +42,9 @@ function ServiceHero() {
             variants={centerVariants}
           >
             <h1 className="text-h2 font-parkinsans text-center text-white font-normal capitalize">
-              Support That Understands You
+             A Support Company that Understands Your Business
+
+
             </h1>
             <img src="./s-hero.gif" className="m-auto" alt="" />
             <p className="text-xl text-center text-white font-manrope">

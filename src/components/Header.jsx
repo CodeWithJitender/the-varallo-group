@@ -15,25 +15,25 @@ const Header = () => {
     {
       name: "Home",
       path: "/",
-      submenu: [
-        { name: "Our Expertise", path: "/#our-expertise" },
-        { name: "Services", path: "/#services" },
-        { name: "Metrics", path: "/#metrics" },
-        { name: "Featured", path: "/#featured" },
-        { name: "Testimonials", path: "/#testimonials" },
-        { name: "Our Blog", path: "/#our-blog" },
-      ],
+      // submenu: [
+      //   { name: "Our Expertise", path: "/#our-expertise" },
+      //   { name: "Services", path: "/#services" },
+      //   { name: "Metrics", path: "/#metrics" },
+      //   { name: "Featured", path: "/#featured" },
+      //   { name: "Testimonials", path: "/#testimonials" },
+      //   { name: "Our Blog", path: "/#our-blog" },
+      // ],
     },
     {
       name: "About Us",
       path: "/about",
-      submenu: [
-        { name: "Mission", path: "/about#mission" },
-        { name: "Vision", path: "/about#vision" },
-        { name: "Our Story", path: "/about#our-story" },
-        { name: "Our Founder", path: "/about#founder" },
-        { name: "Our Experts", path: "/about#team" },
-      ],
+      // submenu: [
+      //   { name: "Mission", path: "/about#mission" },
+      //   { name: "Vision", path: "/about#vision" },
+      //   { name: "Our Story", path: "/about#our-story" },
+      //   { name: "Our Founder", path: "/about#founder" },
+      //   { name: "Our Experts", path: "/about#team" },
+      // ],
     },
     {
       name: "Services",
@@ -52,11 +52,11 @@ const Header = () => {
     {
       name: "Blog",
       path: "/blog",
-      submenu: [
-        { name: "Trending Blogs", path: "/blog#trending-blogs" },
-        { name: "Latest Blogs", path: "/blog#latest-blogs" },
-        { name: "Popular Blogs", path: "/blog#popular-blogs" },
-      ],
+      // submenu: [
+      //   { name: "Trending Blogs", path: "/blog#trending-blogs" },
+      //   { name: "Latest Blogs", path: "/blog#latest-blogs" },
+      //   { name: "Popular Blogs", path: "/blog#popular-blogs" },
+      // ],
     },
     {
       name: "Contact Us",

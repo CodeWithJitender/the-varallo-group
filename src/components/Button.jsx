@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Arrow from "./Arrow";
 import { MapPin, Phone, Clock, Mail } from "lucide-react"; // ✅ Import icons
 
-function Button({ text, link, arrowClass, color }) {
+function Button({ text, link, arrowClass, color, size }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleOpen = () => setIsOpen(true);
@@ -14,7 +14,7 @@ function Button({ text, link, arrowClass, color }) {
       {link ? (
         // When link is provided -> Normal <Link>
         <Link to={link} className={`main-btn flex font-manrope ${color}`}>
-          <div className="text bg-secondary text-base leading-10 lg:text-xl px-6 lg:leading-[40px] rounded-[50px]">
+          <div className="text bg-secondary text-base leading-10 lg:text-lg py-1 px-6 lg:leading-[40px] rounded-[50px]">
             {text}
           </div>
           {arrowClass && <Arrow customClass="bg-secondary -rotate-45" />}
@@ -22,10 +22,10 @@ function Button({ text, link, arrowClass, color }) {
       ) : (
         // When no link -> act like button
         <button onClick={handleOpen} className={`main-btn flex font-manrope ${color}`}>
-          <div className="text bg-secondary text-base leading-10 lg:text-xl px-6 lg:leading-[40px] rounded-[50px]">
+          <div className="text bg-secondary text-base lg:text-lg leading-10 py-1 px-6 lg:leading-[40px] rounded-[50px]">
             {text}
           </div>
-          {arrowClass && <Arrow customClass="bg-secondary -rotate-45" />}
+          {arrowClass && <Arrow customClass="bg-secondary -rotate-45 " />}
         </button>
       )}
 

@@ -63,7 +63,8 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            For law firms that value reliability, accuracy and confidentiality, our team delivers more than just services; we deliver peace of mind.
+          For court reporting firms that value reliability, accuracy and confidentiality, our team delivers more than just services; we deliver peace of mind.
+
           </motion.p>
         </motion.div>
 
@@ -96,7 +97,7 @@ const HeroSection = () => {
             >
               <div className="rounded-xl p-4 text-white text-sm font-medium bg-btn flex flex-col justify-between">
                 <p className="font-manrope text-xl leading-6 md:leading-8">
-                 Decades of expertise led by Nancy  trusted by firms nationwide.
+                 Decades of expertise, led by Nancy Varallo, trusted by firms nationwide.
                 </p>
                 <Link to={"/services"} className="text-base mt-5 font-manrope leading-8">
                   Learn More

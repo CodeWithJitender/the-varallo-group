@@ -24,7 +24,7 @@ const services = [
     link: "/services/tvg-books",
     img: "./books.jpg",
   },
-  
+
   {
     title: "TVG Connect",
     content:
@@ -42,7 +42,7 @@ const services = [
   {
     title: "TVG Creative",
     content:
-      "Whether you’re launching a new venture or refreshing your digital presence, how you show up matters. In today’s fast-moving world, first impressions aren’t just visual, they're strategic. That’s where TVG Creative steps in. We provide full-spectrum digital marketing, branding and design services customized for the legal and B2B industries. From law firm websites to startup identity kits, we help you cut through the noise, attract the right audience and communicate your value with clarity and style.",
+      "Whether you’re launching a new venture or refreshing your digital presence, how you show up matters. In today’s fast-moving world, first impressions aren’t just visual, they're strategic. That’s where TVG Creative steps in. We provide full-spectrum digital marketing, branding and design services customized for the legal and B2B industries. From marketing materials to start-up identity kits, we help you cut through the noise, attract the right audience and communicate your value with clarity and style.",
     link: "/services/tvg-creative",
     img: "./creative.jpg",
   },
@@ -56,7 +56,7 @@ const services = [
   {
     title: "TVG Command",
     content:
-      "The legal industry evolves, so should your technology. From court reporting to case production, efficiency and accuracy are everything. That’s why more reporting firms are turning to AI-powered platforms that don’t just keep up, they lead. TVG Command helps you modernize your transcription workflow with cutting-edge platform solutions. As a U.S. sales partner for Claudio AI and other legal-first platforms, we connect you with tools designed to scale your reporting business, reduce manual work  without sacrificing accuracy.",
+      "As the legal industry evolves, so should your technology. From court reporting to case production, efficiency and accuracy are everything. That’s why more reporting firms are turning to AI-powered platforms that don’t just keep up, they lead. TVG Command helps you modernize your transcription workflow with cutting-edge platform solutions. As a U.S. sales partner for Claudio AI and other legal-first platforms, we connect you with tools designed to scale your reporting business, reduce manual work  without sacrificing accuracy.",
     link: "/services/tvg-command",
     img: "./command.jpg",
   },
@@ -107,18 +107,17 @@ const ServicesGrid = () => {
 
                 {/* Title & arrow at bottom (always visible) */}
                 <div className="absolute bottom-0 left-0 right-0 w-full z-10">
-  {/* Gradient Background */}
-  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-black/1"></div>
+                  {/* Gradient Background */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-black/1"></div>
 
-  {/* Content */}
-  <div className="relative p-4 text-white text-xl flex items-center justify-between w-full">
-    <h3 className="font-normal font-parkinsans text-p sm:text-[40px]">
-      {item.title}
-    </h3>
-    <img src="l-arrow.png" className="max-w-[100px]" alt="" />
-  </div>
-</div>
-
+                  {/* Content */}
+                  <div className="relative p-4 text-white text-xl flex items-center justify-between w-full group-hover:opacity-0 transition duration-300">
+                    <h3 className="font-normal font-parkinsans text-p sm:text-[40px]">
+                      {item.title}
+                    </h3>
+                    <img src="l-arrow.png" className="max-w-[100px]" alt="" />
+                  </div>
+                </div>
               </div>
 
               {/* Hover content overlay */}

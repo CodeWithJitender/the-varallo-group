@@ -19,7 +19,7 @@ const HomeHero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
           >
-           Smart Support. <br /> Real People. <br /> Scalable Success.
+           Expertise To Support You Every Step of the Way
           </motion.h1>
 
           <motion.p
@@ -28,7 +28,7 @@ const HomeHero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-          We partner with court reporting agencies to streamline logistics, enhance capacity and elevate your service delivery from transcripts to tech.
+         Specialized Expertise in Legal, Non-profit and Professional Services 
           </motion.p>
 
           <motion.div
@@ -37,10 +37,10 @@ const HomeHero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            <Button text="Schedule a call now" arrowClass="d" />
+            <Button text="Find out more" arrowClass="d" />
           </motion.div>
 
-          <motion.div
+          {/* <motion.div
             className="relative z-10 mt-20 max-w-[500px]"
             initial={{ opacity: 0, y: 40 }} // from bottom
             animate={{ opacity: 1, y: 0 }}
@@ -54,7 +54,7 @@ const HomeHero = () => {
                 Learn More
               </Link>
             </div>
-          </motion.div>
+          </motion.div> */}
         </div>
 
         {/* Image and Info Cards */}

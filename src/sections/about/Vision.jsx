@@ -49,7 +49,7 @@ const Vision = () => {
             viewport={{ once: true }}
             className="text-h2 mb-5"
           >
-            Empowering Progress. Elevating Standards.
+            Empowering Court Reporters
           </motion.h2>
 
           <motion.p
@@ -59,7 +59,8 @@ const Vision = () => {
             viewport={{ once: true }}
             className="mb-5 leading-relaxed font-manrope text-xl"
           >
-           To be the trusted partner powering the court reporting community with expert, scalable support.
+          We strive to be the trusted partner powering the court reporting community with an expert team and scalable support. 
+
 
           </motion.p>
           <motion.p
@@ -69,7 +70,8 @@ const Vision = () => {
             viewport={{ once: true }}
             className="mb-5 leading-relaxed font-manrope text-xl"
           >
-          We’re building a future where every firm, big or small, has access to proven solutions backed by experience. Through smart tech and dedicated people, we’re raising the industry, one partnership at a time.
+         We’re building a future where every firm, big or small, has access to proven solutions backed by experience.  Through smart tech and passionate people, we’re supporting the industry, one partnership at a time. 
+
           </motion.p>
 {/* 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 xl:grid-cols-2 gap-8">

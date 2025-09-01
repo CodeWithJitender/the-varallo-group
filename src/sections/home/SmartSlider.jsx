@@ -150,7 +150,7 @@ export default function SmartSlider() {
 
               <div className="flex items-center gap-2 mb-8">
                 <Button
-                  text="Schedule a call now"
+                  text="Let's Get Started"
                   color={"text-white"}
                   arrowClass={"sd"}
                   
