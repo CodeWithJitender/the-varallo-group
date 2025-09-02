@@ -267,49 +267,49 @@ function ServiceDetails() {
       },
       Overview2: [
         {
-          icon: "/wwo-icon/m1.png",
+          icon: "/wwo-icon/s1.png",
           title: "Remote Deposition Setup & Hosting",
           description:
             "We manage platform access, scheduling, permissions and environment control, so you don’t have to.",
           classBorder: "border-b border-white",
         },
         {
-          icon: "/wwo-icon/m1.png",
+          icon: "/wwo-icon/s2.png",
           title: "Participant Training & Onboarding",
           description:
             "Customized guidance for attorneys, clients and witnesses to ensure confidence and preparedness before every session.",
           classBorder: "border-b border-white",
         },
         {
-          icon: "/wwo-icon/m1.png",
+          icon: "/wwo-icon/s3.png",
           title: "Live Technical Support",
           description:
             "Real-time troubleshooting during depositions and hearings to minimize disruptions and uphold professionalism.",
           classBorder: "border-b border-white",
         },
         {
-          icon: "/wwo-icon/m1.png",
+          icon: "/wwo-icon/s4.png",
           title: "Secure Exhibit Management",
           description:
             "Confidential document sharing, digital exhibit marking and real-time presentation tools to keep proceedings efficient and organized.",
           classBorder: "border-b border-white",
         },
         {
-          icon: "/wwo-icon/m1.png",
+          icon: "/wwo-icon/s5.png",
           title: "Session Recording & Archiving",
           description:
             "Comprehensive video and audio capture with optional transcript syncing, securely stored and easily accessible when needed.",
           classBorder: "border-b border-white",
         },
         {
-          icon: "/wwo-icon/m1.png",
+          icon: "/wwo-icon/s6.png",
           title: "Trial Technician & Hot-Seat Operator Services",
           description:
             "Skilled in-courtroom support for exhibit displays, video playback and technology coordination, assuring flawless execution under pressure.",
           classBorder: "border-b border-white",
         },
         {
-          icon: "/wwo-icon/m1.png",
+          icon: "/wwo-icon/s7.png",
           title: "Trial Equipment Rentals",
           description:
             "Access professional-grade courtroom equipment including screens, projectors and audio systems with full setup and on-site support.",
@@ -481,7 +481,7 @@ function ServiceDetails() {
           title: "Business Identity Kits",
           description:
             "Everything you need to hit the ground running, whether you’re launching a startup or kicking off your next marketing campaign. Our startup kits include professionally designed logos, business cards, email signatures, social media profiles, brochures and more. From day one, your business identity will be credible, consistent and ready to make an impact.",
-          classBorder: "",
+          classBorder: "border-b border-white",
         },
         {
           icon: "/wwo-icon/c3.png",
