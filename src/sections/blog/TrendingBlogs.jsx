@@ -27,17 +27,9 @@ const blogs = [
 const TrendingBlogs = () => {
   return (
     <section>
-      <div className="container-fluid">
+      <div className="max-w-[1600px] m-auto pb-[100px]  px-[20px] md:px-[30px] lg:px-[50px]">
         {/* Heading */}
-        <motion.h2
-          className="text-center font-parkinsans text-h2 font-semibold mb-10"
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
-          Trending Blogs
-        </motion.h2>
+       
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {/* Large Blog Card */}
@@ -53,7 +45,7 @@ const TrendingBlogs = () => {
             <motion.img
               src={blogs[0].img}
               alt="Blog"
-              className=""
+              className="w-full h-full object-cover"
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.5 }}
             />

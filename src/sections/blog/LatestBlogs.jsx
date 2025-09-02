@@ -36,7 +36,7 @@ const LatestBlogs = () => {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        Latest Blogs
+        Latest Posts
       </motion.h2>
 
       <div className="space-y-12 max-w-4xl mx-auto">

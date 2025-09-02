@@ -1,0 +1,70 @@
+:root {
+  --color-text-general: #555;
+  --color-background-light: #fff;
+  --color-pale-grey: #eaeaec;
+  --font-general: 'Open Sans', sans-serif;
+}
+
+body {
+  font-family: var(--font-general);
+}
+
+.select-list {
+  font-family: var(--font-general);
+  color: var(--color-text-general);
+  background: #F2F2F2;
+  position: relative;
+  display: inline-block;
+}
+
+.select-list .title {
+  display: block;
+  /* cursor: pointer; */
+  background: #F2F2F2;
+  /* border: 1px solid var(--color-pale-grey); */
+  /* border-radius: 5px; */
+  /* padding: 10px 15px; */
+}
+
+.select-list .title::after {
+  display: inline-block;
+  content: '>';
+  position: absolute;
+  right: 20px;
+  margin-left: 15px;
+  font-size: 11px;
+  transform: rotate(90deg) scale(1,2);
+}
+
+.select-list .title:hover {
+  background: #F2F2F2;
+}
+
+.select-options {
+  margin-top: 5px;
+  display: block;
+  position: absolute;
+  z-index: 500;
+  border: 1px solid var(--color-pale-grey);
+  background: var(--color-background-light);
+  border-radius: 5px;
+  min-width: 90%;
+}
+
+.select-options .option {
+  display: flex;
+  align-items: center;
+}
+
+.select-options .option label {
+  display: inline-block;
+  padding: 10px 30px 10px 10px;
+}
+
+.select-options .option:hover {
+  background: var(--color-pale-grey);
+}
+
+.select-options .option input {
+  margin: 10px 0 12px 15px;
+}

@@ -93,7 +93,7 @@ function ServiceDetails() {
           title: "Accurate Payroll & Bookkeeping",
           description:
             "We process reporter payments and manage day-to-day bookkeeping, helping you maintain financial clarity and control.",
-          classBorder: "border-b border-white",
+          classBorder: "",
         },
       ],
     },

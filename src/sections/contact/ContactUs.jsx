@@ -3,6 +3,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FiPhone, FiMail, FiClock, FiMapPin } from "react-icons/fi";
 import { FaLinkedin, FaFacebook, FaChevronDown } from "react-icons/fa";
 import Button from "../../components/Button";
+import MultiSelectDropdown from "./MultiSelectDropdown";
+import Arrow from "../../components/Arrow";
 
 const ContactUs = () => {
   const [open, setOpen] = useState(false);
@@ -17,6 +19,20 @@ const ContactUs = () => {
     // { name: "Technical Help", email: "tech@example.com" },
     // { name: "Feedback", email: "feedback@example.com" },
   ];
+  const options = [
+    { value: "TVG  Management", label: "TVG  Management" },
+    { value: "TVG  Reporting", label: "TVG  Reporting" },
+    { value: "TVG  Stream", label: "TVG  Stream" },
+    { value: "TVG Books", label: "TVG Books" },
+    { value: "TVG Creative", label: "TVG Creative" },
+    { value: "TVG Connect", label: "TVG Connect" },
+    { value: "TVG Command", label: "TVG Command" },
+    { value: "TVG Verify", label: "TVG Verify" },
+  ];
+  const handleSelectionChange = (selected) => {
+    console.log("Selected:", selected);
+  };
+
   const fadeInUp = {
     hidden: { opacity: 0, y: 30 },
     visible: (i) => ({
@@ -233,7 +249,7 @@ const ContactUs = () => {
                 </label>
                 <input
                   type="text"
-      name="first_name"
+                  name="first_name"
                   placeholder="Enter first name"
                   className="border font-manrope rounded-lg px-4 py-3 w-full bg-[#F2F2F2] text-xl"
                 />
@@ -246,7 +262,7 @@ const ContactUs = () => {
                 </label>
                 <input
                   type="text"
-      name="attorney_name"
+                  name="attorney_name"
                   placeholder="Enter attorney name"
                   className="border font-manrope rounded-lg px-4 py-3 w-full bg-[#F2F2F2] text-xl"
                 />
@@ -334,7 +350,7 @@ const ContactUs = () => {
                   Select State*
                 </label>
                 <div className="border font-manrope rounded-lg px-4 py-3 w-full bg-[#F2F2F2] text-xl">
-                  <select  name="state" className="w-full bg-[#F2F2F2]">
+                  <select name="state" className="w-full bg-[#F2F2F2]">
                     <option>Select State</option>
                   </select>
                 </div>
@@ -383,11 +399,16 @@ const ContactUs = () => {
                 <label className="block font-manrope mb-2 font-bold text-base md:text-xl">
                   Services Needed*
                 </label>
-                <input
+                {/* <input
                   type="text"
                   name="services_needed"
                   placeholder="Enter services needed"
                   className="border font-manrope rounded-lg px-4 py-3 w-full bg-[#F2F2F2] text-xl"
+                /> */}
+                <MultiSelectDropdown
+                  options={options}
+                  title="Configure Table"
+                  onChange={handleSelectionChange}
                 />
               </motion.div>
 
@@ -410,11 +431,17 @@ const ContactUs = () => {
                 type="submit"
                 className=""
               >
-                <Button
+                <button className={`main-btn flex font-manrope text-white`}>
+                  <div className="text bg-secondary text-base lg:text-lg leading-10 py-1 px-6 lg:leading-[40px] rounded-[50px]">
+                    Start a Conversation
+                  </div>
+                  <Arrow customClass="bg-secondary -rotate-45 " />
+                </button>
+                {/* <Button
                   text="Start a Conversation"
                   color={"text-white"}
                   arrowClass="d"
-                />
+                /> */}
               </motion.div>
             </motion.form>
           </motion.div>
