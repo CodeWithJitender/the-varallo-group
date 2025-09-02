@@ -407,7 +407,7 @@ const ContactUs = () => {
                 /> */}
                 <MultiSelectDropdown
                   options={options}
-                  title="Configure Table"
+                  title="Select Services"
                   onChange={handleSelectionChange}
                 />
               </motion.div>
