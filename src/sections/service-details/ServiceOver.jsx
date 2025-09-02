@@ -25,7 +25,7 @@ const ServiceOver = ({ data }) => {
 
           {/* Text Section */}
           <motion.div
-            className="md:order-1 md:w-[60%] mt-10 md:mt-auto"
+            className="md:order-1 md:w-[60%] mt-10 "
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
