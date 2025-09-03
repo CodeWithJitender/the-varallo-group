@@ -2,6 +2,7 @@ import React from "react";
 import Button from "./Button"; // Assuming Button is a custom component in your project
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import ScrollToTopButton from "./ScrollToTopButton";
 
 export default function Footer() {
   return (
@@ -113,7 +114,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-
+      <ScrollToTopButton />
       {/* Giant Watermark Text */}
       <div className="foot-text font-manrope font-medium  opacity-5 mt-[150px] lg:mt-[250px] lg:leading-[250px]">
         ©TVG - {new Date().getFullYear()}

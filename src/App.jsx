@@ -12,6 +12,7 @@ import ServiceDetails from "./pages/ServiceDetails";
 import ScrollToTop from "./components/ScrollToTop";
 import Blog from "./pages/Blog";
 import BlogDetails from "./pages/BlogDetails";
+import ThankYouPage from "./components/ThankYouPage";
 
 function App() {
   useEffect(() => {
@@ -38,6 +39,8 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/services/:serviceId" element={<ServiceDetails />} />
         <Route path="/blog/:id" element={<BlogDetails />} />
+        <Route path="/thank-you" element={<ThankYouPage title={"Thank you for filling the form!"} message="We’ll send a confirmation email within 24 hours once you submit your request. If you haven’t received it by then, please contact our office to confirm we’ve received your scheduling request." btnText={"Go back to Home Page"} btnLink={"/"} />} />
+        <Route path="/*" element={<ThankYouPage title={"Error 404: Page not found"} message="The page you are looking for might have been removed, had its name changed or is temporarily unavailable" btnText={"Go back to Home Page"} btnLink={"/"} />} />
       </Routes>
       <Footer />
     </Router>

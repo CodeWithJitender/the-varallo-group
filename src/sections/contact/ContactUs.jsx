@@ -2,9 +2,8 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiPhone, FiMail, FiClock, FiMapPin } from "react-icons/fi";
 import { FaLinkedin, FaFacebook, FaChevronDown } from "react-icons/fa";
-import Button from "../../components/Button";
-import MultiSelectDropdown from "./MultiSelectDropdown";
 import Arrow from "../../components/Arrow";
+import Select from "react-select";
 
 const ContactUs = () => {
   const [open, setOpen] = useState(false);
@@ -67,7 +66,7 @@ const ContactUs = () => {
               initial={{ x: -50, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.8 }}
-              className="text-white rounded-2xl p-8 flex flex-col justify-between bg-grad"
+              className="text-white rounded-2xl p-4 md:p-8 flex flex-col justify-between bg-grad"
             >
               <div>
                 <h3 className="text-[32px] font-manrope font-semibold">
@@ -213,7 +212,7 @@ const ContactUs = () => {
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1 }}
-            className="lg:col-span-2 bg-white rounded-2xl shadow-sm p-8"
+            className="lg:col-span-2 bg-white rounded-2xl shadow-sm  md:p-8"
           >
             <h3 className="text-3xl font-semibold font-manrope text-center mb-2">
               Schedule Online
@@ -227,12 +226,13 @@ const ContactUs = () => {
 
             {/* Form */}
             <motion.form
-              action="https://formsubmit.co/schedule@thevarallogroup.com"
+              action="https://formsubmit.co/jitender@digicots.com"
               method="POST"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
               className="grid md:grid-cols-2 gap-6"
+              
             >
               {/* Prevent spam bots */}
               <input type="hidden" name="_captcha" value="false" />
@@ -250,6 +250,7 @@ const ContactUs = () => {
                 <input
                   type="text"
                   name="first_name"
+                  required
                   placeholder="Enter first name"
                   className="border font-manrope rounded-lg px-4 py-3 w-full bg-[#F2F2F2] text-xl"
                 />
@@ -263,6 +264,7 @@ const ContactUs = () => {
                 <input
                   type="text"
                   name="attorney_name"
+                  required
                   placeholder="Enter attorney name"
                   className="border font-manrope rounded-lg px-4 py-3 w-full bg-[#F2F2F2] text-xl"
                 />
@@ -276,6 +278,7 @@ const ContactUs = () => {
                 <input
                   type="text"
                   name="contact_number"
+                  required
                   placeholder="Enter contact number"
                   className="border font-manrope rounded-lg px-4 py-3 w-full bg-[#F2F2F2] text-xl"
                 />
@@ -289,6 +292,7 @@ const ContactUs = () => {
                 <input
                   type="text"
                   name="contact_name"
+                  required
                   placeholder="Enter contact name"
                   className="border font-manrope rounded-lg px-4 py-3 w-full bg-[#F2F2F2] text-xl"
                 />
@@ -306,6 +310,7 @@ const ContactUs = () => {
                 <input
                   type="email"
                   name="contact_email"
+                  required
                   placeholder="Enter email address"
                   className="border font-manrope rounded-lg px-4 py-3 w-full bg-[#F2F2F2] text-xl"
                 />
@@ -328,6 +333,7 @@ const ContactUs = () => {
                 <input
                   type="date"
                   name="preferred_date"
+                  required
                   className="border font-manrope rounded-lg px-4 py-3 w-full bg-[#F2F2F2] text-xl"
                 />
               </motion.div>
@@ -340,6 +346,7 @@ const ContactUs = () => {
                 <input
                   type="time"
                   name="preferred_time"
+                  required
                   className="border font-manrope rounded-lg px-4 py-3 w-full bg-[#F2F2F2] text-xl"
                 />
               </motion.div>
@@ -350,7 +357,7 @@ const ContactUs = () => {
                   Select State*
                 </label>
                 <div className="border font-manrope rounded-lg px-4 py-3 w-full bg-[#F2F2F2] text-xl">
-                  <select name="state" className="w-full bg-[#F2F2F2]">
+                  <select name="state" required className="w-full bg-[#F2F2F2]">
                     <option>Select State</option>
                   </select>
                 </div>
@@ -362,7 +369,7 @@ const ContactUs = () => {
                   Select City*
                 </label>
                 <div className="border font-manrope rounded-lg px-4 py-3 w-full bg-[#F2F2F2] text-xl">
-                  <select name="city" className="w-full bg-[#F2F2F2]">
+                  <select name="city" required className="w-full bg-[#F2F2F2]">
                     <option>Select City</option>
                   </select>
                 </div>
@@ -376,6 +383,7 @@ const ContactUs = () => {
                 <input
                   type="text"
                   name="witnesses"
+                  required
                   placeholder="Enter witness(es)"
                   className="border font-manrope rounded-lg px-4 py-3 w-full bg-[#F2F2F2] text-xl"
                 />
@@ -389,6 +397,7 @@ const ContactUs = () => {
                 <input
                   type="text"
                   name="estimated_duration"
+                  required
                   placeholder="Enter duration"
                   className="border font-manrope rounded-lg px-4 py-3 w-full bg-[#F2F2F2] text-xl"
                 />
@@ -405,10 +414,20 @@ const ContactUs = () => {
                   placeholder="Enter services needed"
                   className="border font-manrope rounded-lg px-4 py-3 w-full bg-[#F2F2F2] text-xl"
                 /> */}
-                <MultiSelectDropdown
+                {/* <MultiSelectDropdown
                   options={options}
                   title="Select Services"
                   onChange={handleSelectionChange}
+                /> */}
+                {/* <MultiSelect options={options} /> */}
+                <Select
+                  defaultValue={[]}
+                  isMulti
+                  name="services_needed"
+                  required
+                  options={options}
+                  className="basic-multi-select border font-manrope rounded-lg px-4 py-3 w-full bg-[#F2F2F2] text-xl"
+                  classNamePrefix="select"
                 />
               </motion.div>
 

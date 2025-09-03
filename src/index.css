@@ -179,3 +179,15 @@ footer .container-fluid {
     padding: 50px 20px;
   }
 }
+.css-13cymwt-control{
+  background: transparent !important;
+  border: none !important;
+
+}
+.css-13cymwt-control:hover{
+  background: transparent;
+
+  border: transparent;
+  border-color: transparent;
+
+}

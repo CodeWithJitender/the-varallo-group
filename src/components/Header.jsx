@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faXmark, faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBars,
+  faXmark,
+  faChevronDown,
+} from "@fortawesome/free-solid-svg-icons";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "motion/react";
 import ResourcePortalModal from "./ResourcePortalModal";
@@ -168,8 +172,14 @@ const Header = () => {
     >
       <div className="max-w-[1600px] mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo */}
-        <motion.div initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.2 }}>
-          <Link to="/"><img src="/logo.png" alt="Logo" className="h-14" /></Link>
+        <motion.div
+          initial={{ opacity: 0, x: -30 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.2 }}
+        >
+          <Link to="/">
+            <img src="/logo.png" alt="Logo" className="h-14" />
+          </Link>
         </motion.div>
 
         {/* Hamburger Button */}
@@ -197,8 +207,12 @@ const Header = () => {
                 onMouseLeave={() => setOpenDropdown(null)}
               >
                 <div className="flex items-center gap-1 cursor-pointer">
-                  <Link className="font-manrope" to={item.path}>{item.name}</Link>
-                  {item.submenu && <FontAwesomeIcon icon={faChevronDown} className="text-xs" />}
+                  <Link className="font-manrope" to={item.path}>
+                    {item.name}
+                  </Link>
+                  {item.submenu && (
+                    <FontAwesomeIcon icon={faChevronDown} className="text-xs" />
+                  )}
                 </div>
                 <AnimatePresence>
                   {openDropdown === idx && item.submenu && (
@@ -209,7 +223,11 @@ const Header = () => {
                       exit={{ opacity: 0, y: -10 }}
                     >
                       {item.submenu.map((sub) =>
-                        renderLink(sub, "block px-3 py-2 rounded-md hover:bg-[#48cae49c]", false)
+                        renderLink(
+                          sub,
+                          "block px-3 py-2 rounded-md hover:bg-[#48cae49c]",
+                          false
+                        )
                       )}
                     </motion.div>
                   )}
@@ -245,9 +263,10 @@ const Header = () => {
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3 }}
           >
-            {menuItems.map((item, idx) => (
+            {/* {menuItems.map((item, idx) => (
               <div key={idx}>
-                <button
+                <Link
+                  to={item.path}
                   className="flex justify-between w-full py-2 border-b border-gray-700"
                   onClick={() => setOpenDropdown(openDropdown === idx ? null : idx)}
                 >
@@ -258,7 +277,7 @@ const Header = () => {
                       className={`transition-transform ${openDropdown === idx ? "rotate-180" : ""}`}
                     />
                   )}
-                </button>
+                </Link>
                 <AnimatePresence>
                   {openDropdown === idx && item.submenu && (
                     <motion.div
@@ -274,12 +293,62 @@ const Header = () => {
                   )}
                 </AnimatePresence>
               </div>
+            ))} */}
+            {menuItems.map((item, idx) => (
+              <div key={idx}>
+                {item.submenu ? (
+                  // Has submenu → render button with dropdown
+                  <>
+                    <button
+                      className="flex justify-between w-full py-2 border-b border-gray-700"
+                      onClick={() =>
+                        setOpenDropdown(openDropdown === idx ? null : idx)
+                      }
+                    >
+                      {item.name}
+                      <FontAwesomeIcon
+                        icon={faChevronDown}
+                        className={`transition-transform ${
+                          openDropdown === idx ? "rotate-180" : ""
+                        }`}
+                      />
+                    </button>
+                    <AnimatePresence>
+                      {openDropdown === idx && (
+                        <motion.div
+                          className="pl-4 flex flex-col gap-2 py-2"
+                          initial={{ opacity: 0, height: 0 }}
+                          animate={{ opacity: 1, height: "auto" }}
+                          exit={{ opacity: 0, height: 0 }}
+                        >
+                          {item.submenu.map((sub) =>
+                            renderLink(
+                              sub,
+                              "text-sm py-1 border-b border-gray-700",
+                              true
+                            )
+                          )}
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </>
+                ) : (
+                  // No submenu → render as Link directly
+                  <Link
+                    to={item.path}
+                    className="flex justify-between w-full py-2 border-b border-gray-700"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                )}
+              </div>
             ))}
 
             <div className="mt-4 flex flex-col gap-3">
               <button
                 className="border border-white rounded-full px-5 py-2 text-sm text-center hover:bg-white hover:text-black transition"
-                onClick={() => window.open("https://www.repagencyworks.com/login.php", "_blank")}
+                onClick={() => setPortalOpen(true)}
               >
                 Resource Portal
               </button>
@@ -294,7 +363,10 @@ const Header = () => {
           </motion.div>
         )}
       </AnimatePresence>
-      <ResourcePortalModal isOpen={portalOpen} onClose={() => setPortalOpen(false)} />
+      <ResourcePortalModal
+        isOpen={portalOpen}
+        onClose={() => setPortalOpen(false)}
+      />
     </motion.header>
   );
 };
