@@ -72,8 +72,7 @@ const ContactUs = () => {
                   You tell us. We Listen.
                 </h3>
                 <p className="mb-4 font-manrope text-p lg:text-xl">
-                  What started as a way to help my mum manage her childcare
-                  centre.
+                  Rely on our team to help your business succeed.
                 </p>
 
                 <div className="space-y-4 mt-8">
@@ -225,13 +224,14 @@ const ContactUs = () => {
 
             {/* Form */}
             <motion.form
-              action="https://formsubmit.co/jitender@digicots.com"
+              // action="https://formsubmit.co/schedule@thevarallogroup.com"
+              action="https://formsubmit.co/jitender@gmail.com"
               method="POST"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
               className="grid md:grid-cols-2 gap-6"
-              
+              enctype="multipart/form-data"
             >
               {/* Prevent spam bots */}
               <input type="hidden" name="_captcha" value="false" />

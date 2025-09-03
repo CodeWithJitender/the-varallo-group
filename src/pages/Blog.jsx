@@ -44,7 +44,7 @@ function Blog() {
       {/* Conditional Rendering */}
       {searchTerm ? (
         // 🔎 Show only search results
-        <div className="container-fluid">
+        <div className="max-w-[1600px] m-auto pb-[100px]  px-[20px] md:px-[30px] lg:px-[50px]">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {filteredBlogs.length > 0 ? (
             filteredBlogs.map((blog, index) => (

@@ -49,7 +49,7 @@ const Vision = () => {
             viewport={{ once: true }}
             className="text-h2 mb-5"
           >
-            Empowering Court Reporters
+           Empowering Progress. Elevating Standards.
           </motion.h2>
 
           <motion.p

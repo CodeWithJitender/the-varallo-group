@@ -165,7 +165,7 @@ export default function SmartSlider() {
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              At The Varallo Group, our services are built to simplify, strengthen, and scale your operations. Whether you're a court reporting firm, a law practice, or a professional organization, our expertise meets your needs right where you are and right when you need it.
+             At The Varallo Group, our services are built to simplify, strengthen, and scale your operations. Whether you're a court reporting firm, a professional organization, or an individual, our expertise meets your needs right where you are and right when you need it.
             </motion.p>
           </motion.div>
 

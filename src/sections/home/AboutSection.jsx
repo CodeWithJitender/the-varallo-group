@@ -45,7 +45,7 @@ const AboutSection = () => {
                 viewport={{ once: true }}
               >
                 <img
-                  src="./about-home.png"
+                  src="/about-home.png"
                   alt="Expert"
                   className="rounded-2xl w-full max-w-xl object-cover"
                 />

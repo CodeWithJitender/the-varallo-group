@@ -23,7 +23,7 @@ function BlogHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-         From industry trends to practical tips, explore blogs that help court reporters, videographers and legal pros work smarter, stay competitive and grow.
+        From industry trends to practical tips, explore helpful tips from The Varallo Group that help court reporters, videographers and legal support professionals work smarter, stay competitive and grow their businesses.
 
         </motion.p>
 

@@ -40,21 +40,21 @@ const HomeHero = () => {
             <Button text="Find out more" arrowClass="d" />
           </motion.div>
 
-          {/* <motion.div
+          <motion.div
             className="relative z-10 mt-20 max-w-[500px]"
             initial={{ opacity: 0, y: 40 }} // from bottom
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <div className="font-manrope bg-[#FFFFFF0A] backdrop-blur-80 rounded-xl px-6 py-4 text-white text-sm flex flex-col justify-between gap-2">
+            <div className="font-manrope bg-[#FFFFFF0A] backdrop-blur-80 rounded-xl px-6 md:px-8 py-4 text-white text-sm flex flex-col justify-between gap-2">
               <span className="text-xl">
-                Specialized Expertise in Legal, Non-profit and Professional Services
+               Specialized Expertise in Legal, Non-profit and Professional Services
               </span>
-              <Link to="/services" className="text-[16px] whitespace-nowrap text-end">
+              {/* <Link to="/services" className="text-[16px] whitespace-nowrap text-end">
                 Learn More
-              </Link>
+              </Link> */}
             </div>
-          </motion.div> */}
+          </motion.div>
         </div>
 
         {/* Image and Info Cards */}
