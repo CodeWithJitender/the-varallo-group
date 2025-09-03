@@ -5,7 +5,7 @@ export const Blog = [
       "From Steno to Stream: How Small Court Reporting Firms Can Leverage Tech to Stay Competitive",
     date: {
       day: "Tuesday",
-      date: "21/09/2025",
+      date: "09/21/2025",
     },
     tag: "Court Reporting",
     description:"We believe that technology won’t replace court reporters but those who embrace it will. If you’re anywhere near the legal world, you’ve probably noticed that the courtroom isn’t what it used to be anymore.",
@@ -194,7 +194,7 @@ export const Blog = [
       "The Power of Partnership: Know How Legal Videographers and Court Reporters Can Grow Together",
     date: {
       day: "Tuesday",
-      date: "21/09/2025",
+      date: "09/21/2025",
     },
     tag: "Legal Technology",
     description:"In today’s fast-moving, tech-powered legal world, the collaboration between court reporters and legal videographers has never been more crucial.",
@@ -344,7 +344,7 @@ export const Blog = [
       "Confidentiality Counts: Best Practices for Protecting Client Data in the Digital Age",
     date: {
       day: "Tuesday",
-      date: "21/09/2025",
+      date: "09/21/2025",
     },
     tag: "Legal Technology",
     description:
@@ -466,7 +466,7 @@ export const Blog = [
       "Marketing on a Budget: How Independent Court Reporting Firms Can Build a Strong Online Presence",
     date: {
       day: "Tuesday",
-      date: "21/09/2025",
+      date: "09/21/2025",
     },
     tag: "Legal Technology",
     description:
@@ -563,7 +563,7 @@ export const Blog = [
       "Things Attorneys Wish You Knew: Common Missteps Court Reporters and Videographers Can Avoid",
     date: {
       day: "Tuesday",
-      date: "21/09/2025",
+      date: "09/21/2025",
     },
     tag: "Legal Technology",
     description:

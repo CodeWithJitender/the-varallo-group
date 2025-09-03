@@ -224,8 +224,8 @@ const ContactUs = () => {
 
             {/* Form */}
             <motion.form
-              // action="https://formsubmit.co/schedule@thevarallogroup.com"
-              action="https://formsubmit.co/jitender@gmail.com"
+              action="https://formsubmit.co/info@thevarallogroup.com"
+              // action="https://formsubmit.co/jitender@gmail.com"
               method="POST"
               initial="hidden"
               whileInView="visible"
