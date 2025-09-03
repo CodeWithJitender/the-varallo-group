@@ -29,7 +29,7 @@ function Blog() {
                   transition={{ duration: 0.8 }}
                   viewport={{ once: true }}
                 >
-                  Trending Blogs
+                  Trending Posts
                 </motion.h2>
         <input
           type="text"

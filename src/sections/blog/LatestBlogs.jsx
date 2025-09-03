@@ -3,27 +3,9 @@ import { motion } from "framer-motion";
 import {Blog} from '../../blog';
 
 const blogPosts = [
-  {
-    title: "Confidentiality Counts: Best Practices for Protecting Client Data in the Digital Age",
-    excerpt:
-      "It’s really intriguing to know that in today’s hyper connected and data driven world, where a single click can send information halfway across the globe, confidentiality standards aren’t just a compliance checkbox rather",
-    image: "blog-3.png",
-    link: "/blog/3",
-  },
-  {
-    title: "Marketing on a Budget: How Independent Court Reporting Firms Can Build a Strong Online Presence",
-    excerpt:
-      "In a world where every search, click and review influence a potential client’s choice, having a solid online presence for independent court reporting firms isn’t just an extra, it’s essential. ",
-    image: "blog-2.png",
-    link: "/blog/4",
-  },
-  {
-    title: "What Attorneys Wish You Knew: Common Missteps Court Reporters and Videographers Can Avoid",
-    excerpt:
-      "The transcript isn’t just words on a page, it’s the heartbeat of every case. You’ve heard it said before one small misstep and the whole case can wobble. That’s exactly the tightrope attorneys walk on",
-    image: "blog-1.png",
-    link: "/blog/5",
-  },
+  Blog[3],
+  Blog[4],
+  Blog[0],
 ];
 
 const LatestBlogs = () => {
@@ -53,7 +35,7 @@ const LatestBlogs = () => {
               <h3 className="text-p lg:text-[30px] font-semibold font-manrope mb-2 sm:mb-5 text-[#262626]">
                 {post.title}
               </h3>
-              <p className="font-manrope text-lg mb-2 sm:mb-4">{post.excerpt}</p>
+              <p className="font-manrope text-lg mb-2 sm:mb-4">{post.description}</p>
               <a
                 href={post.link}
                 className="font-manrope text-secondary font-medium underline text-[16px]"
@@ -69,9 +51,9 @@ const LatestBlogs = () => {
               viewport={{ once: true }}
             >
               <img
-                src={`./${post.image}`}
+                src={`./${post.img}`}
                 alt={post.title}
-                className="rounded-xl w-full"
+                className="rounded-xl w-full "
               />
             </motion.div>
           </motion.div>

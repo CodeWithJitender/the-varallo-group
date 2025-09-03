@@ -7,6 +7,7 @@ export const Blog = [
       day: "Tuesday",
       date: "21/09/2025",
     },
+    tag: "Court Reporting",
     description:"We believe that technology won’t replace court reporters but those who embrace it will. If you’re anywhere near the legal world, you’ve probably noticed that the courtroom isn’t what it used to be anymore.",
     img: "/blog/blog1/main.jpg",
     link: "/blog/1",
@@ -195,6 +196,7 @@ export const Blog = [
       day: "Tuesday",
       date: "21/09/2025",
     },
+    tag: "Legal Technology",
     description:"In today’s fast-moving, tech-powered legal world, the collaboration between court reporters and legal videographers has never been more crucial.",
     img: "/blog/blog2/main.jpg",
     link: "/blog/2",
@@ -344,6 +346,7 @@ export const Blog = [
       day: "Tuesday",
       date: "21/09/2025",
     },
+    tag: "Legal Technology",
     description:
       "It’s really intriguing to know that in today’s hyper connected and data driven world, where a single click can send information halfway across the globe, confidentiality standards aren’t just a compliance checkbox rather, they’re the currency of trust.",
     img: "/blog/blog3/main.jpg",
@@ -465,6 +468,7 @@ export const Blog = [
       day: "Tuesday",
       date: "21/09/2025",
     },
+    tag: "Legal Technology",
     description:
       "In a world where every search, click and review influence a potential client’s choice, having a solid online presence for independent court reporting firms isn’t just an extra, it’s essential.",
     img: "/blog/blog4/main.jpg",
@@ -561,6 +565,7 @@ export const Blog = [
       day: "Tuesday",
       date: "21/09/2025",
     },
+    tag: "Legal Technology",
     description:
       "The transcript isn’t just words on a page, it’s the heartbeat of every case. You’ve heard it said before one small misstep and the whole case can wobble. That’s exactly the tightrope attorneys walk on and that’s why it is crucial to understand the common missteps court reporters and legal videographers can avoid.",
     img: "/blog/blog5/main.jpg",

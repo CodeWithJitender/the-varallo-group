@@ -19,14 +19,13 @@ const ContactUs = () => {
     // { name: "Feedback", email: "feedback@example.com" },
   ];
   const options = [
-    { value: "TVG  Management", label: "TVG  Management" },
-    { value: "TVG  Reporting", label: "TVG  Reporting" },
-    { value: "TVG  Stream", label: "TVG  Stream" },
-    { value: "TVG Books", label: "TVG Books" },
-    { value: "TVG Creative", label: "TVG Creative" },
-    { value: "TVG Connect", label: "TVG Connect" },
-    { value: "TVG Command", label: "TVG Command" },
-    { value: "TVG Verify", label: "TVG Verify" },
+     { value: "Court Reporter", label: "Court Reporter" },
+    { value: "Videographer", label: "Videographer" },
+    { value: "Interactive Realtime In Person", label: "Interactive Realtime In Person" },
+    { value: "Streaming Realtime", label: "Streaming Realtime" },
+    { value: "Daily Draft", label: "Daily Draft" },
+    { value: "Expedited Delivery", label: "Expedited Delivery" },
+    { value: "Extra Laptop for Witness", label: "Extra Laptop for Witness" },
   ];
   const handleSelectionChange = (selected) => {
     console.log("Selected:", selected);
