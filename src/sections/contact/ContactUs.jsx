@@ -13,8 +13,8 @@ const ContactUs = () => {
     { name: "Production", email: "production@thevarallogroup.com" },
     { name: "Invoicing", email: "invoices@thevarallogroup.com" },
     { name: "Video", email: "video@thevarallogroup.com" },
-    { name: "Marketing ", email: "cedar@thevarallogroup.com" },
-    { name: "General inquires", email: " info@thevarallogroup.com" },
+    { name: "Marketing", email: "cedar@thevarallogroup.com" },
+    { name: "General Inquiries", email: "info@thevarallogroup.com" },
     // { name: "Technical Help", email: "tech@example.com" },
     // { name: "Feedback", email: "feedback@example.com" },
   ];
@@ -52,8 +52,7 @@ const ContactUs = () => {
         >
           <h2 className="text-h2 font-parkinsans font-semibold">Contact Us</h2>
           <p className="font-manrope text-sm lg:text-xl mt-2">
-            Reach out today, we’ll map the way forward with clear strategies and
-            reliable legal assistance..
+            Reach out today, we’ll map the way forward with clear strategies and reliable assistance.
           </p>
         </motion.div>
 
@@ -72,7 +71,7 @@ const ContactUs = () => {
                   You tell us. We Listen.
                 </h3>
                 <p className="mb-4 font-manrope text-p lg:text-xl">
-                  Rely on our team to help your business succeed.
+                  Rely on our team to help your business succeed. 
                 </p>
 
                 <div className="space-y-4 mt-8">
@@ -87,7 +86,7 @@ const ContactUs = () => {
                       </strong>
                       <br />
                       <span className="text-[#ffffffb9] lg:text-xl mt-1 block">
-                        Mon–Thu: 08:00am – 05:00pm <br /> Fri: 08:00am – 05:00pm
+                        Mon-Fri 8:00am - 5:00 pm ET
                       </span>
                     </p>
                   </div>
@@ -451,7 +450,7 @@ const ContactUs = () => {
               >
                 <button className={`main-btn flex font-manrope text-white`}>
                   <div className="text bg-secondary text-base lg:text-lg leading-10 py-1 px-6 lg:leading-[40px] rounded-[50px]">
-                    Start a Conversation
+                    Send Request
                   </div>
                   <Arrow customClass="bg-secondary -rotate-45 " />
                 </button>

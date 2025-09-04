@@ -194,7 +194,7 @@ export default function SmartSlider() {
                         className="w-full rounded-[30px]"
                       />
                       <div className="absolute top-0 left-0 w-full h-full flex items-end justify-start p-4">
-                        <div className="p-4 bg-black/50 backdrop-blur-md text-white rounded-xl md:w-2/4">
+                        <div className="p-4 bg-black/50 backdrop-blur-md text-white rounded-xl xl:w-2/4">
                           <h4 className="font-medium text-p font-manrope mb-1">
                             {item.title}
                           </h4>

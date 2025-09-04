@@ -33,7 +33,7 @@ function BlogHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
-          <Button text="Schedule a call now"  arrowClass="d" />
+          <Button text="Submit a Post Idea" link={"mailto:cedar@thevarallogroup.com"}  arrowClass="d" />
         </motion.div>
        <div className="mt-5">
          <motion.img

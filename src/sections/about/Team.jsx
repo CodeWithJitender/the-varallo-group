@@ -58,7 +58,7 @@ const Team = () => {
     <section className="py-16 bg-white">
       {/* Section Header */}
       <div className="text-center mb-12">
-        <h2 className="text-h2 font-parkinsans">The Pillars of Varallo</h2>
+        <h2 className="text-h2 font-parkinsans">The Pillars of The Varallo Group</h2>
         <p className="font-manrope text-xl mt-2">
           The thinkers, doers and leaders shaping your future.
         </p>

@@ -8,20 +8,33 @@ function Button({ text, link, arrowClass, color, size }) {
 
   const handleOpen = () => setIsOpen(true);
   const handleClose = () => setIsOpen(false);
-
+  const isMailto = link && link.startsWith("mailto:");
   return (
     <>
       {link ? (
-        // When link is provided -> Normal <Link>
-        <Link to={link} className={`main-btn flex font-manrope ${color}`}>
-          <div className="text bg-secondary text-base leading-10 lg:text-lg py-1 px-6 lg:leading-[40px] rounded-[50px]">
-            {text}
-          </div>
-          {arrowClass && <Arrow customClass="bg-secondary -rotate-45" />}
-        </Link>
+        isMailto ? (
+          // If mailto, use <a>
+          <a href={link} className={`main-btn flex font-manrope ${color}`}>
+            <div className="text bg-secondary text-base leading-10 lg:text-lg py-1 px-6 lg:leading-[40px] rounded-[50px]">
+              {text}
+            </div>
+            {arrowClass && <Arrow customClass="bg-secondary -rotate-45" />}
+          </a>
+        ) : (
+          // Otherwise, use <Link>
+          <Link to={link} className={`main-btn flex font-manrope ${color}`}>
+            <div className="text bg-secondary text-base leading-10 lg:text-lg py-1 px-6 lg:leading-[40px] rounded-[50px]">
+              {text}
+            </div>
+            {arrowClass && <Arrow customClass="bg-secondary -rotate-45" />}
+          </Link>
+        )
       ) : (
         // When no link -> act like button
-        <button onClick={handleOpen} className={`main-btn flex font-manrope ${color}`}>
+        <button
+          onClick={handleOpen}
+          className={`main-btn flex font-manrope ${color}`}
+        >
           <div className="text bg-secondary text-base lg:text-lg leading-10 py-1 px-6 lg:leading-[40px] rounded-[50px]">
             {text}
           </div>
@@ -66,7 +79,9 @@ function Button({ text, link, arrowClass, color, size }) {
                 <MapPin className="mr-3 mt-1" />
                 <div>
                   <p className="font-manrope text-p mb-2">Office Address:</p>
-                  <p className="font-manrope text-lg">34 Grafton Street, Suite 2</p>
+                  <p className="font-manrope text-lg">
+                    34 Grafton Street, Suite 2
+                  </p>
                   <p className="font-manrope text-lg">Millbury, MA 01527</p>
                 </div>
               </div>
@@ -75,7 +90,9 @@ function Button({ text, link, arrowClass, color, size }) {
               <div className="flex items-start mb-4">
                 <Phone className="mr-3 mt-1" />
                 <div>
-                  <p className="font-manrope text-p mb-2">Custom Support & Sale:</p>
+                  <p className="font-manrope text-p mb-2">
+                    Custom Support & Sale:
+                  </p>
                   <p className="font-manrope text-lg">508.753.9282</p>
                 </div>
               </div>
@@ -85,7 +102,9 @@ function Button({ text, link, arrowClass, color, size }) {
                 <Clock className="mr-3 mt-1" />
                 <div>
                   <p className="font-manrope text-p mb-2">Working Hours:</p>
-                  <p className="font-manrope text-lg">Mon–Thu: 08:00am - 05:00pm</p>
+                  <p className="font-manrope text-lg">
+                    Mon–Thu: 08:00am - 05:00pm
+                  </p>
                   <p className="font-manrope text-lg">Fri: 08:00am - 05:00pm</p>
                 </div>
               </div>
@@ -95,23 +114,36 @@ function Button({ text, link, arrowClass, color, size }) {
                 <Mail className="mr-3 mt-1" />
                 <div>
                   <p className="font-manrope text-p mb-2">Email us:</p>
-                  <a href="mailto:info@thevarallogroup.com" target="_blank" className="font-manrope text-lg">info@thevarallogroup.com</a>
+                  <a
+                    href="mailto:info@thevarallogroup.com"
+                    target="_blank"
+                    className="font-manrope text-lg"
+                  >
+                    info@thevarallogroup.com
+                  </a>
                 </div>
               </div>
 
               {/* Social Icons */}
               <div className="flex space-x-4">
-                <a href="https://www.linkedin.com/company/the-varallo-group/" target="_blank" className="bg-btn text-white w-10 h-10 flex items-center justify-center rounded-full">
+                <a
+                  href="https://www.linkedin.com/company/the-varallo-group/"
+                  target="_blank"
+                  className="bg-btn text-white w-10 h-10 flex items-center justify-center rounded-full"
+                >
                   <i className="fab fa-linkedin-in"></i>
                 </a>
-                <a href="#" className="bg-btn text-white w-10 h-10 flex items-center justify-center rounded-full">
+                <a
+                  href="#"
+                  className="bg-btn text-white w-10 h-10 flex items-center justify-center rounded-full"
+                >
                   <i className="fab fa-facebook-f"></i>
                 </a>
               </div>
 
-      <div className="image-bottom absolute right-0 -rotate-180 bottom-0 w-32 md:w-60 h-32 md:h-60">
-        <img src="/icon-half.png" alt="Featured 3" />
-      </div>
+              <div className="image-bottom absolute right-0 -rotate-180 bottom-0 w-32 md:w-60 h-32 md:h-60">
+                <img src="/icon-half.png" alt="Featured 3" />
+              </div>
             </div>
           </div>
         </div>

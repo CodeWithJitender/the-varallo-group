@@ -26,7 +26,7 @@ const AboutSection = () => {
               </h2>
               <div className="md:w-[35%] ms-auto">
                 <h3 className="text-xl md:text-2xl font-manrope">
-                Delivering Trusted Solutions to Court Reporting Firms Everywhere
+                Delivering Trusted Solutions to Court Reporting Firms Across the U.S.
 
                 </h3>
                 <p className=" mt-2 font-manrope">

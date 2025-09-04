@@ -19,7 +19,7 @@ const HomeHero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
           >
-           Expertise To Support You Every Step of the Way
+             Court Reporting Focused Expertise to Support You Every Step of the Way
           </motion.h1>
 
           <motion.p
@@ -28,7 +28,8 @@ const HomeHero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-         Specialized Expertise in Legal, Non-profit and Professional Services 
+       Your trusted partner for court reporting, legal video,
+association management, and administrative support services. 
           </motion.p>
 
           <motion.div
@@ -48,7 +49,8 @@ const HomeHero = () => {
           >
             <div className="font-manrope bg-[#FFFFFF0A] backdrop-blur-80 rounded-xl px-6 md:px-8 py-4 text-white text-sm flex flex-col justify-between gap-2">
               <span className="text-xl">
-               Specialized Expertise in Legal, Non-profit and Professional Services
+               Specialized Proficiency in Court Reporting, Non-profit and Professional Services
+
               </span>
               {/* <Link to="/services" className="text-[16px] whitespace-nowrap text-end">
                 Learn More

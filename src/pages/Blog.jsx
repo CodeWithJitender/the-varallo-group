@@ -33,7 +33,7 @@ function Blog() {
                 </motion.h2>
         <input
           type="text"
-          placeholder="Search for the Blogs"
+          placeholder="Search Posts..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           className="bg-[#48CAE4] px-4 py-2 md:w-96 md:p-4 md:px-6 rounded-[50px] focus:outline-none text-white placeholder:text-white placeholder:font-manrope"

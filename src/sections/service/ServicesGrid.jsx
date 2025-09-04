@@ -13,7 +13,7 @@ const services = [
   {
     title: "TVG Stream",
     content:
-      "Remote proceedings have quickly moved from an option to a necessity in today’s evolving legal landscape. But with high stakes and tight schedules, no firm can afford technical hiccups or disjointed setups. TVG Stream ensures your virtual depositions are handled with the same precision and professionalism as in-person proceedings. From multi-party sessions to quick one-on-ones, we bring you secure platforms, real-time support and seamless experiences, so your team can stay focused on what truly matters: making your case heard.  ",
+      "Remote proceedings have quickly moved from an option to a necessity in today’s evolving legal landscape. But with high stakes and tight schedules, no firm can afford technical hiccups or disjointed setups. TVG Stream ensures your virtual depositions are handled with the same precision and professionalism as in-person proceedings. From hybrid depositions to fully online proceedings, we provide secure platforms, real-time support, and exhibit management, so your client can stay focused on what truly matters: making their case heard.",
     link: "/services/tvg-stream",
     img: "./stream.jpg",
   },
@@ -121,7 +121,7 @@ const ServicesGrid = () => {
               </div>
 
               {/* Hover content overlay */}
-              <div className="relative w-full h-full z-10 inset-0 p-10 rounded-[25px] bg-black/80 backdrop-blur-sm   opacity-0 translate-y-8 group-hover:translate-y-0 group-hover:opacity-0 sm:group-hover:opacity-100 transition duration-300 flex flex-col justify-between ">
+              <div className="relative w-full md:min-h-[700px] lg:min-h-[500px] z-10 inset-0 p-10 rounded-[25px] bg-black/80 backdrop-blur-sm   opacity-0 translate-y-8 group-hover:translate-y-0 group-hover:opacity-0 sm:group-hover:opacity-100 transition duration-300 flex flex-col justify-between ">
                 {/* <div className="relative z-10 inset-0 p-4 rounded-[25px] bg-black/80 backdrop-blur-sm opacity-0 translate-y-8 group-hover:translate-y-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-between h-full"> */}
                 <div>
                   <h3 className="font-normal font-parkinsans text-p sm:text-[40px] text-white mb-2">

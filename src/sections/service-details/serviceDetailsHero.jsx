@@ -23,35 +23,13 @@ const ServiceDetailsHero = ({ data }) => {
   };
   return (
     <section className="service-details-hero bg-black text-white relative overflow-hidden p-0">
-      <div className="container-fluid mx-auto px-4 grid xl:grid-cols-2 items-center relative z-10">
-        {/* Image and Info Cards */}
-        <motion.div
-          className="mt-12 lg:mt-0 relative flex justify-center xl:order-2 hidden md:block"
-          initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-        >
-          <div className="relative ">
-            <VerticalSlider images={images} />
-          </div>
-        </motion.div>
-        <div className="block md:hidden">
-          <Slick {...settings} className="w-[300px] mx-auto max-w-[100%]">
-            {images.map((image, index) => (
-              <div key={index} className="slider-item">
-                <img
-                  src={image}
-                  className="w-full rounded-xl"
-                  alt={`Service slide ${index + 1}`}
-                />
-              </div>
-            ))}
-          </Slick>
-        </div>
+      <div className="container-fluid mx-auto px-4 grid xl:grid-cols-2 items-center relative z-10 gap-5">
+       
+       
         {/* Text Content */}
-        <div className="xl:order-1">
+        <div className="">
           <motion.div
-            className="tag text-xl inline-block leading-9 py-4 px-6 rounded-[50px] border border-[#727272] my-5 sm:mt-10 lg:mt-0"
+            className="tag text-xl inline-block leading-9 mb-3 md:py-4 px-6 rounded-[50px] border border-[#727272] md:my-5 sm:mt-10 lg:mt-0"
             style={{
               background:
                 "linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 100%)",
@@ -89,6 +67,30 @@ const ServiceDetailsHero = ({ data }) => {
           >
             <Button text="Schedule a call now" arrowClass="d" />
           </motion.div>
+        </div>
+         {/* Image and Info Cards */}
+        <motion.div
+          className="mt-12 lg:mt-0 relative  justify-center  hidden md:block"
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+        >
+          <div className="relative ">
+            <VerticalSlider images={images} />
+          </div>
+        </motion.div>
+         <div className="block md:hidden">
+          <Slick {...settings} className="w-[300px] mx-auto max-w-[100%]">
+            {images.map((image, index) => (
+              <div key={index} className="slider-item">
+                <img
+                  src={image}
+                  className="w-full rounded-xl"
+                  alt={`Service slide ${index + 1}`}
+                />
+              </div>
+            ))}
+          </Slick>
         </div>
       </div>
     </section>

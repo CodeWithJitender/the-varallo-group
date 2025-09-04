@@ -109,7 +109,6 @@ function ServiceDetails() {
           "/services/reporting/1.png",
           "/services/reporting/2.png",
           "/services/reporting/3.png",
-          "/services/reporting/4.png",
         ],
       },
       Overview: {
@@ -126,7 +125,7 @@ function ServiceDetails() {
           { icon: "/fruit-citrus.png", text: "Job assignment & coordination" },
           {
             icon: "/fruit-citrus.png",
-            text: "Real-time and rough draft delivery",
+            text: "Real-time & rough draft delivery",
           },
           {
             icon: "/fruit-citrus.png",
@@ -140,7 +139,7 @@ function ServiceDetails() {
         tagsRight: [
           {
             icon: "/fruit-citrus.png",
-            text: "File organization and case tracking",
+            text: "File organization & case tracking",
           },
           {
             icon: "/fruit-citrus.png",
@@ -148,7 +147,7 @@ function ServiceDetails() {
           },
           {
             icon: "/fruit-citrus.png",
-            text: "Proofing and transcript finalization",
+            text: "Proofing & transcript finalization",
           },
           {
             icon: "/fruit-citrus.png",
@@ -158,7 +157,7 @@ function ServiceDetails() {
       },
       TvgEffect: {
         title: "Service Metrics",
-        pera: "Every record matters and we make sure not a single word is missed. From deposition to delivery, we ensure accuracy, speed and professionalism.",
+        pera: "Every transcript matters and we make sure not a single word is missed. From deposition to delivery, we ensure accuracy, speed and professionalism.",
         impactStats: [
           { number: "24+", label: "Years of Industry Experience" },
           { number: "98%", label: "Positive Client Feedback" },
@@ -184,7 +183,7 @@ function ServiceDetails() {
           icon: "/wwo-icon/r3.png",
           title: "On-Time Transcript Production & Delivery",
           description:
-            "Court-compliant transcripts delivered promptly, in your firm’s preferred formats and specifications.",
+            "Transcripts or videos delivered promptly, in your firm’s preferred formats and specifications.",
           classBorder: "border-b border-white",
         },
         {
@@ -277,7 +276,7 @@ function ServiceDetails() {
           icon: "/wwo-icon/s2.png",
           title: "Participant Training & Onboarding",
           description:
-            "Customized guidance for attorneys, clients and witnesses to ensure confidence and preparedness before every session.",
+            "Customized guidance for attorneys, court reporters, and witnesses to ensure confidence and preparedness before every session.",
           classBorder: "border-b border-white",
         },
         {
@@ -387,7 +386,7 @@ function ServiceDetails() {
           icon: "/wwo-icon/b2.png",
           title: "Client Billing and Invoicing",
           description:
-            "Never miss a payment. We streamline your client billing process by generating timely, accurate invoices and tracking payments. We make it easy for your clients to pay and for you to stay on top of your receivables, keeping your cash flow steady and predictable.",
+            "Never miss a payment. We streamline your client billing process by generating timely, accurate invoices and tracking payments. We make it easy for your clients to pay, and for you to stay on top of your receivables, keeping your cash flow steady and predictable.",
           classBorder: "border-b border-white",
         },
         {
@@ -411,7 +410,7 @@ function ServiceDetails() {
         name: "TVG Creative",
         title: "Branding & Identity Kits for Legal and B2B Professionals",
         pera: [
-          "Whether you’re launching a new venture or refreshing your digital presence, how you show up matters. In today’s fast-moving world, first impressions aren’t just visual, they're strategic. That’s where TVG Creative steps in. We provide full-spectrum digital marketing, branding and design services customized for the legal and B2B industries. From law firm websites to startup identity kits, we help you cut through the noise, attract the right audience and communicate your value with clarity and style.",
+          "Whether you’re launching a new venture or refreshing your digital presence, how you show up matters. In today’s fast-moving world, first impressions aren’t just visual, they're strategic. That’s where TVG Creative steps in. We provide full-spectrum digital marketing, branding and design services customized for the legal and B2B industries. From marketing materials to startup identity kits, we help you cut through the noise, attract the right audience and communicate your value with clarity and style.",
         ],
         link: "link",
         images: [
@@ -432,7 +431,7 @@ function ServiceDetails() {
       Provide: {
         pera: "To ensure you stand out in a crowded market. We craft branding and content that reflects your values and gets you noticed.",
         tagsLeft: [
-          { icon: "/fruit-citrus.png", text: "Website design & SEO" },
+          // { icon: "/fruit-citrus.png", text: "Website design & SEO" },
           { icon: "/fruit-citrus.png", text: "Logo & brand identity kits" },
           {
             icon: "/fruit-citrus.png",
@@ -495,9 +494,9 @@ function ServiceDetails() {
     "tvg-connect": {
       hero: {
         name: "TVG Connect",
-        title: "Association Management for the court reporting Industry",
+        title: "Association Management for the Court Reporting Industry",
         pera: [
-          "Professional organizations and trade associations thrive on connection, coordination and clear leadership. But managing all the moving parts can be overwhelming. From day-to-day operations to annual conferences, it takes more than passion to keep members engaged and everything running smoothly.  That’s where TVG Connect steps in. We specialize in association management for the court reporting industry, offering customized solutions that keep your organization efficient, professional and people-focused. Whether you're a growing association or a well-established group looking for scalable support, our experienced team brings structure, strategy and heart to every detail.",
+          "Professional organizations and trade associations thrive on connection, coordination, and clear leadership. But managing all the moving parts can be overwhelming. From day-to-day operations to annual conferences, it takes more than passion to keep members engaged and everything running smoothly. That’s where TVG Connect steps in. We specialize in association management for the court reporting industry, offering customized solutions that keep your organization efficient, professional and people-focused. Whether you're a growing association or a well-established group looking for scalable support, our experienced team brings structure, strategy, and heart to every detail.",
         ],
         link: "link",
         images: [
@@ -541,13 +540,13 @@ function ServiceDetails() {
           { icon: "/fruit-citrus.png", text: "Campaign planning & scheduling" },
           {
             icon: "/fruit-citrus.png",
-            text: "Analytics and engagement tracking ",
+            text: "Analytics & engagement tracking ",
           },
         ],
       },
       TvgEffect: {
         title: "Service Metrics",
-        pera: "Every client deserves attention, we help you deliver it consistently. We keep your communication sharp, timely and always client-first.",
+        pera: "Every member deserves attention, we help you deliver it consistently. We keep your communication sharp, timely and always member-first.",
         impactStats: [
           { number: "24+", label: "Years of Industry Experience" },
           { number: "98%", label: "Positive Client Feedback" },
@@ -583,7 +582,7 @@ function ServiceDetails() {
         name: "TVG Command",
         title: "Technology Solutions Built for Legal, Backed by Experts",
         pera: [
-          "As the legal industry evolves, so should your technology. From court reporting to case production, efficiency and accuracy are everything. That’s why more reporting firms are turning to AI-powered platforms that don’t just keep up, they lead. TVG Command helps you modernize your transcription workflow with cutting-edge platform solutions. As a U.S. sales partner for Claudio AI and other legal-first platforms, we connect you with tools designed to scale your reporting business, reduce manual work and improve turnaround times without sacrificing accura",
+          "As the legal industry evolves, so should your technology. From court reporting to case production, efficiency and accuracy are everything. That’s why more reporting firms are turning to AI-powered platforms that don’t just keep up, they lead. TVG Command helps you modernize your transcription workflow with cutting-edge platform solutions. As a U.S. sales partner for Claudio AI and other legal-first platforms, we connect you with tools designed to scale your court reporting business, reduce manual work and improve turnaround times without sacrificing accuracy.",
         ],
         link: "link",
         images: [
@@ -604,33 +603,33 @@ function ServiceDetails() {
       Provide: {
         pera: "We provide smart, scalable transcription solutions to improve efficiency and increase productivity for court reporting firms and individual transcriptionists.",
         tagsLeft: [
-          { icon: "/fruit-citrus.png", text: "Executive director placement" },
-          { icon: "/fruit-citrus.png", text: "Member onboarding & renewals" },
+          { icon: "/fruit-citrus.png", text: "Document Analysis & Advanced Transcription Tools" },
+          { icon: "/fruit-citrus.png", text: "Multilingual Support" },
           {
             icon: "/fruit-citrus.png",
-            text: "Event planning (virtual & in-person)",
+            text: "Secure Delivery & File Backup",
           },
           {
             icon: "/fruit-citrus.png",
-            text: "Board governance & stakeholder liaison",
+            text: "Formatting Customization Per Jurisdiction",
           },
         ],
         tagsRight: [
           {
             icon: "/fruit-citrus.png",
-            text: "Communication strategy & newsletters",
+            text: "Confidentiality Compliance Checks",
           },
           {
             icon: "/fruit-citrus.png",
-            text: "Sponsorship outreach & partner engagement",
+            text: "Smart Formatting & Grammar Checks",
           },
           {
             icon: "/fruit-citrus.png",
-            text: "Meeting minutes & compliance tracking",
+            text: "Quality Control for Final Transcripts",
           },
           {
             icon: "/fruit-citrus.png",
-            text: "Annual reporting & documentation support",
+            text: "Delivery Confirmation & File Handoff Logs",
           },
         ],
       },
@@ -709,43 +708,43 @@ function ServiceDetails() {
         tagsLeft: [
           {
             icon: "/fruit-citrus.png",
-            text: "Smart formatting & grammar checks",
+            text: "Identity Checks",
           },
           {
             icon: "/fruit-citrus.png",
-            text: "Compliance with client style guides",
+            text: "Driving Records",
           },
           {
             icon: "/fruit-citrus.png",
-            text: "Quality control for final transcripts",
+            text: "Drug & Health Screenings",
           },
           {
             icon: "/fruit-citrus.png",
-            text: "Secure delivery & file backup options",
+            text: "Employment History",
           },
         ],
         tagsRight: [
           {
             icon: "/fruit-citrus.png",
-            text: "Formatting customization per jurisdiction",
+            text: "Workforce Screening",
           },
           {
             icon: "/fruit-citrus.png",
-            text: "Turnaround tracking & verification logs",
+            text: "Criminal Background Checks",
           },
           {
             icon: "/fruit-citrus.png",
-            text: "Confidentiality compliance checks",
+            text: "Credit Record & History",
           },
           {
             icon: "/fruit-citrus.png",
-            text: "Delivery confirmation & file handoff logs ",
+            text: "I-9 & E-Verify",
           },
         ],
       },
       TvgEffect: {
         title: "Service Metrics",
-        pera: "Every case depends on facts, we make sure yours are verified and ready. From record retrieval to thorough checks, we make truth accessible and quick.",
+        pera: "Whether it’s verifying identity or running global criminal checks, we give you the confidence to hire the right people without slowing down your process.",
         impactStats: [
           { number: "24+", label: "Years of Industry Experience" },
           { number: "98%", label: "Positive Client Feedback" },

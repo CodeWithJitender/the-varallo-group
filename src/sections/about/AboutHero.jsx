@@ -15,7 +15,7 @@ function AboutHero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
           >
-           Your story is safe in hands that have shaped the record for generations.
+          Your Business is Safe <br className='hidden md:block' /> in Our Hands 
           </motion.h1>
 
           <motion.p
