@@ -76,7 +76,7 @@ const ContactUs = () => {
 
                 <div className="space-y-4 mt-8">
                   {/* Working Hours */}
-                  <div className="flex gap-4">
+                  {/* <div className="flex gap-4">
                     <div className="bg-btn w-14 h-14 rounded flex items-center justify-center">
                       <FiClock className="text-2xl" />
                     </div>
@@ -89,7 +89,7 @@ const ContactUs = () => {
                         Mon-Fri 8:00am - 5:00 pm ET
                       </span>
                     </p>
-                  </div>
+                  </div> */}
 
                   {/* Office Address */}
                   <div className="flex gap-4">

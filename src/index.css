@@ -160,9 +160,9 @@ footer .container-fluid {
   .foot-text {
     font-size: clamp(50px, 15vw, 400px);
   }
-  .testimonials .slick-slide {
+  /* .testimonials .slick-slide {
     height: 600px;
-  }
+  } */
   .testimonials .slick-slide {
     transform: scale(1);
     padding: 10px;

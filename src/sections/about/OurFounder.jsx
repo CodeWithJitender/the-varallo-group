@@ -84,22 +84,21 @@ function OurFounder() {
 
             {/* Description */}
             <p className="text-xl leading-relaxed font-manrope">
-              Nancy Varallo launched her court reporting career in 1979 and
-              founded The Varallo Group in 2001, combining decades of expertise
-              with a bold vision for better, smarter legal support. With a
-              family name rooted in court reporting since 1937, Nancy carries
-              that legacy forward through her unwavering commitment to quality,
-              service and innovation.
+              Nancy Varallo launched her court reporting career in 1979 and founded The
+Varallo Group in 2001, combining decades of expertise with a bold vision for better,
+
+smarter legal support. With a family name rooted in court reporting since 1937, Nancy
+carries that legacy forward through her unwavering commitment to quality, service, and
+innovation.
             </p>
             <p className="text-xl leading-relaxed font-manrope">
-              From serving as President of the National Court Reporters
-              Association to co-founding the Project to Advance Stenographic
-              Reporting (Project Steno), Nancy has been a powerful advocate for
-              the profession, mentoring students, creating industry programs and
-              even overseeing high-profile cases at Guantanamo Bay. Known
-              affectionately as the “Fearless Leader” by her team, she brings
-              heart, leadership and family-first values to every part of The
-              Varallo Group.
+             
+From serving as President of the National Court Reporters Association to co-founding
+the Project to Advance Stenographic Reporting (Project Steno), Nancy has been a
+powerful advocate for the profession, mentoring students, creating industry programs,
+and even overseeing high-profile cases at Guantanamo Bay. Known affectionately as
+the “Fearless Leader” by her team, she brings heart, leadership, and family-first values
+to every part of The Varallo Group.
             </p>
           </motion.div>
         </div>

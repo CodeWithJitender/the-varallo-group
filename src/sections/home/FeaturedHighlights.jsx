@@ -20,9 +20,9 @@ const data = [
     btnText: "Learn More",
   },
   {
-    title: "Tech-Driven. ",
-    title2: "People-Focused.",
-    text: "We combine advanced technology with genuine human insight to deliver efficient, secure and attentive support because behind every service is a team that truly cares.",
+    title: "Tech Driven. ",
+    title2: "People Focused.",
+    text: "We combine advanced technology with genuine human insight to deliver efficient, secure, and attentive support because behind every service is a team that truly cares.",
     img: "./featured-3.jpg",
     link: "/services  ",
     btnText: "Learn More",

@@ -39,13 +39,13 @@ const services = [
     link: "/services/tvg-verify",
     img: "./verify.jpg",
   },
-  {
-    title: "TVG Creative",
-    content:
-      "Whether you’re launching a new venture or refreshing your digital presence, how you show up matters. In today’s fast-moving world, first impressions aren’t just visual, they're strategic. That’s where TVG Creative steps in. We provide full-spectrum digital marketing, branding and design services customized for the legal and B2B industries. From marketing materials to start-up identity kits, we help you cut through the noise, attract the right audience and communicate your value with clarity and style.",
-    link: "/services/tvg-creative",
-    img: "./creative.jpg",
-  },
+  // {
+  //   title: "TVG Creative",
+  //   content:
+  //     "Whether you’re launching a new venture or refreshing your digital presence, how you show up matters. In today’s fast-moving world, first impressions aren’t just visual, they're strategic. That’s where TVG Creative steps in. We provide full-spectrum digital marketing, branding and design services customized for the legal and B2B industries. From marketing materials to start-up identity kits, we help you cut through the noise, attract the right audience and communicate your value with clarity and style.",
+  //   link: "/services/tvg-creative",
+  //   img: "./creative.jpg",
+  // },
   {
     title: "TVG Reporting",
     content:
@@ -53,13 +53,13 @@ const services = [
     link: "/services/tvg-reporting",
     img: "./reporting.jpg",
   },
-  {
-    title: "TVG Command",
-    content:
-      "As the legal industry evolves, so should your technology. From court reporting to case production, efficiency and accuracy are everything. That’s why more reporting firms are turning to AI-powered platforms that don’t just keep up, they lead. TVG Command helps you modernize your transcription workflow with cutting-edge platform solutions. As a U.S. sales partner for Claudio AI and other legal-first platforms, we connect you with tools designed to scale your reporting business, reduce manual work  without sacrificing accuracy.",
-    link: "/services/tvg-command",
-    img: "./command.jpg",
-  },
+  // {
+  //   title: "TVG Command",
+  //   content:
+  //     "As the legal industry evolves, so should your technology. From court reporting to case production, efficiency and accuracy are everything. That’s why more reporting firms are turning to AI-powered platforms that don’t just keep up, they lead. TVG Command helps you modernize your transcription workflow with cutting-edge platform solutions. As a U.S. sales partner for Claudio AI and other legal-first platforms, we connect you with tools designed to scale your reporting business, reduce manual work  without sacrificing accuracy.",
+  //   link: "/services/tvg-command",
+  //   img: "./command.jpg",
+  // },
 ];
 
 // Motion Variants

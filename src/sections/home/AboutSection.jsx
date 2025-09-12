@@ -30,7 +30,9 @@ const AboutSection = () => {
 
                 </h3>
                 <p className=" mt-2 font-manrope">
-                 With more than 50 years of court reporting expertise, The Varallo Group combines a rich legacy, unwavering precision and forward-thinking innovation to empower and support your firm every step of the way.
+                With more than 50 years of court reporting expertise, The Varallo Group
+combines a rich legacy, unwavering commitment, and forward-thinking innovation to
+empower and support your firm every step of the way.
 
                 </p>
               </div>
@@ -84,12 +86,12 @@ const AboutSection = () => {
                     { 
                       icon: '/ab-1.png', 
                       title: "Technology-Driven", 
-                      description: "We leverage advanced tools to streamline scheduling, delivery and communication so you can scale with confidence. " 
+                      description: "We leverage advanced tools to streamline scheduling, delivery, and communication so you can scale with confidence." 
                     },
                     { 
                       icon: '/ab-2.png', 
                       title: "Confidential & Reliable", 
-                      description: "We recognize the trust you’ve placed in us and we’re dedicated to protecting the confidentiality of your private company information. " 
+                      description: "We recognize the trust you’ve placed in us, and we’re dedicated to protecting the confidentiality of your private company information." 
                     },
                     { 
                       icon: '/ab-3.png', 

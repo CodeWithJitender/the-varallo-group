@@ -22,7 +22,7 @@ const smartData = [
   },
   {
     title: "TVG Stream",
-    desc: "Cutting edge legal video, trial presentation and event AV solutions.",
+    desc: "Cutting-Edge trial presentation, and event A/V solutions.",
     image: "smart-3.jpg",
     link: "/services/tvg-stream"
   },
@@ -32,24 +32,24 @@ const smartData = [
     image: "smart-4.jpg",
     link: "/services/tvg-books"
   },
-  {
-    title: "TVG Creative",
-    desc: "Marketing materials, branding and identity kits for legal and B2B sectors.",
-    image: "smart-5.jpg",
-    link: "/services/tvg-creative"
-  },
+  // {
+  //   title: "TVG Creative",
+  //   desc: "Marketing materials, branding and identity kits for legal and B2B sectors.",
+  //   image: "smart-5.jpg",
+  //   link: "/services/tvg-creative"
+  // },
   {
     title: "TVG Connect",
     desc: "Focused management services built for professional associations and organizations.",
     image: "smart-6.jpg",
     link: "/services/tvg-connect"
   },
-  {
-    title: "TVG Command",
-    desc: "Empowering you with sales support and practical training on leading legal tech platforms.",
-    image: "smart-7.jpg",
-    link: "/services/tvg-command"
-  },
+  // {
+  //   title: "TVG Command",
+  //   desc: "Empowering you with sales support and practical training on leading legal tech platforms.",
+  //   image: "smart-7.jpg",
+  //   link: "/services/tvg-command"
+  // },
   {
     title: "TVG Verify",
     desc: "Let us ensure your hiring is secure with reliable background screening and compliance checks, powered by SmartHire.",
@@ -93,7 +93,7 @@ export default function SmartSlider() {
     slidesToScroll: 1,
     centerMode: false,
     autoplay: true,
-    autoplaySpeed: 3000, // 3 seconds
+    autoplaySpeed: 5000, // 3 seconds
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     responsive: [

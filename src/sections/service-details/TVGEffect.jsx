@@ -5,14 +5,13 @@ export default function TVGEffect({ data }) {
   const { title, pera, impactStats } = data;
 
   return (
-    <section>
+    <section className="tvg-effect">
       <div className="container-fluid">
         <div className="flex justify-center items-center  bg-white">
           <motion.div
-            className="rounded-full bg-white shadow-xl flex flex-col justify-center items-center text-center p-5 sm:p-10 md:p-20 relative overflow-hidden md:w-[700px] md:h-[700px]"
+            className="rounded-[50px] md:rounded-full bg-white shadow-xl flex flex-col justify-center items-center text-center p-5 sm:p-10 md:p-20 relative overflow-hidden md:w-[700px] md:h-[700px]"
             style={{
               boxShadow: "0 0 120px 20px rgba(0, 204, 255, 0.2)",
-              borderRadius: "9999px",
             }}
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}

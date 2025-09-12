@@ -48,9 +48,9 @@ const Header = () => {
         { name: "TVG Books", path: "/services/tvg-books" },
         { name: "TVG Connect", path: "/services/tvg-connect" },
         { name: "TVG Verify", path: "/services/tvg-verify" },
-        { name: "TVG Creative", path: "/services/tvg-creative" },
+        // { name: "TVG Creative", path: "/services/tvg-creative" },
         { name: "TVG Reporting", path: "/services/tvg-reporting" },
-        { name: "TVG Command", path: "/services/tvg-command" },
+        // { name: "TVG Command", path: "/services/tvg-command" },
       ],
     },
     {

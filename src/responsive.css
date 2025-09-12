@@ -29,4 +29,8 @@
      .covercontainer{
     margin-top: 100vw; 
   }
+  .vertical-slider{
+    height: 170px !important;
+  }
+ 
 }

@@ -48,9 +48,9 @@ function ServiceHero() {
             </h1>
             <img src="./s-hero.gif" className="m-auto" alt="" />
             <p className="text-xl text-center text-white font-manrope">
-              At The Varallo Group, we bring together 8 specialized sub-brands
-              under one unified umbrella. Think of us as your one-stop partner
-              for smarter, streamlined and scalable success.
+             At The Varallo Group, we bring together 6 specialized sub-
+brands under one clear vision. We are your single source for smarter, effective, and
+scalable success.
             </p>
             <Button
               arrowClass={"sdf"}

@@ -25,7 +25,7 @@ const stats = [
   {
     title: "2.5M+",
     description:
-      "Million depositions handled",
+      "Depositions Handled",
   },
 ];
 
@@ -63,7 +63,8 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
-          For court reporting firms that value reliability, accuracy and confidentiality, our team delivers more than just services; we deliver peace of mind.
+          For court reporting firms that value reliability, accuracy, and confidentiality, our
+team delivers more than just services; we deliver peace of mind.
 
           </motion.p>
         </motion.div>
@@ -97,7 +98,8 @@ const HeroSection = () => {
             >
               <div className="rounded-xl p-4 text-white text-sm font-medium bg-btn flex flex-col justify-between">
                 <p className="font-manrope text-xl leading-6 md:leading-8">
-                 Decades of expertise, led by Nancy Varallo, trusted by firms nationwide.
+                Decades of expertise, led by Nancy Varallo. Trusted by firms
+nationwide.
                 </p>
                 <Link to={"/services"} className="text-base mt-5 font-manrope leading-8">
                   Learn More
@@ -115,7 +117,7 @@ const HeroSection = () => {
 
             {/* Vertical Slider */}
             <motion.div
-              className="vertical-slider mt-10"
+              className="vertical-slider mt-10 max-h-[165px] md:max-h-auto overflow-hidden"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}

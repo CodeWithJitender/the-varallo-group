@@ -5,13 +5,13 @@ import { FaLinkedin } from "react-icons/fa";
 const teamMembers = [
   {
     name: "Nancy Varallo",
-    role: "Founder",
+    role: "Founder and CEO",
     image: "team-1.jpg",
     linkedin: "https://www.linkedin.com/in/nancy-varallo-8346a248/",
   },
   {
     name: "George Catuogno",
-    role: "CEO",
+    role: "COO",
     image: "team-2.jpg",
     linkedin: "https://www.linkedin.com/in/george-catuogno-2627a67/",
   },
@@ -60,7 +60,7 @@ const Team = () => {
       <div className="text-center mb-12">
         <h2 className="text-h2 font-parkinsans">The Pillars of The Varallo Group</h2>
         <p className="font-manrope text-xl mt-2">
-          The thinkers, doers and leaders shaping your future.
+         The thinkers, doers, and leaders shaping your future.
         </p>
       </div>
 

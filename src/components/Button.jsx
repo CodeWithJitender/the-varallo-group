@@ -98,7 +98,7 @@ function Button({ text, link, arrowClass, color, size }) {
               </div>
 
               {/* Hours */}
-              <div className="flex items-start mb-4">
+              {/* <div className="flex items-start mb-4">
                 <Clock className="mr-3 mt-1" />
                 <div>
                   <p className="font-manrope text-p mb-2">Working Hours:</p>
@@ -107,7 +107,7 @@ function Button({ text, link, arrowClass, color, size }) {
                   </p>
                   <p className="font-manrope text-lg">Fri: 08:00am - 05:00pm</p>
                 </div>
-              </div>
+              </div> */}
 
               {/* Email */}
               <div className="flex items-start mb-6">

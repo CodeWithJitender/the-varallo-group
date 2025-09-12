@@ -16,7 +16,7 @@ function ServiceDetails() {
         name: "TVG  Management",
         title: "Agency Management Services for Court Reporting Firms",
         pera: [
-          "Running a court reporting firm involves more than just capturing the record.  It demands consistent administrative precision, strong client communication and an eye on the bigger business picture. That’s where we come in. TVG Management acts as your operational backbone, helping you manage the day-to-day so you can focus on what matters most that’s your clients and your growth. Whether you're scaling up, facing staffing challenges or need support during high-demand periods, our experienced team steps in.  We bring reliability, consistency and confidence to your agency.",
+          "Running a court reporting firm involves more than just capturing the record.  It demands consistent administrative precision, strong client communication, and an eye on the bigger business picture. That’s where we come in. TVG Management acts as your operational backbone, helping you manage the day-to-day so you can focus on what matters most: your clients and your growth. Whether you're scaling up, facing staffing challenges, or need support during high-demand periods, our experienced team steps in.  We bring reliability, consistency, and confidence to your agency.",
         ],
         link: "link",
         images: [
@@ -29,8 +29,8 @@ function ServiceDetails() {
       Overview: {
         title: "Proven Experience Delivering the Efficiency You Need",
         pera: [
-          "Managing a court reporting agency means balancing client demands, coordinating with reporters, billing cycles and deadlines all while maintaining your firm’s reputation. That’s where TVG Management comes in. We help you as your supportive operational partner, providing customized administrative support that is specifically designed for court reporting firms.",
-          "If you’re looking to expand your business, facing staffing shortages, or simply wanting to free up time for strategic growth, our experienced team steps in smoothly for your needs. We take care of all the behind the scenes mess so you can stay focused on delivering exceptional service to your clients.",
+          "Managing a court reporting agency means balancing client expectations, reporter coordination, billing cycles, and deadlines, all while keeping your firm’s reputation. That’s where TVG Management comes in. We serve as your dependable operational partner, delivering customized administrative support designed specifically for court reporting firms.",
+          "Whether you're scaling your business, dealing with staff shortages, or simply looking to free up time for strategic growth, our experienced team is here to help. We take care of the behind-the-scenes so you can stay focused on delivering exceptional service to your clients.",
         ],
         img: "/services/management-over.png",
       },
@@ -71,21 +71,21 @@ function ServiceDetails() {
           icon: "/wwo-icon/m1.png",
           title: "End to End Scheduling & Communication Management",
           description:
-            "We handle scheduling, resource calendar coordination, email monitoring and phone answering, ensuring your agency runs smoothly and stays responsive.  We are more than an answering service. We have the skills needed to answer questions the first time they are asked.",
+            "We handle scheduling, resource calendar coordination, email monitoring, and phone answering, ensuring your agency runs smoothly and stays responsive.  We are more than an answering service. We have the skills needed to answer questions the first time they are asked. ",
           classBorder: "border-b border-white",
         },
         {
           icon: "/wwo-icon/m2.png",
           title: "Meticulous Transcript & Exhibit Processing",
           description:
-            "From accurate transcript formatting to exhibit marking, printing, binding and final delivery, we manage it all with precision and speed.",
+            "From accurate transcript formatting to exhibit marking, printing, binding, and final delivery, we manage it all with precision and speed.",
           classBorder: "border-b border-white",
         },
         {
           icon: "/wwo-icon/m3.png",
           title: "Streamlined Invoicing & Collections",
           description:
-            "Get paid on time with professional invoice generation, client billing follow-ups and efficient collections support.",
+            "Get paid on time with professional invoice generation, client billing follow-ups, and efficient collections support.",
           classBorder: "border-b border-white",
         },
         {

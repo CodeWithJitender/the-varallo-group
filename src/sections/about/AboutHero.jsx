@@ -24,7 +24,9 @@ function AboutHero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-          Rooted in a legacy of court reporting since 1937, The Varallo Group blends time honored precision with modern innovation to protect, preserve and elevate the legal record.
+          Rooted in a legacy of court reporting since 1937,
+The Varallo Group blends time-honored values with modern
+innovation to protect, preserve, and elevate the legal record.
           </motion.p>
 
           <motion.div
