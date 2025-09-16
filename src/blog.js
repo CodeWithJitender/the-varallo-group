@@ -8,7 +8,8 @@ export const Blog = [
       date: "09/21/2025",
     },
     tag: "Court Reporting",
-    description:"We believe that technology won’t replace court reporters but those who embrace it will. If you’re anywhere near the legal world, you’ve probably noticed that the courtroom isn’t what it used to be anymore.",
+    description:
+      "We believe that technology won’t replace court reporters but those who embrace it will. If you’re anywhere near the legal world, you’ve probably noticed that the courtroom isn’t what it used to be anymore.",
     img: "/blog/blog1/main.jpg",
     link: "/blog/1",
     content: [
@@ -19,7 +20,6 @@ export const Blog = [
           "If we're for real, technology isn’t here to replace court reporters, but it’s here to change the game. If you’re part of a court reporting firm, whether as a small claims representative or support staff, you already know the drill: speed, accuracy, and trust are everything. However, with the small court claims process moving faster and expectations climbing higher, the pressure is on. In today’s landscape, tech isn’t just a nice bonus, it’s the secret weapon small firms need to stay sharp, agile and competitive.",
         ],
       },
-
       {
         section: "What Is Court Reporting?",
         paragraphs: [
@@ -112,10 +112,7 @@ export const Blog = [
             pera: "Real-time collaboration platforms enable small claims representatives and legal teams to work on the same transcript simultaneously. Whether annotating testimony or reviewing legal notes, teams stay synced and informed, cutting down on errors and turnaround times. This streamlines the small court claims process.",
           },
         ],
-        imageList: [
-          "/blog/blog1/1.jpg",
-          "/blog/blog1/2.jpg",
-        ],
+        imageList: ["/blog/blog1/1.jpg", "/blog/blog1/2.jpg"],
       },
       {
         section: "Real-Time Court Reporting Devices",
@@ -197,7 +194,8 @@ export const Blog = [
       date: "09/21/2025",
     },
     tag: "Legal Technology",
-    description:"In today’s fast-moving, tech-powered legal world, the collaboration between court reporters and legal videographers has never been more crucial.",
+    description:
+      "In today’s fast-moving, tech-powered legal world, the collaboration between court reporters and legal videographers has never been more crucial.",
     img: "/blog/blog2/main.jpg",
     link: "/blog/2",
     content: [
@@ -234,6 +232,8 @@ export const Blog = [
             pera: " It’s not just about typing fast; reporters need to know evidentiary rules and tricky legal terminology inside out to make sure transcripts stand strong in court.",
           },
         ],
+      },
+      {
         paragraphs: [
           "Put simply, today’s court reporter is part legal scholar, part tech whiz, and honestly, an indispensable teammate in the legal game.",
         ],
@@ -264,6 +264,8 @@ export const Blog = [
             pera: "Secure, tamper-proof storage ensures video records remain admissible and credible.",
           },
         ],
+      },
+      {
         paragraphs: [
           "Legal videographers are no longer “camera people”, they’re trusted evidence custodians whose work can tip the balance in a trial.",
           "Bring the visual record to life. Each fills in the gaps of the other. Together, they offer legal teams a comprehensive package, clarity in words, and depth in visuals. A transcript can be powerful, but paired with video, it becomes unarguable. For court reporting firms aiming to provide end to end services, this collaboration isn’t just helpful, it’s foundational.",
@@ -295,6 +297,8 @@ export const Blog = [
             pera: "They elevate trial presentations with persuasive visual storytelling.",
           },
         ],
+      },
+      {
         paragraphs: [
           "For court reporters, this collaboration means they’re never left guessing what was said in a noisy room or over a glitchy Zoom feed. A videographer’s audio backup can fill in those hard to hear gaps, ensuring the final transcript is flawless.",
           "For court reporting firms, it’s an instant value add. Offering both services under one roof means attorneys get an airtight record of words, tone, and body language, all preserved for strategic use in trial or settlement.",
@@ -319,13 +323,12 @@ export const Blog = [
             pera: "Position themselves as a one stop shop for modern litigation support.",
           },
         ],
-        paragraphs: [
+      },
+      {
+         paragraphs: [
           "Think about it, the legal industry is dealing with increasingly complex, digital first workflows. Hybrid depositions, encrypted file transfers, AI AI-enhanced transcripts, these are now standard expectations. If your firm can tick all those boxes while still keeping that human touch, the kind of personal service clients remember, you’re sitting right in the “sweet spot” of the market.",
         ],
-        imageList: [
-          "/blog/blog2/1.jpg",
-          "/blog/blog2/2.jpg",
-        ],
+        imageList: ["/blog/blog2/1.jpg", "/blog/blog2/2.jpg"],
       },
       {
         section: "Conclusion: A Partnership Built for the Future",
@@ -409,10 +412,7 @@ export const Blog = [
         section: "Why Confidentiality Matters?",
         paragraphs:
           "The digital shift has brought efficiency, but it’s also created more points of vulnerability. As highlighted by IBM’s Cost of a Data Breach Report, 83% of organizations have suffered more than one breach, with legal and financial sectors among the most targeted. Like for professionals, the risk isn’t just about data theft, but it’s about erosion of trust. Once a client feels their privacy is compromised, the relationship and trust end most of the time.",
-        imageList: [
-          "/blog/blog3/1.jpg",
-          "/blog/blog3/2.jpg",
-        ],
+        imageList: ["/blog/blog3/1.jpg", "/blog/blog3/2.jpg"],
       },
       {
         section: "Best Practices for Protecting Client Data",

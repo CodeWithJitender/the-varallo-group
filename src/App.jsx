@@ -5,6 +5,7 @@ import "aos/dist/aos.css";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Privacy from "./pages/Privacy";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Service from "./pages/Service";
@@ -34,6 +35,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/privacy-policy" element={<Privacy />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/services" element={<Service />} />
         <Route path="/blog" element={<Blog />} />
