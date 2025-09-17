@@ -96,7 +96,7 @@ export default function BlogDetail() {
               </motion.div>
             )}
 
-            {/* List (if exists) */}
+            {/* List (if exists)
             {section.list && (
               <ul className="list-disc ml-6 mt-3">
                 {section.list.map((item, i) => (
@@ -106,6 +106,33 @@ export default function BlogDetail() {
                   >
                     {item.title && <strong>{item.title}: </strong>}
                     {item.pera}
+                  </li>
+                ))}
+              </ul>
+            )} */}
+            {section.list && (
+              <ul className="list-disc ml-6 mt-3">
+                {section.list.map((item, i) => (
+                  <li
+                    key={i}
+                    className="mb-4 text-base font-manrope text-[#262626]"
+                  >
+                    {item.title && (
+                      <p className="font-semibold mb-1">{item.title}</p>
+                    )}
+                    <p className="mb-2">{item.pera}</p>
+
+                    {item.innerList && item.innerList.length > 0 && (
+                      <ul className="list-disc ml-6">
+                        {item.innerList.map((inner, j) => (
+                          <p
+                            key={j}
+                            className="text-sm text-[#444]"
+                            dangerouslySetInnerHTML={{ __html: inner }}
+                          />
+                        ))}
+                      </ul>
+                    )}
                   </li>
                 ))}
               </ul>

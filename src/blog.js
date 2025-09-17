@@ -650,7 +650,7 @@ export const Blog = [
       {
         section: "Conclusion",
         paragraphs: [
-          "Attorneys don’t expect perfection, but they expect consistency, clarity, and professionalism from both of them. When you avoid common missteps, whether it’s tech trouble, missing detail,s or unclear certification, you’re doing more than just your job; you’re preserving the integrity of the legal record.",
+          "Attorneys don’t expect perfection, but they expect consistency, clarity, and professionalism from both of them. When you avoid common missteps, whether it’s tech trouble, missing details, or unclear certification, you’re doing more than just your job; you’re preserving the integrity of the legal record.",
           "Your court reporters board certification, your commitment to ethical neutrality, and your meticulous attention to detail are what make attorneys trust you with their cases. As cited in a recent article by Trust Array notes, seasoned professionals become indispensable not just because they’re accurate but because they’re reliable. So keep your skills sharp, your tech in check, and your communication open. That’s how you move from being just another vendor to being the person attorneys always want on their team.",
         ],
       },
