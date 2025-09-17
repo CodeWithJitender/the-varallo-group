@@ -38,12 +38,12 @@ const smartData = [
   //   image: "smart-5.jpg",
   //   link: "/services/tvg-creative"
   // },
-  {
-    title: "TVG Connect",
-    desc: "Focused management services built for professional associations and organizations.",
-    image: "smart-6.jpg",
-    link: "/services/tvg-connect"
-  },
+  // {
+  //   title: "TVG Connect",
+  //   desc: "Focused management services built for professional associations and organizations.",
+  //   image: "smart-6.jpg",
+  //   link: "/services/tvg-connect"
+  // },
   // {
   //   title: "TVG Command",
   //   desc: "Empowering you with sales support and practical training on leading legal tech platforms.",

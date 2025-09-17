@@ -25,13 +25,13 @@ const services = [
     img: "./books.jpg",
   },
 
-  {
-    title: "TVG Connect",
-    content:
-      "Trade groups and professional associations thrive on connection, coordination and clear leadership but managing all the moving parts can be overwhelming. From day-to-day operations to annual conferences, it takes more than passion to keep members engaged and everything running smoothly. That’s where TVG Connect steps in. We specialize in association management for professional, legal and compliance-driven industries, offering customized solutions that keep your organization efficient, professional and people-focused.",
-    link: "/services/tvg-connect",
-    img: "./connect.jpg",
-  },
+  // {
+  //   title: "TVG Connect",
+  //   content:
+  //     "Trade groups and professional associations thrive on connection, coordination and clear leadership but managing all the moving parts can be overwhelming. From day-to-day operations to annual conferences, it takes more than passion to keep members engaged and everything running smoothly. That’s where TVG Connect steps in. We specialize in association management for professional, legal and compliance-driven industries, offering customized solutions that keep your organization efficient, professional and people-focused.",
+  //   link: "/services/tvg-connect",
+  //   img: "./connect.jpg",
+  // },
   {
     title: "TVG Verify",
     content:

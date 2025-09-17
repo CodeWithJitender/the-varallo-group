@@ -1,6 +1,7 @@
 import React from "react";
 import { motion, AnimatePresence } from "motion/react";
 import Button from "./Button";
+import Arrow from "./Arrow";
 
 const ResourcePortalModal = ({ isOpen, onClose }) => {
   return (
@@ -58,13 +59,14 @@ const ResourcePortalModal = ({ isOpen, onClose }) => {
                 />
               </label>
 
-              <button
-                type="submit"
-                className="flex mt-3 justify-center"
-              >
-                <Button text={"Submit"} arrowClass={"r"}  />
-              </button>
-
+              <div className="flex mt-3 justify-center">
+                <button className={`main-btn flex font-manrope text-white`}>
+                  <div className="text bg-secondary text-base lg:text-lg leading-10 py-1 px-6 lg:leading-[40px] rounded-[50px]">
+                    Submit
+                  </div>
+                  <Arrow customClass="bg-secondary -rotate-45 " />
+                </button>
+              </div>
             </form>
 
             <div className="text-center mt-3">
