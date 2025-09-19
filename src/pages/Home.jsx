@@ -27,9 +27,9 @@ function Home() {
       <div className="" id="testimonials">
         <Testimonials />
       </div>
-      <div className="" id="our-blog">
+      {/* <div className="" id="our-blog">
         <BlogSection />
-      </div>
+      </div> */}
     </div>
   );
 }

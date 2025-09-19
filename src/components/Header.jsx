@@ -53,15 +53,15 @@ const Header = () => {
         // { name: "TVG Command", path: "/services/tvg-command" },
       ],
     },
-    {
-      name: "Blog",
-      path: "/blog",
-      // submenu: [
-      //   { name: "Trending Blogs", path: "/blog#trending-blogs" },
-      //   { name: "Latest Blogs", path: "/blog#latest-blogs" },
-      //   { name: "Popular Blogs", path: "/blog#popular-blogs" },
-      // ],
-    },
+    // {
+    //   name: "Blog",
+    //   path: "/blog",
+    //   submenu: [
+    //     { name: "Trending Blogs", path: "/blog#trending-blogs" },
+    //     { name: "Latest Blogs", path: "/blog#latest-blogs" },
+    //     { name: "Popular Blogs", path: "/blog#popular-blogs" },
+    //   ],
+    // },
     {
       name: "Contact Us",
       path: "/contact",
