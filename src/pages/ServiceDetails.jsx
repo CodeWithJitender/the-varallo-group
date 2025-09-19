@@ -63,7 +63,7 @@ function ServiceDetails() {
         impactStats: [
           { number: "24+", label: "Years of Industry Experience" },
           { number: "98%", label: "Positive Client Feedback" },
-          { number: "1000+", label: "Clients Supported Annually" },
+          { number: "1000+", label: "Attorneys Supported Annually" },
         ],
       },
       Overview2: [ 
@@ -114,7 +114,7 @@ function ServiceDetails() {
       Overview: {
         title: " Precision That Speaks for Itself",
         pera: [
-          "At TVG Reporting, we understand what court reporting firm owners need: dependable professionals who deliver accurate, impartial and timely records under your banner. That’s why we partner with court reporting agencies across Massachusetts, Rhode Island, Connecticut and nationwide through our trusted network to expand your coverage and reinforce your reputation.",
+          "At TVG Reporting, we understand what court reporting firm owners need: dependable professionals who deliver accurate, impartial, and timely records under your banner. That’s why we partner with court reporting agencies across Massachusetts, Rhode Island, Connecticut, and nationwide through our trusted network to expand your coverage and reinforce your reputation.",
           "Whether you're managing overflow, staffing a high-volume case or seeking remote coverage across jurisdictions, our experienced team of certified reporters and legal videographers is here to support your operations so you can confidently meet client expectations without missing a beat.",
         ],
         img: "/services/reporting-over.png",
@@ -129,7 +129,7 @@ function ServiceDetails() {
           },
           {
             icon: "/fruit-citrus.png",
-            text: "Stenographer support & management",
+            text: "Reporter Support & Management",
           },
           {
             icon: "/fruit-citrus.png",
@@ -137,17 +137,29 @@ function ServiceDetails() {
           },
         ],
         tagsRight: [
-          {
+          // {
+          //   icon: "/fruit-citrus.png",
+          //   text: "File organization & case tracking",
+          // },
+          // {
+          //   icon: "/fruit-citrus.png",
+          //   text: "Deadline reminders & follow-ups",
+          // },
+          // {
+          //   icon: "/fruit-citrus.png",
+          //   text: "Proofing & transcript finalization",
+          // },
+           {
             icon: "/fruit-citrus.png",
-            text: "File organization & case tracking",
+            text: "In-Person & Remote Coverage",
           },
           {
             icon: "/fruit-citrus.png",
-            text: "Deadline reminders & follow-ups",
+            text: "Transcript-to-Video Synchronization",
           },
           {
             icon: "/fruit-citrus.png",
-            text: "Proofing & transcript finalization",
+            text: "Exhibit Management",
           },
           {
             icon: "/fruit-citrus.png",
@@ -207,7 +219,7 @@ function ServiceDetails() {
         name: "TVG Stream",
         title: "Legal Video, Trial Presentation and Conference A/V",
         pera: [
-          "In today’s fast-evolving legal landscape, advanced technology is no longer optional; it’s indispensable. TVG Stream equips court reporting firms with comprehensive remote support, offering secure platforms, real-time technical assistance, and flawless execution. From multi-party depositions and last-minute bookings to trial presentation services and equipment rentals, we ensure your firm consistently delivers an exceptional experience to every client.",
+          "In today’s fast-evolving legal landscape, advanced technology is no longer optional; it’s indispensable. TVG Stream equips court reporting firms with comprehensive remote support, offering secure platforms, real-time technical assistance, and flawless execution. From multi-party depositions and last-minute bookings, to trial presentation services and equipment rentals, we ensure your firm consistently delivers an exceptional experience to every client.",
         ],
         link: "link",
         images: [
@@ -238,6 +250,8 @@ function ServiceDetails() {
             text: "Platform flexibility (Zoom, WebEx, etc.) ",
           },
           { icon: "/fruit-citrus.png", text: "End-to-end exhibit handling " },
+          { icon: "/fruit-citrus.png", text: "A/V Technicians" },
+          { icon: "/fruit-citrus.png", text: "Trial Equipment Rentals" },
         ],
         tagsRight: [
           {
@@ -253,11 +267,13 @@ function ServiceDetails() {
             text: "Screen-sharing & audio testing ",
           },
           { icon: "/fruit-citrus.png", text: "Session recording & storage" },
+          { icon: "/fruit-citrus.png", text: "Trial Technicians" },
+          { icon: "/fruit-citrus.png", text: "Hot-Seat Operators " },
         ],
       },
       TvgEffect: {
         title: "Service Metrics",
-        pera: "Every moment counts and we help you capture it live. From remote depositions to secure streaming, we make virtual proceedings seamless.",
+        pera: "Every moment counts and we help you capture it live. From remote depositions to secure streaming, we make virtual proceedings smooth.",
         impactStats: [
           { number: "24+", label: "Years of Industry Experience" },
           { number: "98%", label: "Positive Client Feedback" },
@@ -321,8 +337,7 @@ function ServiceDetails() {
         name: "TVG Books",
         title: "Bookkeeping and Accounting Services for Court Reporting Firms",
         pera: [
-          "Your business depends on more than exceptional service.  It depends on strong financial health. Without transparent financial insights, even thriving agencies can face challenges with cash flow, tax preparation, and strategic planning. That’s why smart bookkeeping and precise accounting aren’t optional; they’re critical.",
-          "At TVG Books, we recognize the unique financial pressures you encounter behind the scenes. Whether you’re managing client payments, maintaining compliance, or simply seeking better control over your finances, our team is here to make it easier. We offer specialized bookkeeping and accounting services tailored specifically for court reporting firms and industry professionals. With TVG Books, you can operate with confidence, clarity, and control.",
+          "Your business depends on more than exceptional service. It depends on strong financial health. Without transparent financial insights, even thriving agencies can face challenges with cash flow, tax preparation, and strategic planning. That’s why smart bookkeeping and precise accounting aren’t optional; they’re critical.  At TVG Books, we recognize the unique financial pressures you encounter behind the scenes. Whether you’re managing client payments, maintaining compliance, or simply seeking better control over your finances, our team is here to make it easier. We offer specialized bookkeeping and accounting services tailored specifically for court reporting firms and industry professionals. With TVG Books, you can operate with confidence, clarity, and control.",
         ],
         link: "link",
         images: [
@@ -387,7 +402,7 @@ function ServiceDetails() {
           icon: "/wwo-icon/b2.png",
           title: "Client Billing and Invoicing",
           description:
-            "Never miss a payment. We streamline your client billing process by generating timely, accurate invoices and tracking payments. We make it easy for your clients to pay, and for you to stay on top of your receivables, keeping your cash flow steady and predictable.",
+            "Never miss a payment. We streamline your client billing process by generating timely, accurate invoices, and tracking payments. We make it easy for your clients to pay, and for you to stay on top of your receivables, keeping your cash flow steady and predictable.",
           classBorder: "border-b border-white",
         },
         {
@@ -758,7 +773,7 @@ function ServiceDetails() {
           icon: "/wwo-icon/v1.png",
           title: "Comprehensive Screening Packages",
           description:
-            "Get full-spectrum background checks from criminal history, and driving records to drug screenings, credit checks, employment verification, and more, all customized to your industry needs.",
+            "Get full-spectrum background checks from criminal history and driving records, to drug screenings, credit checks, employment verification, and more all customized to your industry needs. ",
           classBorder: "border-b border-white",
         },
         {

@@ -212,7 +212,7 @@ const ContactUs = () => {
             className="lg:col-span-2 bg-white rounded-2xl shadow-sm  md:p-8"
           >
             <h3 className="text-3xl font-semibold font-manrope text-center mb-2">
-              Schedule Online
+              Schedule a deposition
             </h3>
             <p className="text-p lg:text-xl font-manrope text-center mb-6">
               Once you submit your request, we’ll send a confirmation email
@@ -257,7 +257,7 @@ const ContactUs = () => {
               {/* Attorney Name */}
               <motion.div custom={1} variants={fadeInUp} className="mb-3">
                 <label className="block font-manrope mb-2 font-bold text-base md:text-xl">
-                  Attorney Name*
+                  Attorney Name
                 </label>
                 <input
                   type="text"
@@ -285,7 +285,7 @@ const ContactUs = () => {
               {/* Contact Name */}
               <motion.div custom={3} variants={fadeInUp} className="mb-3">
                 <label className="block font-manrope mb-2 font-bold text-base md:text-xl">
-                  Contact Name*
+                  Contact Name
                 </label>
                 <input
                   type="text"
@@ -326,7 +326,7 @@ const ContactUs = () => {
               {/* Preferred Date */}
               <motion.div custom={6} variants={fadeInUp} className="mb-3">
                 <label className="block font-manrope mb-2 font-bold text-base md:text-xl">
-                  Preferred Date*
+                  Preferred Date
                 </label>
                 <input
                   type="date"
@@ -339,7 +339,7 @@ const ContactUs = () => {
               {/* Preferred Time */}
               <motion.div custom={7} variants={fadeInUp} className="mb-3">
                 <label className="block font-manrope mb-2 font-bold text-base md:text-xl">
-                  Preferred Time*
+                  Preferred Time
                 </label>
                 <input
                   type="time"
@@ -352,7 +352,7 @@ const ContactUs = () => {
               {/* State */}
               <motion.div custom={8} variants={fadeInUp} className="mb-3">
                 <label className="block font-manrope mb-2 font-bold text-base md:text-xl">
-                  Select State*
+                  Select State
                 </label>
                 <div className="border font-manrope rounded-lg px-4 py-3 w-full bg-[#F2F2F2] text-xl">
                   <select name="state" required className="w-full bg-[#F2F2F2]">
@@ -390,7 +390,7 @@ const ContactUs = () => {
               {/* Estimated Duration */}
               <motion.div custom={11} variants={fadeInUp} className="mb-3">
                 <label className="block font-manrope mb-2 font-bold text-base md:text-xl">
-                  Estimated Duration*
+                  Estimated Duration
                 </label>
                 <input
                   type="text"

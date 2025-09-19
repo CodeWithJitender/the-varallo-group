@@ -23,7 +23,8 @@ function BlogHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-        From industry trends to practical tips, explore helpful tips from The Varallo Group that help court reporters, videographers and legal support professionals work smarter, stay competitive and grow their businesses.
+        From industry trends to practical tips, explore helpful topics from The Varallo Group that help court reporters, videographers, and legal support professionals work smarter, stay competitive, and grow their businesses.
+
 
         </motion.p>
 
@@ -33,7 +34,8 @@ function BlogHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
-          <Button text="Submit a Post Idea" link={"mailto:cedar@thevarallogroup.com"}  arrowClass="d" />
+          
+          <Button text="Submit a Post Idea" link={"mailto:Info@thevarallogroup.com"}  arrowClass="d" />
         </motion.div>
        <div className="mt-5">
          <motion.img
