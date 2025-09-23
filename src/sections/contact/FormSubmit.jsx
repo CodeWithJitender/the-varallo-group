@@ -70,7 +70,7 @@ function FormSubmit() {
     }),
   };
   return (
-    <div className="lg:col-span-2">
+    <div className="w-full">
       <motion.div
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}

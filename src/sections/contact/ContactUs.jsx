@@ -206,7 +206,9 @@ const ContactUs = () => {
           </div>
 
           {/* Right Contact Form */}
+          <div className="lg:col-span-2" id="contact-main">
          <Form/>
+          </div>
         </div>
       </div>
     </section>

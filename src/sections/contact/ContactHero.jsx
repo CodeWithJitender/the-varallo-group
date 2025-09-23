@@ -33,6 +33,7 @@ function ContactHero() {
           transition={{ duration: 0.8, delay: 0.1 }}
         >
          Start your journey with a conversation. Let’s Connect!
+        
         </motion.h1>
 
         <motion.p
@@ -45,12 +46,15 @@ function ContactHero() {
         </motion.p>
 
         <motion.div
-          className="mt-10 flex justify-center"
+          className="mt-10 flex justify-center flex-col items-center gap-4"
           initial={{ opacity: 0, y: 40 }} // from bottom
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
-          <Button text="Schedule a call now" arrowClass="d" />
+          <Button text="Request a call back for other services" arrowClass="d" />
+          <div className="border-b border-white ">
+            <a href="#contact-main" className="text-base font-manrope md:text-xl">Schedule a Deposition &nbsp; <i class="fal fa-external-link text-base"></i></a>
+          </div>
         </motion.div>
        <div className="mt-5">
          {/* <motion.img
@@ -61,6 +65,7 @@ function ContactHero() {
           alt="Professional"
           className="w-full  "
         /> */}
+         
        </div>
       </div>
       <div className="block md:hidden">

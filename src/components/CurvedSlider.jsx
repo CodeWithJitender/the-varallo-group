@@ -89,8 +89,9 @@ const CurvedSlider = ({
         className="
           relative scale-[1.5]
           mt-[190vw] sm:mt-[200vw] md:mt-[145vw]
-          lg:mt-[180vw] xl:mt-[150vw] 2xl:mt-[120vw]
+          lg:mt-[180vw] xl:mt-[150vw] 2xl:mt-[120vw] 
         "
+        id="curved-slider-container"
       >
         {cards.map((card) => (
           <div
