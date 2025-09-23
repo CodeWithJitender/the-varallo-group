@@ -241,31 +241,16 @@ function ServiceDetails() {
         pera: "We are your remote deposition experts. We manage the tech so your virtual proceedings run smoothly, securely and professionally. ",
         tagsLeft: [
           { icon: "/fruit-citrus.png", text: "Full remote deposition setup" },
-          {
-            icon: "/fruit-citrus.png",
-            text: "Live tech monitoring & troubleshooting",
-          },
-          {
-            icon: "/fruit-citrus.png",
-            text: "Platform flexibility (Zoom, WebEx, etc.) ",
-          },
+          { icon: "/fruit-citrus.png", text: "Live tech monitoring & troubleshooting", },
+          { icon: "/fruit-citrus.png", text: "Platform flexibility (Zoom, WebEx, etc.) ",},
           { icon: "/fruit-citrus.png", text: "End-to-end exhibit handling " },
           { icon: "/fruit-citrus.png", text: "A/V Technicians" },
           { icon: "/fruit-citrus.png", text: "Trial Equipment Rentals" },
         ],
         tagsRight: [
-          {
-            icon: "/fruit-citrus.png",
-            text: "Participant coordination & scheduling",
-          },
-          {
-            icon: "/fruit-citrus.png",
-            text: "Secure breakout room facilitation",
-          },
-          {
-            icon: "/fruit-citrus.png",
-            text: "Screen-sharing & audio testing ",
-          },
+          { icon: "/fruit-citrus.png",text: "Participant coordination & scheduling", },
+          { icon: "/fruit-citrus.png",text: "Secure breakout room facilitation",},
+          { icon: "/fruit-citrus.png", text: "Screen-sharing & audio testing ",},
           { icon: "/fruit-citrus.png", text: "Session recording & storage" },
           { icon: "/fruit-citrus.png", text: "Trial Technicians" },
           { icon: "/fruit-citrus.png", text: "Hot-Seat Operators " },
@@ -334,10 +319,10 @@ function ServiceDetails() {
     },
     "tvg-books": {
       hero: {
-        name: "TVG Books",
+        name: "TVG Book",
         title: "Bookkeeping and Accounting Services for Court Reporting Firms",
         pera: [
-          "Your business depends on more than exceptional service. It depends on strong financial health. Without transparent financial insights, even thriving agencies can face challenges with cash flow, tax preparation, and strategic planning. That’s why smart bookkeeping and precise accounting aren’t optional; they’re critical.  At TVG Books, we recognize the unique financial pressures you encounter behind the scenes. Whether you’re managing client payments, maintaining compliance, or simply seeking better control over your finances, our team is here to make it easier. We offer specialized bookkeeping and accounting services tailored specifically for court reporting firms and industry professionals. With TVG Books, you can operate with confidence, clarity, and control.",
+          "Your business depends on more than exceptional service. It depends on strong financial health. Without transparent financial insights, even thriving agencies can face challenges with cash flow, tax preparation, and strategic planning. That’s why smart bookkeeping and precise accounting aren’t optional; they’re critical. At TVG Books, we recognize the unique financial pressures you encounter behind the scenes. Whether you’re managing client payments, maintaining compliance, or simply seeking better control over your finances, our team is here to make it easier. We offer specialized bookkeeping and accounting services tailored specifically for court reporting firms and industry professionals. With TVG Books, you can operate with confidence, clarity, and control.",
         ],
         link: "link",
         images: [
@@ -350,7 +335,7 @@ function ServiceDetails() {
       Overview: {
         title: "Precision You Can Count On",
         pera: [
-          ""
+          "Running a court reporting firm means wearing many hats and finances shouldn’t be the one that keeps you up at night. At TVG Books, we specialize in taking the weight of bookkeeping and reporting off your shoulders with services built specifically for your industry. Whether you're managing monthly invoices or prepping for year-end filings, we ensure your numbers stay clean, compliant and in control."
         ],
         img: "/services/books-over.png",
       },
