@@ -2,14 +2,11 @@ import React, { useState, useEffect, useRef } from "react";
 import { gsap } from "gsap";
 
 const CurvedSlider = ({
-  numberOfCards = 14,
-  radius = 750,
-  cardSize = 145,
-  rotationSpeed = 60,
+  rotationSpeed = 50,
   responsiveConfig = {
-    mobile: { maxWidth: 640, radius: 250, cardCount: 5, cardSize: 100, spacing: .8 },
-    tablet: { maxWidth: 1024, radius: 450, cardCount: 10, cardSize: 120, spacing: 1.2 },
-    desktop: { maxWidth: Infinity, radius: 750, cardCount: 14, cardSize: 145, spacing: 1 },
+    mobile:{ maxWidth: Infinity, radius: 1000, cardCount: 12, cardSize: 145, spacing: 1 },
+    tablet: { maxWidth: Infinity, radius: 1000, cardCount: 12, cardSize: 145, spacing: 1 },
+    desktop: { maxWidth: Infinity, radius: 1000, cardCount: 12, cardSize: 145, spacing: 1 },
   },
 }) => {
   const [windowSize, setWindowSize] = useState({ width: 0, height: 0 });
@@ -41,33 +38,24 @@ const CurvedSlider = ({
     return () => gsap.killTweensOf(containerRef.current);
   }, [rotationSpeed]);
 
-  // ✅ Function to get config for current screen size
+  // ✅ Get pixel config for current screen size
   const getResponsiveConfig = (width) => {
-    if (width <= responsiveConfig.mobile.maxWidth) {
-      return responsiveConfig.mobile;
-    } else if (width <= responsiveConfig.tablet.maxWidth) {
-      return responsiveConfig.tablet;
-    }
+    if (width <= responsiveConfig.mobile.maxWidth) return responsiveConfig.mobile;
+    if (width <= responsiveConfig.tablet.maxWidth) return responsiveConfig.tablet;
     return responsiveConfig.desktop;
   };
 
-  const {
-    radius: responsiveRadius,
-    cardCount,
-    cardSize: responsiveCardSize,
-    spacing,
-  } = getResponsiveConfig(windowSize.width);
+  const { radius, cardCount, cardSize, spacing } = getResponsiveConfig(windowSize.width);
 
-  // Generate cards
+  // Generate cards in pixels
   const generateCards = () => {
     const cards = [];
-    // ✅ Add spacing factor here
     const angleStep = ((2 * Math.PI) / cardCount) * spacing;
 
     for (let i = 0; i < cardCount; i++) {
       const angle = i * angleStep - Math.PI / 2;
-      const x = Math.cos(angle) * responsiveRadius;
-      const y = Math.sin(angle) * responsiveRadius;
+      const x = Math.cos(angle) * radius;
+      const y = Math.sin(angle) * radius;
 
       cards.push({
         id: i + 1,
@@ -83,33 +71,52 @@ const CurvedSlider = ({
   const cards = generateCards();
 
   return (
-    <div className="w-full h-[50vh] flex items-center justify-center overflow-hidden">
+    <div
+      style={{
+        width: "100%",
+        height: `${radius - 200}px`, // only show top half
+        position: "relative",
+        overflow: "hidden",
+      }}
+      >
       <div
         ref={containerRef}
-        className="
-          relative scale-[1.5]
-          mt-[190vw] sm:mt-[200vw] md:mt-[145vw]
-          lg:mt-[180vw] xl:mt-[150vw] 2xl:mt-[120vw] 
-        "
-        id="curved-slider-container"
+        style={{
+          position: "absolute",
+          left: "50%",
+          top: "300px",
+          transform: "translateX(-50%)",
+          width: `${radius * 2}px`,
+          height: `${radius * 2}px`,
+        }}
       >
         {cards.map((card) => (
           <div
             key={card.id}
-            className="absolute rounded-lg overflow-hidden flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 pointer-events-none"
             style={{
-              width: responsiveCardSize * 1.8,
-              height: responsiveCardSize,
-              left: card.x - (responsiveCardSize * 1.8) / 2,
-              top: card.y - responsiveCardSize / 2,
+              position: "absolute",
+              width: `${cardSize * 1.8}px`,
+              height: `${cardSize}px`,
+              left: `${card.x - (cardSize * 1.8) / 2 + radius}px`,
+              top: `${card.y - cardSize / 2 + radius}px`,
               transformOrigin: "center",
               transform: `rotate(${card.angle + 90}deg)`,
+              borderRadius: "12px",
+              overflow: "hidden",
+              boxShadow: "0 4px 12px rgba(0,0,0,0.3)",
+              pointerEvents: "none",
+              transition: "all 0.3s ease",
+              scale: 1.5
             }}
           >
             <img
-              className="h-full w-full object-cover"
               src={card.image}
               alt={`Card ${card.id}`}
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+              }}
             />
           </div>
         ))}

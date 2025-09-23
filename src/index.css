@@ -126,12 +126,12 @@ footer .container-fluid {
 /* ------------========== Responsive CSS Start ==========------------ */
 
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
-@media (max-width: 2000px) {
+/* @media (max-width: 2000px) {
   #curved-slider-container{
     margin-top:80vw !important;
     
   }
-}
+} */
 
 /* // `xl` applies to large devices (desktops, less than 1200px) */
 @media (max-width: 1200px) {
