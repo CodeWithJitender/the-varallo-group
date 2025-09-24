@@ -35,7 +35,7 @@ const Story = () => {
         {/* Heading */}
         <div className="text-center">
           <h2 className="text-h2 font-parkinsans">
-            The Varallo’s Journey
+            The Varallo Group’s Journey
 
           </h2>
           <p className="mt-4 font-manrope text-xl max-w-4xl mx-auto">

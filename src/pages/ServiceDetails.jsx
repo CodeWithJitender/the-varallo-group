@@ -319,7 +319,7 @@ function ServiceDetails() {
     },
     "tvg-books": {
       hero: {
-        name: "TVG Book",
+        name: "TVG Books",
         title: "Bookkeeping and Accounting Services for Court Reporting Firms",
         pera: [
           "Your business depends on more than exceptional service. It depends on strong financial health. Without transparent financial insights, even thriving agencies can face challenges with cash flow, tax preparation, and strategic planning. That’s why smart bookkeeping and precise accounting aren’t optional; they’re critical. At TVG Books, we recognize the unique financial pressures you encounter behind the scenes. Whether you’re managing client payments, maintaining compliance, or simply seeking better control over your finances, our team is here to make it easier. We offer specialized bookkeeping and accounting services tailored specifically for court reporting firms and industry professionals. With TVG Books, you can operate with confidence, clarity, and control.",

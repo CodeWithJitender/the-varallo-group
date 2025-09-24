@@ -18,7 +18,7 @@ const services = [
     img: "./stream.jpg",
   },
   {
-    title: "TVG Book",
+    title: "TVG Books",
     content:
       "Your business runs on more than just great service, it runs on healthy numbers. Without clear financial visibility, even the most successful agencies can struggle with cash flow, tax prep and long-term planning. That’s why smart bookkeeping and accurate accounting aren’t just nice to have, they’re essential. At TVG Book, we get the behind-the-scenes pressures that you face. Whether you're chasing down client payments, trying to stay compliant or just need a better handle on your books, our team is here to simplify your financial life.",
     link: "/services/tvg-books",

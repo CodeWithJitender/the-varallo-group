@@ -51,7 +51,7 @@ function ContactHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
-          <Button text="Request a call back for other services" arrowClass="d" />
+          <Button text="Request a call back for other services" link={"mailto:info@varallogroup.com"} arrowClass="d" />
           <div className="border-b border-white ">
             <a href="#contact-main" className="text-base font-manrope md:text-xl">Schedule a Deposition &nbsp; <i class="fal fa-external-link text-base"></i></a>
           </div>

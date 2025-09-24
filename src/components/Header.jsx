@@ -45,7 +45,7 @@ const Header = () => {
       submenu: [
         { name: "TVG Management", path: "/services/tvg-management" },
         { name: "TVG Stream", path: "/services/tvg-stream" },
-        { name: "TVG Book", path: "/services/tvg-books" },
+        { name: "TVG Books  ", path: "/services/tvg-books" },
         { name: "TVG Connect", path: "/services/tvg-connect" },
         { name: "TVG Verify", path: "/services/tvg-verify" },
         // { name: "TVG Creative", path: "/services/tvg-creative" },
@@ -294,7 +294,7 @@ const Header = () => {
                 </AnimatePresence>
               </div>
             ))} */}
-            {menuItems.map((item, idx) => (
+            {/* {menuItems.map((item, idx) => (
               <div key={idx}>
                 {item.submenu ? (
                   // Has submenu → render button with dropdown
@@ -343,7 +343,70 @@ const Header = () => {
                   </Link>
                 )}
               </div>
-            ))}
+            ))} */}
+            {menuItems.map((item, idx) => (
+  <div key={idx}>
+    {item.submenu ? (
+      // Has submenu → text as Link, arrow as dropdown toggle
+      <>
+        <div className="flex justify-between items-center w-full border-b border-gray-700 py-2">
+          {/* Text → acts as a link */}
+          <Link
+            to={item.path || "#"} // you can add a main path if needed
+            className="flex-1"
+            onClick={() => setIsOpen(false)}
+          >
+            {item.name}
+          </Link>
+
+          {/* Arrow → toggles submenu */}
+          <button
+            onClick={() =>
+              setOpenDropdown(openDropdown === idx ? null : idx)
+            }
+          >
+            <FontAwesomeIcon
+              icon={faChevronDown}
+              className={`transition-transform ml-2 ${
+                openDropdown === idx ? "rotate-180" : ""
+              }`}
+            />
+          </button>
+        </div>
+
+        {/* Dropdown submenu */}
+        <AnimatePresence>
+          {openDropdown === idx && (
+            <motion.div
+              className="pl-4 flex flex-col gap-2 py-2"
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: "auto" }}
+              exit={{ opacity: 0, height: 0 }}
+            >
+              {item.submenu.map((sub) =>
+                renderLink(
+                  sub,
+                  "text-sm py-1 border-b border-gray-700",
+                  true
+                )
+              )}
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </>
+    ) : (
+      // No submenu → render as Link directly
+      <Link
+        to={item.path}
+        className="flex justify-between w-full py-2 border-b border-gray-700"
+        onClick={() => setIsOpen(false)}
+      >
+        {item.name}
+      </Link>
+    )}
+  </div>
+))}
+
 
             <div className="mt-4 flex flex-col gap-3">
               <button
