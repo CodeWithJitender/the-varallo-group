@@ -7,7 +7,7 @@ const Mission = () => {
     <section className="">
       <div className="container-fluid ">
         <motion.p
-          className="text-center   text-h3 font-parkinsans"
+          className="text-center max-w-[1360px] mx-auto leading-[1.5] text-h3 font-parkinsans"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
