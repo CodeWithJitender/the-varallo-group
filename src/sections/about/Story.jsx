@@ -6,13 +6,13 @@ const Story = () => {
     {
       year: "2017",
       title: "Our Legacy",
-      para: "Founded in 2001 with a clear mission to deliver exceptional court reporting and legal support services rooted in professionalism, reliability and personal attention, The Varallo Group builds on a family legacy dating back to 1937. For nearly 100 years, the Varallo name has been synonymous with excellence in the field.",
+      para: "Founded in 2001 with a clear mission to deliver exceptional court reporting and legal support services rooted in professionalism, reliability, and personal attention, The Varallo Group builds on a family legacy dating back to 1937. For nearly 100 years, the Varallo name has been synonymous with excellence in the field.",
       img: "/our-legacy.jpg",
     },
     {
       year: "2018",
       title: "Our Commitment",
-      para: "From the start, The Varallo Group set out to be a different kind of court reporting firm. We’ve assembled a team of experts dedicated to upholding the highest standards of accuracy, responsiveness, and service. Whether handling routine depositions, high- profile cases, administration or communications, we bring the same precision, discretion, and care to every client. Our founder, Nancy Varallo, a lifelong court reporter and respected industry leader, shaped the company’s client-first culture. Under her guidance, The Varallo Group has grown into a trusted partner for court reporting firms, government agencies, and organizations nationwide.",
+      para: "From the start, The Varallo Group set out to be a different kind of court reporting firm. We’ve assembled a team of experts dedicated to upholding the highest standards of accuracy, responsiveness, and service. Whether handling routine depositions, high-profile cases, administration or communications, we bring the same precision, discretion, and care to every client. Our founder, Nancy Varallo, a lifelong court reporter and respected industry leader, shaped the company’s client-first culture. Under her guidance, The Varallo Group has grown into a trusted partner for court reporting firms, government agencies, and organizations nationwide.",
       img: "/our-commitment.jpg",
     },
     {

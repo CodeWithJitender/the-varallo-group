@@ -19,7 +19,7 @@ const HomeHero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
           >
-             <div className="mb-5">Court Reporting </div>
+             <div className="mb-5 uppercase">Court Reporting </div>
              <div className="">Focused Expertise to Support You Every Step of the Way</div>
           </motion.h1>
 

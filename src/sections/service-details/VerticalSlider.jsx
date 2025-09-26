@@ -50,7 +50,7 @@ export default function VerticalSlider({ images }) {
       </div>
 
       {/* Dots */}
-      <ul className="absolute right-3 top-1/2 -translate-y-1/2 hidden xl:flex flex-col">
+      {/* <ul className="absolute right-3 top-1/2 -translate-y-1/2 hidden xl:flex flex-col">
         {images.map((_, index) => (
           <li
             key={index}
@@ -60,7 +60,7 @@ export default function VerticalSlider({ images }) {
             } my-2`}
           ></li>
         ))}
-      </ul>
+      </ul> */}
     </div>
   );
 }

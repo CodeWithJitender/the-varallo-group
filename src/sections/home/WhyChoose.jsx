@@ -54,7 +54,7 @@ const HeroSection = () => {
           viewport={{ once: true }}
         >
           <h1 className="text-h2 font-parkinsans font-medium">
-           Experience You Trust. <br /> Support You Deserve.
+           Experience That Performs. <br /> Support You Deserve.
           </h1>
           <motion.p
             className=" mt-6 lg:max-w-[40%] font-manrope text-base"
@@ -98,8 +98,7 @@ team delivers more than just services; we deliver peace of mind.
             >
               <div className="rounded-xl p-4 text-white text-sm font-medium bg-btn flex flex-col justify-between">
                 <p className="font-manrope text-xl leading-6 md:leading-8">
-                Decades of expertise, led by Nancy Varallo. Trusted by firms
-nationwide.
+                Decades of expertise, led by Nancy Varallo.  Teacher.  Mentor.  Industry Leader.
                 </p>
                 <Link to={"/services"} className="text-base mt-5 font-manrope leading-8">
                   Learn More

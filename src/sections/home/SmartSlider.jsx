@@ -22,13 +22,13 @@ const smartData = [
   },
   {
     title: "TVG Stream",
-    desc: "Cutting-Edge trial presentation, and event A/V solutions.",
+    desc: "Cutting-edge trial presentation and event A/V, with detail-focused on-site support.",
     image: "smart-3.jpg",
     link: "/services/tvg-stream"
   },
   {
     title: "TVG Books",
-    desc: "Bookkeeping and financial support services for court reporting and other professional industries.",
+    desc: "Bookkeeping support services for court reporting and other professional industries.",
     image: "smart-4.jpg",
     link: "/services/tvg-books"
   },
@@ -145,7 +145,7 @@ export default function SmartSlider() {
               <h2 className="text-h2 font-medium leading-tight mb-4">
                 Smart Support.
                 <br />
-                Seamless Solutions.
+                Smart Solutions.
               </h2>
 
               <div className="flex items-center gap-2 mb-8">
@@ -158,6 +158,15 @@ export default function SmartSlider() {
               </div>
             </motion.div>
 
+            <motion.p
+              className="text-white font-manrope text-xl lg:max-w-[500px]"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+           Our team is the heart of The Varallo Group. They bring dedication, professionalism, and integrity to everything they do. I’m constantly inspired by their commitment to our clients and to each other. It's a privilege to work alongside such talented people who take real pride in delivering excellence every single day.
+            </motion.p>
             <motion.p
               className="text-white font-manrope text-xl lg:max-w-[500px]"
               initial={{ opacity: 0, y: 30 }}
