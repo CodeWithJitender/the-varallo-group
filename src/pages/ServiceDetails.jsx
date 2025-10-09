@@ -1102,7 +1102,7 @@ function ServiceDetails() {
       <ServiceDetailsHero data={content.hero} />
       <ServiceOver data={content.Overview} />
       <WhatWeProvide data={content.Provide} />
-      <TVGEffect data={content.TvgEffect} />
+      {/* <TVGEffect data={content.TvgEffect} /> */}
       <ServiceOverview data={content.Overview2} />
 
       <Testimonials />

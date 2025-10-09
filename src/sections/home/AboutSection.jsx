@@ -30,7 +30,8 @@ const AboutSection = () => {
 
                 </h3>
                 <p className=" mt-2 font-manrope">
-               Backed by over 50 years of leadership and expertise in the court reporting industry, The Varallo Group combines a rich legacy, unwavering commitment, and forward-thinking innovation to empower and support your firm every step of the way.
+              Delivering Solutions to Court Reporting Firms Across the U.S.
+Backed by over 50 years of leadership and expertise in the court reporting industry, The Varallo Group combines a rich legacy, unwavering commitment, and forward-thinking innovation to empower and support your firm every step of the way.
                 </p>
               </div>
             </motion.div>

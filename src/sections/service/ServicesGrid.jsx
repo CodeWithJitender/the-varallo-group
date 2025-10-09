@@ -6,6 +6,51 @@ const services = [
   {
     title: "TVG Management",
     content:
+      "Comprehensive agency management support focused on optimizing your day-to-day operations.",
+    link: "/services/tvg-management",
+    img: "./management.jpg",
+  },
+  {
+    title: "TVG Stream",
+    content:
+      "Cutting-edge trial presentation and event A/V, with detail-focused on-site support.",
+    link: "/services/tvg-stream",
+    img: "./stream.jpg",
+  },
+  {
+    title: "TVG Books",
+    content:
+      "Bookkeeping support services for court reporting and other professional industries.",
+    link: "/services/tvg-books",
+    img: "./books.jpg",
+  },
+
+  {
+    title: "TVG Connect",
+    content:
+      "Focused management services built for professional associations and organizations.",
+    link: "/services/tvg-connect",
+    img: "./connect.jpg",
+  },
+  {
+    title: "TVG Verify",
+    content:
+      "Let us ensure your hiring is secure with reliable background screening and compliance checks, powered by SmartHire.",
+    link: "/services/tvg-verify",
+    img: "./verify.jpg",
+  },
+  {
+    title: "TVG Reporting",
+    content:
+      "Our nationwide network of court reporters and legal videographers is ready to support your firm wherever you need.",
+    link: "/services/tvg-reporting",
+    img: "./reporting.jpg",
+  },
+];
+/* const services = [
+  {
+    title: "TVG Management",
+    content:
       "It starts from a very simple goal in mind and that's to serve your clients really well and grow at the same time. Running a court reporting firm involves more than just capturing the record, it demands consistent administrative precision, strong client communication and an eye on the bigger business picture. That’s where we come in. TVG Management service becomes your backbone, which helps you manage your day to day so you can actually focus on what really matters the most, which is your clients and your growth. ",
     link: "/services/tvg-management",
     img: "./management.jpg",
@@ -61,7 +106,7 @@ const services = [
   //   img: "./command.jpg",
   // },
 ];
-
+ */
 // Motion Variants
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -85,7 +130,7 @@ const ServicesGrid = () => {
     <div className="container-fluid mx-auto px-4 py-16">
       <h2 className="text-h2 font-parkinsans mb-10">Services</h2>
       <motion.div
-        className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch"
         variants={containerVariants}
         initial="hidden"
         whileInView="show"
