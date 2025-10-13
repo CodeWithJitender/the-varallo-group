@@ -14,19 +14,18 @@ This project demonstrates a clean, modular approach to building a multipage Reac
 A typical layout for this project looks like:
 
 \`\`\`
-/
-├─ public/                 # Static assets served as-is (favicons, static images)
-├─ src/
-│  ├─ assets/              # App images, fonts, and other asset files
-│  ├─ components/          # Reusable UI components (buttons, headers, cards)
-│  ├─ pages/               # Route-level components (Home.jsx, About.jsx, etc.)
-│  ├─ index.css            # Global CSS or Tailwind setup 
-│  ├─ App.jsx              # App shell and router configuration
-│  ├─ main.jsx             # App entry point (ReactDOM.createRoot)
-│  └─ routes/              # Optional: abstracted Routes configuration
-├─ package.json
-├─ README.md
-└─ CHANGES.md
+public/ – Static assets served as-is, such as favicons and static images
+src/ – Main source code folder
+assets/ – App images, fonts, and other asset files
+components/ – Reusable UI components (like buttons, headers, and cards)
+pages/ – Route-level components such as Home.jsx and About.jsx
+index.css – Global CSS or Tailwind setup file
+App.jsx – Application shell and router configuration
+main.jsx – App entry point (using ReactDOM.createRoot)
+routes/ – Optional folder for abstracted routes configuration
+package.json – Project metadata and dependencies
+README.md – Project documentation
+CHANGES.md – Change log or version history
 \`\`\`
 
 Note: Your folder names may differ slightly; use the above as a reference.
