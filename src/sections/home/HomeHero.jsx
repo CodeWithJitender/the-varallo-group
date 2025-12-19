@@ -7,8 +7,15 @@ import Hero from "../../components/Hero";
 import { Link } from "react-router-dom";
 // import heroImage from "../assets/hero-image.jpg"; // Replace with your actual image
 
-const HomeHero = () => {
+const HomeHero = ({data}) => {
+
+  if(!data) return null;
+
+  const { heading, subHeading, description, button, image } = data;
+  console.log(image)
+
   return (
+
     <Hero>
       <div className="mx-auto px-4  grid lg:grid-cols-2 items-center">
         {/* Text Content */}
@@ -19,8 +26,8 @@ const HomeHero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
           >
-             <div className="mb-5 uppercase">Court Reporting </div>
-             <div className="">Focused Expertise to Support You Every Step of the Way</div>
+             <div className="mb-5 uppercase">{heading} </div>
+             <div className="">{subHeading}</div>
           </motion.h1>
 
           <motion.p
@@ -29,8 +36,7 @@ const HomeHero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-       Your trusted partner for court reporting, legal video,
-association management, and administrative support services. 
+       {description}
           </motion.p>
 
           <motion.div
@@ -68,7 +74,7 @@ association management, and administrative support services.
               initial={{ scale: 0.9 }}
               animate={{ scale: 1 }}
               transition={{ type: "tween", duration: 1.5 }} // Increased duration
-              src="./hero.png" // Replace with your actual image path
+              src={image.url} // Replace with your actual image path
               alt="Professional"
               className="w-full  "
             />

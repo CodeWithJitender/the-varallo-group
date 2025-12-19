@@ -4,7 +4,23 @@ import { faLock, faCamera } from "@fortawesome/free-solid-svg-icons";
 // import personImage from "../assets/about-image.jpg"; // Replace with your image
 import { motion } from "framer-motion";
 
-const AboutSection = () => {
+const AboutSection = ({ data }) => {
+
+  if (!data) return null;
+
+  const {
+    title,
+    subHeading,
+    description,
+    image,
+    whatSetsUsApart,
+    highlights
+  } = data;
+
+  console.log(image)
+  console.log(highlights)
+
+
   return (
     <section className="" id="WhatSetsUsApart">
       <div className="container-fluid">
@@ -18,21 +34,19 @@ const AboutSection = () => {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <h2 className="md:w-[50%] text-4xl md:text-5xl font-medium leading-tight font-parkinsans">
-                Decades of Experience.
-               
-                <br />
-                One Trusted Team.
+              <h2 className="md:w-[40%] text-4xl md:text-5xl font-medium leading-tight font-parkinsans">
+                {title}
               </h2>
+
               <div className="md:w-[35%] ms-auto">
                 <h3 className="text-xl md:text-2xl font-manrope">
-                Delivering  Solutions to Court Reporting Firms Across the U.S.
+                  {subHeading}
 
                 </h3>
-                <p className=" mt-2 font-manrope">
-              Delivering Solutions to Court Reporting Firms Across the U.S.
-Backed by over 50 years of leadership and expertise in the court reporting industry, The Varallo Group combines a rich legacy, unwavering commitment, and forward-thinking innovation to empower and support your firm every step of the way.
+                <p className="mt-2 font-manrope">
+                  {description}
                 </p>
+
               </div>
             </motion.div>
 
@@ -45,7 +59,7 @@ Backed by over 50 years of leadership and expertise in the court reporting indus
                 viewport={{ once: true }}
               >
                 <img
-                  src="/about-home.png"
+                  src={image.url}
                   alt="Expert"
                   className="rounded-2xl w-full max-w-xl object-cover"
                 />
@@ -60,10 +74,10 @@ Backed by over 50 years of leadership and expertise in the court reporting indus
               >
                 <div>
                   <h3 className="mb-4 text-h3 font-manrope">
-                    What Sets Us Apart
+                    {whatSetsUsApart.heading}
                   </h3>
                   <p className=" text-xl max-w-[500px] mt-2 ">
-                    Our handpicked team draws from decades of experience, delivering service with precision and professionalism.  Think of us as a trusted extension of your team, dedicated to driving results together.
+                    {whatSetsUsApart.description}
                   </p>
                 </div>
 
@@ -80,26 +94,13 @@ Backed by over 50 years of leadership and expertise in the court reporting indus
                   }}
                   viewport={{ once: true }}
                 >
-                  {[
-                    { 
-                      icon: '/ab-1.png', 
-                      title: "Technology-Driven", 
-                      description: "We leverage advanced tools to streamline scheduling, delivery, and communication so you can scale with confidence." 
-                    },
-                    { 
-                      icon: '/ab-2.png', 
-                      title: "Confidential & Reliable", 
-                      description: "We recognize the trust you’ve placed in us, and we’re dedicated to protecting the confidentiality of your private company information." 
-                    },
-                    { 
-                      icon: '/ab-3.png', 
-                      title: "People First", 
-                      description: "It’s not just what we do, it’s about the people we serve. Our dedicated team brings genuine passion to help your business thrive and succeed." 
-                    }
-                  ].map((card, index) => (
+                  {highlights && highlights.length > 0 && highlights.map((card, index) => (
                     <div key={index} className="flex items-start flex-col sm:flex-row md:flex-col lg:flex-row gap-4 justify-between mb-4 md:mb-8">
                       <div className="">
-                        <img src={card.icon} alt={card.title} className="w-full max-w-[50px] h-auto" />
+                        {/* Agar icon URL hai toh show karo */}
+                        {card.icon && (
+                          <img src={card.icon} alt={card.title} className="w-full max-w-[50px] h-auto" />
+                        )}
                       </div>
                       <h4 className="font-medium font-manrope text-black text-p sm:w-[28%] md:w-full lg:w-[25%]">
                         {card.title}
@@ -107,8 +108,10 @@ Backed by over 50 years of leadership and expertise in the court reporting indus
                       <p className="font-manrope text-black sm:w-[40%] md:w-full lg:w-[60%]">
                         {card.description}
                       </p>
-                  </div>))}
+                    </div>
+                  ))}
                 </motion.div>
+
               </motion.div>
             </div>
           </div>

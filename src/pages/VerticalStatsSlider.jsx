@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 export default function VerticalStatsSlider({ stats }) {
+  console.log(stats);
   const settings = {
     dots: false,
     arrows: true,
@@ -63,10 +64,10 @@ export default function VerticalStatsSlider({ stats }) {
             <div key={index} className="w-full flex-shrink-0 p-4">
               <div className="flex justify-between items-start">
                 <h3 className="text-h3 font-medium font-parkinsans">
-                  {stat.title}
+                  {stat.value}
                 </h3>
                 <p className="text-black font-manrope text-xl text-end max-w-[350px] pe-5">
-                  {stat.description}
+                  {stat.label}
                 </p>
               </div>
             </div>
